@@ -1,0 +1,10 @@
+  .card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+
+   }
+   .testi:hover{
+    transform: scale(1.1);
+    transition: 1s;
+
+   }
