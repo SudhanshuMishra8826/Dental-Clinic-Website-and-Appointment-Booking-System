@@ -67,7 +67,7 @@
            
           <a class="dropdown-item" href="https://www.facebook.com/Acme-Dental-Lounge-Health-Medi-Center-173040433301775/"><i class="fa fa-facebook-square fa-2x"></i></a>
            <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/contact">Contact</a>
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/login">Appointments</a>
+           
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -89,19 +89,19 @@
 </nav>
 <!navbar end> 
 
-
-
- <section style="background:url('http://localhost/acme_dental_care/dc1_images/Untitled1.jpg') no-repeat; width: 100%; height: 60vh;  opacity: 0.9; background-attachment: fixed; margin-top: - 0px;  ">
-   <h1>Welcome to Acme Dental Care</h1>
+<section style="background:url('http://localhost/acme_dental_care/dc1_images/banner-anestheiology_1600_v2.jpg') no-repeat; width: 100%; height: 60vh;  opacity: 1.0; background-attachment: fixed; margin-top: - 0px;">
+   <h1 class="text-dark"style="margin-top:  50px; padding:130px  250px   0px; background-attachment: fixed; font-size:48px;"><span style="font-style: italic; color: red;"> Acme</span> Dental Care</h1>
+     
  </section>
-
+  
+  
  
 
 
 
-<section class="container-fluid bg-info text-center">
-  <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic; color: #ff8080;">Welcome</span> To Acme Dental Care</h2>
-  <hr style="width: 30%; border-color: #ff8080;  padding-bottom: 40px;">
+<section class="container-fluid bg-info text-center" style="margin-top: -50px;">
+  <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic; color: white;">Welcome</span>  </h2>
+  <hr style="width: 8%; border-color: white; border-width: 2px;  padding-bottom: 40px;">
 </section>
   
     <section id="clinic" class="container-fluid bg-white text-center">
@@ -139,9 +139,8 @@ strive to focus a great deal of time and resources on
 meeting and exceeding your dental expectations each
 and every time.</p>
 <div class="d-block m-auto">
-        <a class="btn   text-white btn1" role="button" href="<?php echo base_url();?>dental1/homepage/login">
-          BOOK APPOINTMENT 
-        </a>
+         <P>Timing-Monday to Saturday <br> 
+        (10:30am-02:30pm and 05:30pm-08:30pm)</p></P>
       </div>
                 
            </div>
@@ -175,8 +174,8 @@ and every time.</p>
 </section>
 
  <section class="container-fluid bg-info text-center">
-  <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic; color: #ff8080;">Our</span> Team</h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">
+  <h2 class="text-white" style="padding-top: 50px; font-style: italic;">Our Team</h2>
+  <hr style="width: 10%; border-color: white; border-width: 2px; padding-bottom: 40px;">
 </section>
  
 
@@ -195,11 +194,7 @@ and every time.</p>
                 <hr style="width: 30%; border-color: #ff8080;  padding-bottom: 20px;">
                <p class="text-secondary" style="text-align: justify;">Dr. Ashish Gupta has been practicing Dentistry since 14 years and he established centr by the name 'Acme Dental Care' in Aundh,Pune which is specially established to experience the people advancement of dentistry.<br>
                 Dr. Gupta continued his advanced studies in dental implants,comprehensive training conducted by Biohorizon Impalant System USA and is currently a certified Life Time Menmber of ISOI(Indian Society of Implantology). His expertise in Cosmetic Dentistry,Dentl Implants,Restorative Dentistry,Rotry Endo (lastest technique in RCT),Veneers & Laminates. His favorite thing about the partice is being able to change patient's perception of dentistry & empower them reading the importance of oral health. He is looking forward to providing quality of oral health care service from its state of art facility.</p>
-                <div class="d-block m-auto">
-        <a class="btn   text-white btn1" role="button" href="<?php echo base_url();?>dental1/homepage/login">
-          BOOK APPOINTMENT 
-        </a>
-      </div>
+                 
                  
            </div>
         </div> 
@@ -215,18 +210,14 @@ and every time.</p>
                 <hr style="width: 30%; border-color: #ff8080;  padding-bottom: 20px;">
                <p class="text-secondary" style="text-align: justify;">Dr. Vishu A Gupta qualified as Dental surgeon in 2007 and has 11yrs of clinical Expeience.She has unique & wide spectrum of skill in all aspect of Dentistry with special interest in cosmetic Dentistry, smile designing, Pediatric Dentistry, Restorative Dentistry. Dentistry is her passion & philosophy is to provide the best & ethical Care to the patient with Care with on pain. She provides an upgarded experience that includes state-of-the-art technology,personalized treatment,and luxurious amenities. Her waen sense of humor and friendly nature make visiting the dentist fell more like a social call then an ordinary responsibility, one in which your smile can leave healthier and more beautiful than ever before.<br>
                Dr. Vishu A gupta believes continuing education to be very important to staying at the cutting edge of ehat dentistry has to offer. she is committed to learning the latest techniques to provide the best possible care for her patiebts.</p>
-               <div class="d-block m-auto">
-        <a class="btn   text-white btn1" role="button" href="<?php echo base_url();?>dental1/homepage/login">
-          BOOK APPOINTMENT 
-        </a>
-      </div>
+                
                 
            </div>
         </div>
         <div class="col-lg-5 col-md-5 col-sm-10 col-10 d-block m-auto">
            <div class="d-block m-auto" style="padding-bottom: 25px; padding-top: 40px;">
                <figure class="figure">
-                 <img src="<?php echo base_url();?>/dc1_images/IMG_7444 - Copy.JPG" class="figure-img img-fluid rounded-circle" height="300px" width="300px">
+                  <img src="<?php echo base_url();?>/dc1_images/project_16898.jpeg" class="figure-img img-fluid rounded-circle" height="300px" width="300px">
                <figcaption>
            </div>
         </div> 

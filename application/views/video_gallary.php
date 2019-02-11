@@ -61,7 +61,7 @@
            
           <a class="dropdown-item" href="https://www.facebook.com/Acme-Dental-Lounge-Health-Medi-Center-173040433301775/"><i class="fa fa-facebook-square fa-2x text-info"></i></a>
            <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/contact">Contact</a>
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/login">Appointments</a>
+           
         </div>
       </li>
        <li class="nav-item dropdown">
@@ -86,19 +86,12 @@
             <div class="container">
                 <div class="row" id="div1">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>ABCD</h2>
-                      <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsvjdvb
-                          djhvbdhjbdjhvbdhjvbdfhjvfbvjhb</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbs
-                            vjdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjfj</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p> 
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p> 
+		              <h2>Root Canal</h2>
+                      <p style="text-align: justify;">When the decay in your tooth is so deep that it reaches the inner most layer of the tooth where the nerve lies, root canal treatment is needed to save the tooth. Nerve and blood vessels lie in the center of the tooth , when get infected needs to be removed to alleviate the pain and infection. If the carious tooth is left untreated, the infection from the tooth will spread to the bone and surrounding teeth and will cause bone loss and more serious dental problems.</p> 
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="embed-responsive embed-responsive-21by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pyj9yJO4rbA" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/d9iVeeigUPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
 
@@ -111,19 +104,12 @@
             <div class="container">
                 <div class="row" id="div1">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>ABCD</h2>
-                      <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsvjdvb
-                          djhvbdhjbdjhvbdhjvbdfhjvfbvjhb</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbs
-                            vjdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjfj</p>  
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p> 
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p>                    
+		              <h2>Tooth extraction</h2>
+                      <p style="text-align: justify;">A dental extraction (also referred to as tooth extraction, exodontia, exodontics, or informally, tooth pulling) is the removal of teeth from the dental alveolus (socket) in the alveolar bone. Extractions are performed for a wide variety of reasons, but most commonly to remove teeth which have become unrestorable through tooth decay, periodontal disease or dental trauma, especially when they are associated with toothache. Sometimes wisdom teeth are impacted (stuck and unable to grow normally into the mouth) and may cause recurrent infections of the gum (pericoronitis). In orthodontics if the teeth are crowded, sound teeth may be extracted (often bicuspids) to create space so the rest of the teeth can be straightened.</p>                    
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="embed-responsive embed-responsive-21by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pyj9yJO4rbA" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fRCGI3YNai0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
 
@@ -132,205 +118,6 @@
             </div>
 
         </section>
-        <section id="vid3">
-            <div class="container">
-                <div class="row" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>ABCD</h2>
-                      <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsvjdvb
-                          djhvbdhjbdjhvbdhjvbdfhjvfbvjhb</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbs
-                            vjdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjfj</p>      
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p> 
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p>                    
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pyj9yJO4rbA" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section id="vid4">
-            <div class="container">
-                <div class="row" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>ABCD</h2>
-                      <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsvjdvb
-                          djhvbdhjbdjhvbdhjvbdfhjvfbvjhb</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbs
-                            vjdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjfj</p>   
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p> 
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p>                    
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pyj9yJO4rbA" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section id="vid5">
-            <div class="container">
-                <div class="row" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>ABCD</h2>
-                      <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsvjdvb
-                          djhvbdhjbdjhvbdhjvbdfhjvfbvjhb</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbs
-                            vjdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjfj</p>  
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p> 
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p>                    
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pyj9yJO4rbA" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section id="vid6">
-            <div class="container">
-                <div class="row" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>ABCD</h2>
-                      <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsvjdvb
-                          djhvbdhjbdjhvbdhjvbdfhjvfbvjhb</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbs
-                            vjdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjfj</p>     
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p> 
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p>                    
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pyj9yJO4rbA" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section id="vid7">
-            <div class="container">
-                <div class="row" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>ABCD</h2>
-                      <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsvjdvb
-                          djhvbdhjbdjhvbdhjvbdfhjvfbvjhb</p>     
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p> 
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbs
-                            vjdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjfj</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p>                    
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pyj9yJO4rbA" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section id="vid8">
-            <div class="container">
-                <div class="row" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>ABCD</h2>
-                      <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsvjdvb
-                          djhvbdhjbdjhvbdhjvbdfhjvfbvjhb</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbs
-                            vjdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjfj</p>  
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p> 
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p>                    
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pyj9yJO4rbA" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section id="vid9">
-            <div class="container">
-                <div class="row" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>ABCD</h2>
-                      <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsvjdvb
-                          djhvbdhjbdjhvbdhjvbdfhjvfbvjhb</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbs
-                            vjdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjfj</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p>     
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p> 
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pyj9yJO4rbA" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section id="vid10">
-            <div class="container">
-                <div class="row" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>ABCD</h2>
-                      <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsvjdvb
-                          djhvbdhjbdjhvbdhjvbdfhjvfbvjhb</p>        
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p> 
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbs
-                            vjdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjfj</p>                    
-                        <p>bdfvhjbjhvbdhjdsbvgjsdhbdsjvbsv
-                            jdvbdjhvbdhjbdjhvbdhjvbdfhjvfbvjdfj</p>                    
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pyj9yJO4rbA" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
+         
     </body>
 </html>

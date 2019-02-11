@@ -75,7 +75,7 @@
            
           <a class="dropdown-item" href="https://www.facebook.com/Acme-Dental-Lounge-Health-Medi-Center-173040433301775/"><i class="fa fa-facebook-square fa-2x"></i></a>
            <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/contact">Contact</a>
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/login">Appointments</a>
+           
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -100,13 +100,14 @@
 
 <section class="container-fluid bg-info text-center" style="margin-top: 50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Smile Photo Gallery</span>  </h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 10%; border-color: white;  border-width: 2px; padding-bottom: 40px;">
 </section>
 
 
 
   <div class="gallery">
-    <a href="<?php echo base_url();?>/dc1_images/images/26907872_176020513003767_1167050437066330406_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/gallery/26907872_176020513003767_1167050437066330406_n.jpg" width="300" height="150"> </a>
+    <a href="<?php echo base_url();?>/dc1_images/images/44286388_302082290397588_3304832207327068160_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/26907872_176020513003767_1167050437066330406_n.jpg" width="300" height="150"></a>
+
     <a href="<?php echo base_url();?>/dc1_images/images/26229999_174082143197604_5273773021954518344_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/26229999_174082143197604_5273773021954518344_n.jpg" width="300" height="150"></a>
     <a href="<?php echo base_url();?>/dc1_images/images/44213229_302082260397591_9074665258156556288_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/44213229_302082260397591_9074665258156556288_n.jpg" width="300" height="150"> </a>
     <a href="<?php echo base_url();?>/dc1_images/images/26804960_176020516337100_4471383098197088894_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/26804960_176020516337100_4471383098197088894_n.jpg" width="300" height="150"></a>

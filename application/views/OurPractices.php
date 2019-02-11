@@ -76,7 +76,7 @@
            
           <a class="dropdown-item" href="https://www.facebook.com/Acme-Dental-Lounge-Health-Medi-Center-173040433301775/"><i class="fa fa-facebook-square fa-2x"></i></a>
            <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/contact">Contact</a>
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/login">Appointments</a>
+           
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -105,7 +105,7 @@
 
 <section class="container-fluid bg-info text-center" style="margin-top:  0px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Our Practices</span>  </h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 10%; border-color: white; border-width: 2px;   padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px;">
    
@@ -148,7 +148,7 @@ when you're in need of professional dental care and attention..<br>
 
 <section class="container-fluid bg-info text-center" style="margin-top: 50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Our Policies</span>  </h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 10%; border-color: white; border-width: 2px;   padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px;">
    
@@ -191,7 +191,7 @@ Find out how Acme Dental Care can keep you smiling for a lifetime!
 
 <section class="container-fluid bg-info text-center" style="margin-top: 50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Advanced Technology</span>  </h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 10%; border-color: white; border-width: 2px;   padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px;">
    
@@ -249,7 +249,7 @@ trained with this technology
 
   <section class="container-fluid bg-info text-center" style="margin-top: 50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Infection Control</span>  </h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 10%; border-color: white; border-width: 2px;   padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px;">
    

@@ -95,7 +95,7 @@
            
           <a class="dropdown-item" href="https://www.facebook.com/Acme-Dental-Lounge-Health-Medi-Center-173040433301775/"><i class="fa fa-facebook-square fa-2x text-info"></i></a>
            <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/contact">Contact</a>
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/login">Appointments</a>
+           
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -202,7 +202,7 @@
 
 <section class="container-fluid bg-light text-center" style="margin-top: -5px;">
 	<h2 class="text-dark" style="padding-top:  50px;">Why Choose Acme Dental Care</h2>
-  <hr style="width: 30%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 30%; border-color: #ff8080; border-width: 2px; padding-bottom: 40px;">
 	<!div class="container-fluid bg-dark">	 
    <div class="row text-center" >
     <div class="col-lg-2 col-md-2 col-sm-6 col-10 d-block m-auto">
@@ -242,12 +242,12 @@
 
 <section id="clinic" class="container-fluid bg-white text-center">
 	<h2 class="text-dark text-center" style="padding-top: 50px;">Welcome To Acme Dental Care</h2>
-   <hr style="width: 30%; border-color: #ff8080;  padding-bottom: 40px;">
+   <hr style="width: 30%; border-color: #ff8080; border-width: 2px;  padding-bottom: 40px;">
     <div class="row" style="padding: 50px;" > 
 		<div class="col-lg-6 col-md-6 col-sm-10 col-12 d-block m-auto">
            <div class="d-block m-auto" style="padding-bottom: 25px;">
                <h2 class="text-center"><span style="font-style: italic; color: red;">Acme</span> Dental Clinic</h2>
-               <hr style="width: 30%; border-color: #ff8080;  padding-bottom: 20px;">
+               <hr style="width: 30%; border-color: #ff8080;  border-width: 2px; padding-bottom: 20px;">
                <p class="text-secondary" style="text-align: justify;"> 
                 At Acme Dental care we are proud to have helped thousands of
 patients from India. Korea Japan. Canada. Germany, Iraq, Irarn
@@ -308,7 +308,7 @@ class dentistry and let us be a part of your smile.</p>
         <div class="col-lg-7 col-md-7 col-sm-10 col-12 d-block m-auto" style="padding: 50px;">
            <div class="d-block m-auto" style="padding-bottom: 25px; padding-top: 40px;">
                <h2 class="text-center">Dr. Ashish Gupta</h2>
-               <hr style="width: 30%; border-color:  #ff8080;  padding-bottom: 20px;">
+               <hr style="width: 30%; border-color:  #ff8080;  border-width: 2px; padding-bottom: 20px;">
                <p class="text-secondary" style="text-align: justify;">With over 14 years of helping our local community
 achieving their oral health needs, you can be confident
 that Dr. Ashish Gupta and his team will help maintain
@@ -327,7 +327,7 @@ modern office!</p>
         <div class="col-lg-7 col-md-7 col-sm-10 col-12 d-block m-auto" style="padding: 50px;">
            <div class="d-block m-auto" style="padding-bottom: 25px; padding-top: 40px;">
                <h2 class="text-center">Dr. Vishu A Gupta</h2>
-               <hr style="width: 30%; border-color: #ff8080;  padding-bottom: 20px;">
+               <hr style="width: 30%; border-color: #ff8080;  border-width: 2px; padding-bottom: 20px;">
                <p class="text-secondary " style="text-align: justify;">Dr Vishu Gupta is helping our community since 11
 years Her warm sense of humor and friendly
 nature make visiting the dentist feel more like a
@@ -342,7 +342,7 @@ office!</p>
         <div class="col-lg-5 col-md-5 col-sm-10 col-10 d-block m-auto">
            <div class="d-block m-auto" style="padding-bottom: 25px; padding-top: 40px;">
                <figure class="figure">
-                 <img src="<?php echo base_url();?>/dc1_images/IMG_7444 - Copy.JPG" class="figure-img img-fluid rounded-circle" height="300px" width="300px">
+                 <img src="<?php echo base_url();?>/dc1_images/project_16898.jpeg" class="figure-img img-fluid rounded-circle" height="300px" width="300px">
                <figcaption>
            </div>
         </div> 
@@ -351,7 +351,7 @@ office!</p>
 
 
 <section class="container-fluid bg-info text-center">
-  <h2 class="text-white" style="padding: 50px;"><span style="font-style: italic; color: #ff8080;">Healty</span>,Prosperous Smiles</h2>
+  <h2 class="text-white" style="padding: 50px;"><span style="font-style: italic; color: #ff8080;">Healty</span>, Prosperous Smiles</h2>
 </section>
 
 
@@ -361,7 +361,7 @@ office!</p>
 
 <section class="container-fluid bg-light text-center" style="margin-top: -7px;">
   <h2 class="text-dark" style="padding-top:  50px;">Our Results</h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 20px;">
+  <hr style="width: 10%; border-color: #ff8080;  border-width: 2px;  padding-bottom: 20px;">
   <!div class="container-fluid bg-dark">  
   <p class="text-secondary" style="padding-bottom: 20px;">For our patients, dental treatments provided by us have been nothing short of life changing! Be it a bride who wanted to show off her pearly whites on her D-day, an IT professional who wanted to confidently pitch proposals or a fitness enthusiast who wanted to improve his oral health and diet. From designing smiles and porcelain crown sculpting to full mouth dental implants and mouth rehabilitation, Smilekraft Dentistry has successfully created customized treatments for each patient. Here is a sneak peek into the before and after pictures of our smiling patients.</p> 
    <div class="row text-center" style="margin-right: 50px; margin-left: 50px;" >
@@ -436,9 +436,9 @@ office!</p>
     <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto" style="background:#339BA5;">
       <div class="d-block m-auto" style="padding: 78px 50px 98px;">
          
-            <h4 style="margin-top: 10px;">Cosmetic Dentistry</h4> 
-            <hr style="width: 40%; border-color: #ff8080;  padding-bottom: 20px;">
-           <p style="text-align: justify;">In today’s world, modern technology has paved the path for newer possibilities that were once only a dream to create a perfect set of pearly whites. While your smile adds up to be a confidence booster in social and professional situations, it is now possible to have aesthetic enhancements to a level that meet your needs perfectly – from basic alterations of your teeth to more pronounced smile makeovers provided by the best cosmetic dentist in Pune, India.</p>
+            <h4 style="margin-top:  10px;">Cosmetic Dentistry</h4> 
+            <hr style="width: 40%; border-color: #ff8080;  border-width: 2px; padding-bottom: 20px;">
+           <p style="text-align: justify;">In today’s world, modern technology has paved the path for newer possibilities that were once only a dream to create a perfect set of pearly whites. While your smile adds up to be a confidence booster in social and professional situations, it is now possible to have aesthetic enhancements to a level that meet your needs perfectly – from basic alterations of your teeth to more pronounced smile makeovers provided by the best cosmetic dentist in Pune,India    </p>   
 
  
       </div>
@@ -447,8 +447,8 @@ office!</p>
       <div class="d-block m-auto" style="padding: 30px 50px 50px;">
          
         <h4 style="margin-top: 10px;">Dental Implants</h4> 
-            <hr style="width: 40%; border-color: #ff8080;  padding-bottom: 20px;">
-           <p style="text-align: justify;"> Missing teeth or loose dentures are detrimental not only to your oral health, but your self-esteem might also take a hit. Whatever the reason for losing your teeth, they need to be replaced both for aesthetic and functional reasons such as eating or talking, which would be more difficult otherwise. Eliminating the need to live with an ill-fitting set of teeth or an embarrassing gap between them, Dr. Priyank, an implantologist, widely known as the best implant dentist in Pune at Smilekraft Dentistry provides you with easy and comfortable solutions best suiting your needs.</p>
+            <hr style="width: 40%; border-color: #ff8080;  border-width: 2px; padding-bottom: 20px;">
+           <p style="text-align: justify;"> Missing teeth or loose dentures are detrimental not only to your oral health, but your self-esteem might also take a hit. Whatever the reason for losing your teeth, they need to be replaced both for aesthetic and functional reasons such as eating or talking, which would be more difficult otherwise. Eliminating the need to live with an ill-fitting set of teeth or an embarrassing gap between them, Dr. Ashish, an implantologist, widely known as the best implant dentist in Pune at Smilekraft Dentistry provides you with easy and comfortable solutions best suiting your needs.</p>
 
       </div>
     </div>
@@ -456,7 +456,7 @@ office!</p>
       <div class="d-block m-auto" style="padding: 66px 50px 86px;">
          
         <h4 style="margin-top: 10px;">Laser Assisted Dentistry</h4> 
-            <hr style="width: 40%; border-color: #ff8080;  padding-bottom: 20px;">
+            <hr style="width: 40%; border-color: #ff8080;  border-width: 2px; padding-bottom: 20px;">
            <p style="text-align: justify;"> Laser Dentistry is one of the most innovative and minimally invasive technologies. Acting as a gentle alternative to the drill, the WATERLASE laser dentistry eliminates the feeling of anxiety amongst patients enhancing faster healing and a reduced risk of infection. With this preventive approach, we are committed to providing you with services for all your dental needs. Visit the pioneer of this technology and the best dentist in Pune, India, Dr. Priyank Mathur at Smilekraft Dentistry today.</p>
       </div>
     </div>
@@ -480,7 +480,7 @@ office!</p>
 <!cards>
 <section class="container-fluid bg-white" style="padding-bottom: 25px;  margin-top: -5px;">
   <h2 class="text-dark text-center" style="padding-top: 50px;">User Reviews</h2> 
-   <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">  
+   <hr style="width: 10%; border-color: #ff8080;  border-width: 2px; padding-bottom: 40px;">  
    <div class="row text-center">
     <div class="col-lg-3 col-md-3 col-sm-6 col-10 d-block m-auto text-center">
 
@@ -556,13 +556,7 @@ office!</p>
 
 
 
- <div class="col-lg-2 col-md-2 col-sm-12 col-12 d-block m-auto" style="padding-top: 25px; padding-bottom: 25px;">
-      <div class="d-block m-auto">
-        <a class="btn   text-white btn1" role="button" href="<?php echo base_url();?>dental1/homepage/login">
-          BOOK APPOINTMENT 
-        </a>
-      </div>
-    </div>
+  
 
 
 <! upper links>  

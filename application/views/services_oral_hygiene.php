@@ -67,7 +67,7 @@
            
           <a class="dropdown-item" href="https://www.facebook.com/Acme-Dental-Lounge-Health-Medi-Center-173040433301775/"><i class="fa fa-facebook-square fa-2x"></i></a>
            <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/contact">Contact</a>
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/login">Appointments</a>
+          
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -90,7 +90,7 @@
 <!navbar end> 
 
  <section style="background:url('http://localhost/acme_dental_care/dc1_images/banner-anestheiology_1600_v2.jpg') no-repeat; width: 100%; height: 60vh;  opacity: 1.0; background-attachment: fixed; margin-top: - 0px;">
-   <h1 class="text-dark"style="margin-top:  50px; padding:150px  540px   0px; background-attachment: fixed;">OUR SERVICES</h1>
+   <h1 class="text-dark"style="margin-top:  50px; padding:150px  250px   0px; background-attachment: fixed;">OUR SERVICES</h1>
      
  </section>
 
@@ -99,7 +99,7 @@
 <!service start>
 <section class="container-fluid bg-info text-center" style="margin-top: -50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Oral Hygiene</span>  </h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 10%; border-color: white; border-width: 2px; padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px;">
    
@@ -137,11 +137,7 @@ If you have a severe form of gums disease where you have lost considerable amoun
 We highly recommend dental check ups and cleanings every 6 months to keep your teeth clean and gums healthy to prevent any gum disease.<br> 
 
 periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on your gum condition.</p>
- <div class="text-center"> 
-                  <a class="btn   text-white btn1" role="button" href="<?php echo base_url();?>dental1/homepage/login">
-                    BOOK APPOINTMENT 
-                  </a>
-                </div>
+  
                 </div>
            </div>
         </div>
@@ -158,7 +154,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
 <!service start>
 <section class="container-fluid bg-info text-center" style="margin-top: 50px; margin-bottom: 50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Root Canal</span>  </h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 10%; border-color: white; border-width: 2px; padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px;">
    
@@ -178,11 +174,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
              
                <p class="text-secondary" style="text-align: justify;">When the decay in your tooth is so deep that it reaches the inner most layer of the tooth where the nerve lies, root canal treatment is needed to save the tooth. Nerve and blood vessels lie in the center of the tooth , when get infected needs to be removed to alleviate the pain and infection. If the carious tooth is left untreated, the infection from the tooth will spread to the bone and surrounding teeth and will cause bone loss and more serious dental problems.</p>
                
-            <div class="text-center" style="margin-top:200px;"> 
-                  <a class="btn   text-white btn1" role="button" href="<?php echo base_url();?>dental1/homepage/login">
-                    BOOK APPOINTMENT 
-                  </a>
-                </div>
+             
          
                 
            </div>
@@ -198,7 +190,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
 <!service start>
 <section class="container-fluid bg-info text-center" style="margin-top: 50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Crowns And Bridges</span>  </h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 10%; border-color: white; border-width: 2px; padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px;">
    
@@ -229,11 +221,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
                When you are missing one or more teeth, we can fill in the space with the help of a dental bridge. We prepare 2 adjacent teeth which act as supporting pillars to cross the area where you are missing teeth. It is then cemented onto the prepared abutments permanently.<br> 
                Bridge is a fixed option as compared to the removable partial dentures. Meaning that the bridge does not have to be removed every night unlike a partial denture.
                 </p>
-                <div class="text-center"> 
-                  <a class="btn   text-white btn1" role="button" href="<?php echo base_url();?>dental1/homepage/login">
-                    BOOK APPOINTMENT 
-                  </a>
-                </div>
+                 
                 </div>
            </div>
         </div>
@@ -248,7 +236,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
   <!service start>
 <section class="container-fluid bg-info text-center" style="margin-top: 50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Veneers</span>  </h2>
-  <hr style="width: 5%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 10%; border-color: white; border-width: 2px; padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px;">
    
@@ -265,11 +253,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
            </div>
                <p class="  text-secondary" style="text-align: justify;">If you don’t like your smile or you want a solution for your discolored teeth or smaller sized/maligned teeth? We can transform your smile with the help of Veneers. Veneer is a thin porcelain shell that covers the front of your natural tooth surface. It’s a simple procedure that is done in 2 visits. The 1st visit- we minimally prepare your teeth to fit the veneers. we then, make an impression of your teeth and provisionalize your teeth with temporary veneers. The dental laboratory fabricates your veneers within 10-14 business days.</br> On the 2nd visit- we cement your permanent veneers with the help of color matching resin cement.</br> The dentist will let you know what precautions to take while you have your Veneers. And how to Whiten rest of your teeth when you have Veneers or Porcelain crowns.</br> 
 
-            <div class="text-center" style="margin-top: 50px;"> 
-                  <a class="btn   text-white btn1" role="button" href="<?php echo base_url();?>dental1/homepage/login">
-                    BOOK APPOINTMENT 
-                  </a>
-                </div>
+            
         </div>
                 </p>
                 
@@ -286,7 +270,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
 <!service start>
 <section class="container-fluid bg-info text-center" style="margin-top: 50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Tooth Extraction</span>  </h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">
+ <hr style="width: 10%; border-color: white; border-width: 2px; padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px;">
    
@@ -317,11 +301,7 @@ Failed root canal treatment<br>
 Wisdom teeth extractions<br> 
 
 Tooth extraction can be done under local or general anesthesia. We highly recommend nitrous oxide gas ( laughing gas ) for kids between 5 – 12 years of age. Please stop by our office to get more information.</p>
- <div class="text-center"> 
-                  <a class="btn   text-white btn1" role="button" href="<?php echo base_url();?>dental1/homepage/login">
-                    BOOK APPOINTMENT 
-                  </a>
-                </div>
+ 
                 
            </div>
         </div>
@@ -337,7 +317,7 @@ Tooth extraction can be done under local or general anesthesia. We highly recomm
 <!service start>
 <section class="container-fluid bg-info text-center" style="margin-top:  50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Inlays and Onlays</span>  </h2>
-  <hr style="width: 10%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 10%; border-color: white; border-width: 2px; padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px; margin-bottom: 50px;">
    
@@ -361,11 +341,7 @@ Tooth extraction can be done under local or general anesthesia. We highly recomm
                This procedure is done in 2 visits- during the first visit, Dentist removes any old filling/decay from the tooth, he then makes an impression of the tooth to send to the dental lab. he then temporizes your tooth with a temporary filling. The lab takes about 10-14 business day to fabricate your inlay/onlay.</br> On the 2nd visit, the dentist cements in your final restoration ( inlay/onlay) with the tooth colored cement. he then polishes the tooth to removed any excess cement and check your bite.
                </br><br>
                 </p>
-                 <div class="text-center"> 
-                  <a class="btn   text-white btn1" role="button" href="<?php echo base_url();?>dental1/homepage/login">
-                    BOOK APPOINTMENT 
-                  </a>
-                </div>
+                  
                 </div>
            </div>
         </div>
@@ -380,7 +356,7 @@ Tooth extraction can be done under local or general anesthesia. We highly recomm
 <!service start>
 <section class="container-fluid bg-info text-center" style="margin-top: 50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Sealants & Sports Guard</span>  </h2>
-  <hr style="width: 20%; border-color: #ff8080;  padding-bottom: 40px;">
+  <hr style="width: 10%; border-color: white; border-width: 2px; padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px;">
    
@@ -408,11 +384,7 @@ Tooth extraction can be done under local or general anesthesia. We highly recomm
               There are several OTC mouth guard’s available but are ill-fitting and uncomfortable, therefore, do not provide best protection. For highest level of comfort and protection you need a custom made mouth guard. we can make a custom made mouth guard by taking a mold of you mouth. This mold is unique to your mouth and the mouth guard made of this mold fits perfectly into your mouth without any. discomfort.
                </br> 
                 </p>
-                 <div class="text-center"> 
-                  <a class="btn   text-white btn1" role="button" href="<?php echo base_url();?>dental1/homepage/login">
-                    BOOK APPOINTMENT 
-                  </a>
-                </div>
+                  
                 </div>
            </div>
         </div>
