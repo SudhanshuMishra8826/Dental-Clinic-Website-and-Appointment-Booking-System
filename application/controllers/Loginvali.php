@@ -33,13 +33,23 @@ class Loginvali extends CI_Controller {
                 if($q->num_rows())
                 {
 					//echo "details matched";
-					$this->load->view('dash_home');
-                } 
-                else 
-                {
-					echo "detailes not matched";
+					
+     				$this->load->model('appointment_model');
+     				if($this->appointment_model->check_notifications()){
+        			//$this->load->view('dash_home_2');
+						$data['bool']=1;
+         						}
+     				else{
+     	 				$data['bool']=2;
+     								}
+     //$data['check_posts']=$this->appointment_model->check_notifications();
+     					$this->load->view('dash_home', $data);
+                		} 
+             	   	else 
+                	{
+						echo "detailes not matched";
                    	
-                } 
+                	} 
 		 	 /*if($this->loginmodel->isvalidate($email,$pass))
 		 	 {
 

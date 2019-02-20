@@ -72,6 +72,34 @@ public function notifications()
 
 }
 
+
+
+
+//public function index()
+//{
+   //$this->load->view('index');
+  // $this->load->library('session');
+  // $this->load->model('appointment_model');
+//$data['check_posts']=$this->appointment_model->check_notifications();
+ //  $this->load->view('dash_home', $data);
+   //unset($_SESSION["name"]);
+   //unset($_SESSION["id"]);
+   //$this->load->view(''.$page);
+   //$this->load->view('home');
+	
+
+
+//}
+
+
+
+
+
+
+
+
+
+
 public function seenNotifications()
 {
    //$this->load->view('index');
@@ -199,9 +227,21 @@ public function dissapprove($Bid)
  {
 	 //$this->load->view('index');
 	 //$this->load->view('contact');
-	 $this->load->view('dash_home');
+	 //$this->load->view('dash_home');
 	 //$this->load->view('home');
+     $this->load->library('session');
+     $this->load->model('appointment_model');
+     if($this->appointment_model->check_notifications()){
+        //$this->load->view('dash_home_2');
 
+       $data['bool']=1;
+         
+     }
+     else{
+     	 $data['bool']=2;
+     }
+     //$data['check_posts']=$this->appointment_model->check_notifications();
+     $this->load->view('dash_home', $data);
 
 }
 public function appointment()
