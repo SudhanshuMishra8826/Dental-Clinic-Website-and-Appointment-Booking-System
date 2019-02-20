@@ -52,7 +52,7 @@ catch(Exception $e)
                      
                 </li>
                 <li>
-                    <a href="<?php echo base_url().'appointment/savedata/';?>">Book Appointments</a>
+                    <a href="<?php echo base_url().'/appointment/savedata/';?>">Book Appointments</a>
                 </li>
                 <li>
                     <a href="<?php echo base_url();?>/dental1/history/">History</a>

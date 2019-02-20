@@ -1,6 +1,4 @@
 <?php
- 
-
 class Loginvali extends CI_Controller {
 
 	 

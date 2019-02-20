@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -126,8 +127,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label" for="name">Name</label>
-                                        <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required>
-                                         
+                                        <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required>                                         
                                     </div>
                                 </div>
                                 <!-- Text input-->
@@ -135,7 +135,12 @@
                                     <div class="form-group">
                                         <label class="control-label" for="email">Email</label>
                                         <input id="email" name="email" type="text" placeholder="E-Mail" class="form-control input-md" required >
-                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Phone number</label>
+                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control input-md" required >
                                     </div>
                                 </div>
                                 <!-- Text input-->
@@ -149,7 +154,7 @@
                                 <!-- Select Basic -->
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="control-label" for="time">Preferred Time</label>
+                                        <label class="control-label" for="time">Preferred Time</label>z
                                         <select id="time" name="time" class="form-control" required >
                                             <option value="8:00 to 9:00">8:00 to 9:00</option>
                                             <option value="9:00 to 10:00">9:00 to 10:00</option>
@@ -174,13 +179,13 @@
                                 <!-- Button -->
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                    <input type="submit" name="save" value="Make an Appointment"
-                                    class="btn btn-info" />
+                                    <input type="submit" name="save" class="btn btn-info" />
                                     </div>
                                 </div>
                             </div>
                         </form>
                         <!-- form end -->
+                      
                     </div>
                 </div>	</div>
                  

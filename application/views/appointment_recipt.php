@@ -1,12 +1,22 @@
 <?php
-
+try{
 $this->load->library('session');
 	//session_start();
 	$name=$_SESSION['name'];
 	$id=$_SESSION['id'];
   ini_set('session.cache_limiter','public');
   session_cache_limiter(false);
+}
+catch(Exception $e)
+{
+  echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+  $this->load->view('homepage');
+}
 ?>
+ 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,20 +35,10 @@ $this->load->library('session');
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
-    <script>
-window.location.hash=" ";
-window.location.hash="  ";//again because google chrome don't insert first hash into history
-window.onhashchange=function(){window.location.hash=" ";}
-</script>
- 
 </head>
- 
 
 <body>
- 
-
-<div class="wrapper">
+    <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -47,14 +47,14 @@ window.onhashchange=function(){window.location.hash=" ";}
 
             <ul class="list-unstyled components">
                  
-                <li>
+                <li class="active">
                     <a href="<?php echo base_url();?>/dental1/dash_home_load/">Home</a>
                      
                 </li>
                 <li>
                     <a href="<?php echo base_url().'appointment/savedata/';?>">Book Appointments</a>
                 </li>
-                <li  class="active">
+                <li>
                     <a href="<?php echo base_url();?>/dental1/history/">History</a>
                      
                 </li>
@@ -87,9 +87,9 @@ window.onhashchange=function(){window.location.hash=" ";}
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                           <li class="nav-item" >
+                            <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url();?>dental1/notifications">
-                                <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 8px;"> 
+                                <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 8px; "> 
                                    <i class="fas fa-bell"></i>
                                 </div>
                             </a>
@@ -98,61 +98,50 @@ window.onhashchange=function(){window.location.hash=" ";}
                                 <a class="nav-link" href="<?php echo base_url();?>dental1/logout">Logout</a>
                             </li>
                              
+                             
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="table-responsive-md">
+
+            <div class="board">
             <?php
-  echo "<table class='table table-hover'>
-  
-  <thead class='bg-info text-white'>
-    <tr>
-      <th scope='col'>BookingId</th>
-      <th scope='col'>Name</th>
-      <th scope='col'>email</th>
-      <th scope='col'>User Id</th>
-      <th scope='col'>Date</th>
-      <th scope='col'>Time</th>
-      <th scope='col'>Service</th>
-      <th scope='col'>View</th>
-
-
-    </tr>
-  </thead>";
-  foreach($posts as $row)
-  {
-  echo"<tbody>";
-  echo "<tr>";
-  echo "<td>" . $row->id . "</td>";
-  echo "<td>" . $row->name . "</td>";
-  echo "<td>" . $row->email . "</td>";
-  echo "<td>" . $row->userid . "</td>";
-  echo "<td>" . $row->date . "</td>";
-  echo "<td>" . $row->time . "</td>";
-  echo "<td>" . $row->appointmentfor . "</td>";
-  echo "<td><a href='http://localhost/ci2/dental1/viewappointment/". $row->id ."'><button>View More</button></a></td>";
-
-  echo "</tr>";
-  echo "</tbody>";
+    foreach($posts as $row)
+        {
+  echo '<h3> Patient Name : ' .$row->name. '</h3>';
+ echo '<h3>Patient Email : '.$row->email. '</h3>';
+ echo '<h3>Appointment Date : '.$row->date. '</h3>';
+ echo '<h3>Appointment Time : '.$row->time. '</h3>';
+  echo '<h3>Service : '.$row->appointmentfor. '</h3>';
+   echo '<h3>Status : '.$row->status. '</h3>';
+  echo '<h3>Payment not paid : '. '</h3>';
+  echo '<h3>Appointment Id : '.$row->id. '</h3>';
+  echo '<h3>Account Id : '.$row->userid. '</h3>';
   }
-  echo "</table>";
-  ?>
-
-
-     
-
-
-
+?>
+  <form action=<?php echo base_url().'dental1/history/';?> method="POST">
+<!-- Note that the amount is in paise = 50 INR -->
+<script
+    src="https://checkout.razorpay.com/v1/checkout.js"
+    data-key="rzp_test_OeMS2mGVcm5mDl"
+    data-amount="500"
+    data-buttontext="Pay Now"
+    data-name="Merchant Name"
+    data-description="Purchase Description"
+    data-image="https://your-awesome-site.com/your_logo.jpg"
+    data-prefill.name="Gaurav Kumar"
+    data-theme.color="#F37254"
+></script>
+<input type="hidden" value="Hidden Element" name="hidden" >
+</form>
 
 </div>
+            <div class="line"></div>
+             
+        </div>
+    </div>
 
-
- 
-</div>
-</div>
-
- <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
@@ -167,4 +156,5 @@ window.onhashchange=function(){window.location.hash=" ";}
         });
     </script>
 </body>
+
 </html>

@@ -69,6 +69,7 @@ td {
   <th>Approve</th>
   <th>Reschedule</th>
 
+
   </tr>";
 
   foreach($posts as $row)

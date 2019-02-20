@@ -23,9 +23,24 @@ class Dental1 extends CI_Controller {
 		$this->load->view(''.$page);
 		//$this->load->view('home');
 		
-
-
  } 
+ 
+ public function recipt()
+ {
+	//$this->load->view('index');
+	$this->load->library('session');
+	$this->load->model('appointment_model');
+	$apid = $this->session->flashdata('apid');
+	$this->data['posts']=$this->appointment_model->view_appointment($apid);
+	$this->load->view('appointment_recipt',$this->data);
+	//unset($_SESSION["name"]);
+	//unset($_SESSION["id"]);
+	//$this->load->view(''.$page);
+	//$this->load->view('home');
+	 
+
+
+}
  public function history()
  {
 	//$this->load->view('index');
@@ -156,6 +171,18 @@ public function approve_this($Bid)
 	//$this->load->view(''.$page);
 	//$this->load->view('home');
 }
+public function viewappointment($Bid)
+ {
+	//$this->load->view('index');
+	$this->load->library('session');
+	$this->load->model('appointment_model');
+	$this->data['posts']=$this->appointment_model->view_appointment($Bid);
+	$this->load->view('appointment_recipt',$this->data);
+	//unset($_SESSION["name"]);
+	//unset($_SESSION["id"]);
+	//$this->load->view(''.$page);
+	//$this->load->view('home');
+}
 public function dissapprove($Bid)
  {
 	//$this->load->view('index');
@@ -174,6 +201,15 @@ public function dissapprove($Bid)
 	 //$this->load->view('contact');
 	 $this->load->view('dash_home');
 	 //$this->load->view('home');
+
+
+}
+public function appointment()
+{
+	//$this->load->view('index');
+	//$this->load->view('contact');
+	$this->load->view('appointment');
+	//$this->load->view('home');
 
 
 }

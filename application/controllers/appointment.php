@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class appointment extends CI_Controller {
 	 
 		public function savedata()
-		{   
+		{
 			$this->load->database();
 			$this->load->library('session');
 			//session_start();
@@ -13,6 +13,8 @@ class appointment extends CI_Controller {
 			//echo $id;
 			//load Model
 			$this->load->model('appointment_model');
+
+
 			//load registration view form
 			$this->load->view('appointment');
 		
@@ -26,16 +28,16 @@ class appointment extends CI_Controller {
 			$date=$this->input->post('date');
 			$time=$this->input->post('time');
 			$service=$this->input->post('appointmentfor');
+			$phone=$this->input->post('phone');
 			
 	//call saverecords method of Hello_Model and pass variables as parameter
-			$apd=$this->appointment_model->saverecords($name,$email,$userid,$date,$time,$service);
+			$apd=$this->appointment_model->saverecords($name,$email,$userid,$date,$time,$service,$phone);
 			foreach($apd as $row){
 				$apid=$row->id;
 			}
-			$this->appointment_model->create_notifications($apid,$service,$date,$time);	
-			echo '<script language="javascript">';
-			echo 'alert("Appointment Requested")';
-			echo '</script>';
+			$this->appointment_model->create_notifications($apid,$service,$date,$time,$phone);	
+			$this->session->set_flashdata('apid',$apid);
+			redirect('dental1/recipt');
 			}
 		}
 }
