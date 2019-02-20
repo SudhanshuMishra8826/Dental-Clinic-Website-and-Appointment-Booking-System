@@ -46,6 +46,49 @@ class appointment_model extends CI_Model
 	//$this->load->view('allappointments',$r);
 	
 	}
+
+
+
+
+
+
+
+	function check_notifications()
+	{
+	$this->load->library('session');
+	$name=$_SESSION['name'];
+	$id=$_SESSION['id'];
+	$query="select * from notifications where uid='$id' and status='unseen'";
+	$r=$this->db->query($query);
+	 if($r->num_rows())
+                  {
+                  	return True;
+
+                  } 
+                  else 
+                  {
+                  	return False;
+                   	
+                   } 
+
+	//return $r->result();
+
+
+	//$data['r']=$r;
+	//$this->load->view('allappointments',$r);
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
 	function get_seen_notifications()
 	{
 	$this->load->library('session');

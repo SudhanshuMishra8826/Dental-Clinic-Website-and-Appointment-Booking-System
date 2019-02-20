@@ -1,5 +1,6 @@
 <?php
 try{
+    //version 1
 $this->load->library('session');
 	//session_start();
 	$name=$_SESSION['name'];
@@ -15,6 +16,8 @@ catch(Exception $e)
   $this->load->view('homepage');
 }
 ?>
+
+ 
  
 
 <!DOCTYPE html>
@@ -89,8 +92,16 @@ catch(Exception $e)
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url();?>dental1/notifications">
-                                <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 8px; "> 
-                                   <i class="fas fa-bell"></i>
+                                <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 0px; "> 
+                                    <?php 
+                                    if($bool==1){
+                                        echo '<i class="fas fa-bell text-danger"></i>';
+                                    }
+                                    else {
+                                        echo '<i class="fas fa-bell"></i>';
+                                    }
+                                     ?> 
+                                          
                                 </div>
                             </a>
                             </li>
