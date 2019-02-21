@@ -29,7 +29,7 @@
    <!navbar start>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark"> 
   <div class="navbar-brand text-white font-weight-bold"  style="margin-left: 50px;">
-    <a href="<?php echo base_url();?>dental1/homepage/elements">
+    <a href="#">
     <img src="<?php echo base_url();?>/dc1_images/WPFtdnZn_400x400.jpg" width="50" height="35"></a>
     </div>
  
