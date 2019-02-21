@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 20, 2019 at 02:45 PM
--- Server version: 10.1.32-MariaDB
--- PHP Version: 5.6.36
+-- Generation Time: Feb 21, 2019 at 10:47 AM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 5.6.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -155,6 +155,27 @@ INSERT INTO `appointments` (`id`, `name`, `email`, `userid`, `date`, `time`, `ap
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `uname` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `contact` int(12) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `message` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`uname`, `email`, `contact`, `subject`, `message`) VALUES
+('kk', 'abhi@gmail.com', 1234567890, 'wert', 'edrtfgyhuij');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `doctors`
 --
 
@@ -206,16 +227,16 @@ INSERT INTO `notifications` (`uid`, `apid`, `id`, `message`, `status`) VALUES
 (13, '45', 24, 'Your appointment for Service#1 at 2019-02-03 , 08:00:00 is approved.', 'seen'),
 (12, '46', 25, 'Your appointment for Service#1 at 2019-02-03 , 08:00:00 is rescheduled. Please book again.', 'seen'),
 (12, '47', 26, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'seen'),
-(12, '48', 27, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'unseen'),
-(12, '49', 28, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'unseen'),
-(12, '50', 29, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'unseen'),
-(12, '51', 30, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'unseen'),
-(12, '52', 31, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'unseen'),
+(12, '48', 27, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'seen'),
+(12, '49', 28, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'seen'),
+(12, '50', 29, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'seen'),
+(12, '51', 30, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'seen'),
+(12, '52', 31, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'seen'),
 (0, '53', 32, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'seen'),
 (13, '54', 33, 'You have requested an appointment for Service#1 at 2019-02-15 , 8:00 to 9:00 ', 'seen'),
 (0, '55', 34, 'You have requested an appointment for Service#1 at 2019-02-16 , 8:00 to 9:00 ', 'seen'),
-(12, '56', 35, 'You have requested an appointment for Service#1 at 2019-02-16 , 8:00 to 9:00 ', 'unseen'),
-(12, '57', 36, 'You have requested an appointment for Service#1 at 2019-02-16 , 8:00 to 9:00 ', 'unseen'),
+(12, '56', 35, 'You have requested an appointment for Service#1 at 2019-02-16 , 8:00 to 9:00 ', 'seen'),
+(12, '57', 36, 'You have requested an appointment for Service#1 at 2019-02-16 , 8:00 to 9:00 ', 'seen'),
 (13, '58', 37, 'You have requested an appointment for Service#1 at 2019-02-16 , 8:00 to 9:00 ', 'seen'),
 (13, '59', 38, 'You have requested an appointment for Service#1 at 2019-02-16 , 8:00 to 9:00 ', 'seen'),
 (13, '60', 39, 'You have requested an appointment for Service#1 at 2019-02-16 , 8:00 to 9:00 ', 'seen'),
@@ -269,17 +290,17 @@ INSERT INTO `notifications` (`uid`, `apid`, `id`, `message`, `status`) VALUES
 (13, '105', 87, 'You have requested an appointment for Service#3 at 2019-02-20 , 10:00 to 1:00 ', 'seen'),
 (13, '106', 88, 'You have requested an appointment for Service#2 at 2019-02-20 , 9:00 to 10:00 ', 'seen'),
 (13, '105', 89, 'Your appointment for Service#3 at 2019-02-20 , 10:00:00 is rescheduled. Please book again.', 'seen'),
-(12, '47', 90, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'unseen'),
-(12, '48', 91, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'unseen'),
-(12, '49', 92, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'unseen'),
-(12, '50', 93, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'unseen'),
-(12, '51', 94, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'unseen'),
-(12, '52', 95, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'unseen'),
+(12, '47', 90, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'seen'),
+(12, '48', 91, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'seen'),
+(12, '49', 92, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'seen'),
+(12, '50', 93, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'seen'),
+(12, '51', 94, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'seen'),
+(12, '52', 95, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'seen'),
 (0, '53', 96, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'unseen'),
 (13, '54', 97, 'Your appointment for Service#1 at 2019-02-15 , 08:00:00 is approved', 'seen'),
 (0, '55', 98, 'Your appointment for Service#1 at 2019-02-16 , 08:00:00 is approved', 'unseen'),
-(12, '56', 99, 'Your appointment for Service#1 at 2019-02-16 , 08:00:00 is approved', 'unseen'),
-(12, '57', 100, 'Your appointment for Service#1 at 2019-02-16 , 08:00:00 is approved', 'unseen'),
+(12, '56', 99, 'Your appointment for Service#1 at 2019-02-16 , 08:00:00 is approved', 'seen'),
+(12, '57', 100, 'Your appointment for Service#1 at 2019-02-16 , 08:00:00 is approved', 'seen'),
 (13, '58', 101, 'Your appointment for Service#1 at 2019-02-16 , 08:00:00 is approved', 'seen'),
 (13, '59', 102, 'Your appointment for Service#1 at 2019-02-16 , 08:00:00 is approved', 'seen'),
 (13, '60', 103, 'Your appointment for Service#1 at 2019-02-16 , 08:00:00 is approved', 'seen'),

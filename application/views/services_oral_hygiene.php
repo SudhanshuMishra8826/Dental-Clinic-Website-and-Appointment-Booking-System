@@ -89,12 +89,8 @@
 </nav>
 <!navbar end> 
 
-<<<<<<< HEAD
  <section style="background:url('http://localhost/ci2/dc1_images/banner-2.jpg') no-repeat; width: 100%; height: 60vh;  opacity: 1.0; background-attachment: fixed; margin-top: - 0px;">
    <h1 class="text-dark"style="margin-top:  50px; padding:150px 1000px   0px; background-attachment: fixed;">SERVICES</h1>
-=======
- <section style="background:url('http://localhost/ci2/dc1_images/main-image.jpg') no-repeat; width: 100%; height: 90vh;  opacity: 0.9; background-attachment: fixed; margin-top: - 0px;">
->>>>>>> 1d223fc4b2b75babcf1c9246dd10eec34ea9ba7a
      
  </section>
 

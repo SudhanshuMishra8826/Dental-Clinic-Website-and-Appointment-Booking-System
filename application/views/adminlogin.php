@@ -107,7 +107,7 @@
        
         <div class="col-lg-5 col-md-8 col-sm-10 col-12 d-block m-auto">
          <! form start>
-         <div class="form-container" style="margin-top: 150px;">">
+         <div class="form-container" style="margin-top: 150px;">
             <?php echo form_open('index.php/Loginvali/indexadmin'); ?>
             <h1>Login</h1>
    
@@ -132,9 +132,6 @@
    </div> 
   </div>
   <br>
-  <center> 
-    <p>Copyright ©: 2018| kishan kumar</p>
-  </center>
 </div>
     </body>
 </html>
