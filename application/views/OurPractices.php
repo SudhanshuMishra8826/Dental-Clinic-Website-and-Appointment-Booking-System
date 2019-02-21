@@ -29,7 +29,7 @@
  <!navbar start>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark"> 
   <div class="navbar-brand text-white font-weight-bold"  style="margin-left: 50px;">
-    <a href="<?php echo base_url();?>dental1/homepage/elements">
+    <a href="#">
     <img src="<?php echo base_url();?>/dc1_images/WPFtdnZn_400x400.jpg" width="50" height="35"></a>
     </div>
  
@@ -97,8 +97,7 @@
   </div>
 </nav>
 <!navbar end> 
- <section style="background:url('http://localhost/acme_dental_care/dc1_images/banner-anestheiology_1600_v2.jpg') no-repeat; width: 100%; height: 60vh;  opacity: 1.0; background-attachment: fixed; margin-top: - 0px;  ">
-   <h1>Welcome to Acme Dental Care</h1>
+ <section style="background:url('http://localhost/ci2/dc1_images/banner-anestheiology_1600_v2.jpg') no-repeat; width: 100%; height: 60vh;  opacity: 0.9; background-attachment: fixed; margin-top: - 0px;  ">
  </section>
 
 <!service start>
