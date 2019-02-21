@@ -12,7 +12,7 @@
        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/nav_bar.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/btn.css">
     </head>
-<body background="<?php echo base_url();?>/dc1_images/2.jpg" style="background-attachment: fixed; background-repeat: no-repeat;">
+<body background="<?php echo base_url();?>/dc1_images/32b877ed4aa7778cc7d43ebb7d95a6f1.png" style="background-attachment: fixed; background-repeat: no-repeat;">
 
 
 

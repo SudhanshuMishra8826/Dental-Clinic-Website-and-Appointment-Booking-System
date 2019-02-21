@@ -102,10 +102,10 @@
         </section>
         <section id="vid2">
             <div class="container">
-                <div class="row" id="div1">
+                <div class="row text-white" id="div1">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 		              <h2>Tooth extraction</h2>
-                      <p style="text-align: justify;">A dental extraction (also referred to as tooth extraction, exodontia, exodontics, or informally, tooth pulling) is the removal of teeth from the dental alveolus (socket) in the alveolar bone. Extractions are performed for a wide variety of reasons, but most commonly to remove teeth which have become unrestorable through tooth decay, periodontal disease or dental trauma, especially when they are associated with toothache. Sometimes wisdom teeth are impacted (stuck and unable to grow normally into the mouth) and may cause recurrent infections of the gum (pericoronitis). In orthodontics if the teeth are crowded, sound teeth may be extracted (often bicuspids) to create space so the rest of the teeth can be straightened.</p>                    
+                      <p style="text-align: justify;  ">A dental extraction (also referred to as tooth extraction, exodontia, exodontics, or informally, tooth pulling) is the removal of teeth from the dental alveolus (socket) in the alveolar bone. Extractions are performed for a wide variety of reasons, but most commonly to remove teeth which have become unrestorable through tooth decay, periodontal disease or dental trauma, especially when they are associated with toothache. Sometimes wisdom teeth are impacted (stuck and unable to grow normally into the mouth) and may cause recurrent infections of the gum (pericoronitis). In orthodontics if the teeth are crowded, sound teeth may be extracted (often bicuspids) to create space so the rest of the teeth can be straightened.</p>                    
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="embed-responsive embed-responsive-21by9">

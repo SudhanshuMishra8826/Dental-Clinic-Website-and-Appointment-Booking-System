@@ -89,8 +89,8 @@
 </nav>
 <!navbar end> 
 
- <section style="background:url('http://localhost/acme_dental_care/dc1_images/banner-anestheiology_1600_v2.jpg') no-repeat; width: 100%; height: 60vh;  opacity: 1.0; background-attachment: fixed; margin-top: - 0px;">
-   <h1 class="text-dark"style="margin-top:  50px; padding:150px  250px   0px; background-attachment: fixed;">OUR SERVICES</h1>
+ <section style="background:url('http://localhost/ci2/dc1_images/banner-2.jpg') no-repeat; width: 100%; height: 60vh;  opacity: 1.0; background-attachment: fixed; margin-top: - 0px;">
+   <h1 class="text-dark"style="margin-top:  50px; padding:150px 1000px   0px; background-attachment: fixed;">SERVICES</h1>
      
  </section>
 
@@ -106,7 +106,7 @@
     <div class="row" > 
     <div class="col-lg-10 col-md-10 col-sm-10 col-12 d-block m-auto" style="padding:  20px;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">
-            <h2 class="text-center" style="padding-bottom: 25px; color: #ff8080;"><span style="font-style: italic; color: #ff8080;">How Can You Keep Your Gums Healthy and Prevent Gum Disease?</span></h2>
+            <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px; ">How Can You Keep Your Gums Healthy and Prevent Gum Disease?</span></h2>
                 
                <div class=" text-secondary">
                <p style="text-align: justify; line-height: 32px;   ">Our dental office takes the pride in educating our patients about maintaining optimum health care which can be achieved by a combination of oral hygiene practice at home like brushing and flossing and by getting a professional dental cleaning.<br> 
@@ -161,7 +161,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
     <div class="row" > 
     <div class="col-lg-10 col-md-10 col-sm-10 col-12 d-block m-auto" style="padding:  0px;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">
-             <h2 class="text-center" style="padding-bottom: 25px; color: #ff8080;"><span style="font-style: italic; color: #ff8080;">Do you feel sensitivity or pain on one or more teeth?</span></h2>
+             <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px; ">Do you feel sensitivity or pain on one or more teeth?</span></h2>
              <div class="col-lg-6 col-md-6 col-sm-10 col-12 d-block m-auto" style="float: right;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">                
                 <div class="embed-responsive embed-responsive-16by9" style="float: right;border-style: solid; border-width: 5; border-color:  #4db8ff; ">
@@ -197,7 +197,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
     <div class="row" > 
     <div class="col-lg-10 col-md-10 col-sm-10 col-12 d-block m-auto" style="padding:  0px;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">
-            <h2 class="text-center" style="padding-bottom: 25px; color: #ff8080;"><span style="font-style: italic; color: #ff8080;">Why are crowns or bridges necessary?</span></h2>
+            <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px;">Why are crowns or bridges necessary?</span></h2>
                 
                <div class="text-secondary" style="text-align: justify;">
                <p>Chipped tooth or a broken large filling can be detrimental to your chewing ability and esthetics. Crowns are recommended to prevent breakage of your teeth either due to a large decay or after a root canal procedure.</br> 
@@ -243,7 +243,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
     <div class="row" > 
     <div class="col-lg-10 col-md-10 col-sm-10 col-12 d-block m-auto" style="padding:  0px;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">
-             <h2 class="text-center" style="padding-bottom: 25px; color: #ff8080;"><span style="font-style: italic; color: #ff8080;">Do you have discolored teeth, gaps or spaces in between your teeth, or have a chipped front tooth?</span></h2>
+             <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px; ">Do you have discolored teeth, gaps or spaces in between your teeth, or have a chipped front tooth?</span></h2>
                  <div class="col-lg-6 col-md-6 col-sm-10 col-12 d-block m-auto" style="float: right;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">                
                 <div class="embed-responsive embed-responsive-16by9" style="float: right;border-style: solid; border-width: 5; border-color:  #4db8ff; ">
@@ -277,7 +277,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
     <div class="row" > 
     <div class="col-lg-10 col-md-10 col-sm-10 col-12 d-block m-auto"  >
            <div class="d-block m-auto" style="padding-bottom: 25px;">
-            <h2 class="text-center" style="padding-bottom: 25px; color: #ff8080;"><span style="font-style: italic; color: #ff8080;">When Is a Tooth Extraction Is Necessary?</span></h2>
+            <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px; ">When Is a Tooth Extraction Is Necessary?</span></h2>
                 
                <div class="  text-secondary" style="text-align: justify;">
                <p>You are going to need a tooth extraction if your tooth is not in a savable condition. If your tooth has one of the following condition, you need an extraction.<br> 
@@ -324,7 +324,7 @@ Tooth extraction can be done under local or general anesthesia. We highly recomm
     <div class="row" > 
     <div class="col-lg-10 col-md-10 col-sm-10 col-12 d-block m-auto" style="padding:  0px;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">
-            <h2 class="text-center" style="padding-bottom: 25px; color: #ff8080;"><span style="font-style: italic; color: #ff8080;">Want to know the benefits of Inlays and Onlays?</span></h2>
+            <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px; ">Want to know the benefits of Inlays and Onlays?</span></h2>
 
             <div class="col-lg-6 col-md-6 col-sm-10 col-12 d-block m-auto" style="float: right;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">                
@@ -363,7 +363,7 @@ Tooth extraction can be done under local or general anesthesia. We highly recomm
     <div class="row" > 
     <div class="col-lg-10 col-md-10 col-sm-10 col-12 d-block m-auto" style="padding:  0px;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">
-            <h2 class="text-center" style="padding-bottom: 25px; color: #ff8080;"><span style="font-style: italic; color: #ff8080;">How Can You Keep Your Childrens Teeth Healthy, Safe, and Prevent Cavities?</span></h2>
+            <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px; ">How Can You Keep Your Childrens Teeth Healthy, Safe, and Prevent Cavities?</span></h2>
                 
                <div class="  text-secondary" style="text-align: justify;">
                <p>  

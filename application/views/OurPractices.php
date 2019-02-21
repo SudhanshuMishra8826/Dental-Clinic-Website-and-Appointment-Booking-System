@@ -5,6 +5,8 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/nav_bar.css">
@@ -97,13 +99,13 @@
   </div>
 </nav>
 <!navbar end> 
- <section style="background:url('http://localhost/acme_dental_care/dc1_images/banner-anestheiology_1600_v2.jpg') no-repeat; width: 100%; height: 60vh;  opacity: 1.0; background-attachment: fixed; margin-top: - 0px;  ">
-   <h1>Welcome to Acme Dental Care</h1>
+ <section style="background:url('http://localhost/ci2/dc1_images/banner-anestheiology_1600_v2.jpg') no-repeat; width: 100%; height: 60vh;  opacity: 1.0; background-attachment: fixed; margin-top: - 0px;  ">
+   <h1 class="text-dark"style="margin-top:  50px; padding:150px  250px   0px; background-attachment: fixed;">OUR PRACTICES</h1>
  </section>
 
 <!service start>
 
-<section class="container-fluid bg-info text-center" style="margin-top:  0px;">
+<section class="container-fluid bg-info text-center" style="margin-top:  -50px;">
   <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Our Practices</span>  </h2>
   <hr style="width: 10%; border-color: white; border-width: 2px;   padding-bottom: 40px;">
 </section>
@@ -113,7 +115,7 @@
     <div class="row" > 
     <div class="col-lg-8 col-md-8 col-sm-10 col-12 d-block m-auto">
            <div class="d-block m-auto" style="padding-bottom: 25px;">
-             <h2 class="text-center" style="padding-bottom: 25px; color: #ff8080;"><span style="font-style: italic; color: #ff8080;">Feel Comfortable Relaxed and at Ease Our Facility</span></h2>
+             <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px;  ">Feel Comfortable Relaxed and at Ease Our Facility</span></h2>
                 <div class="circle"></div>
                <p class="text-secondary" style="text-align: justify;">At Acme Dental Care, we have created an atmosphere to induce the feeling of comfort, relaxation and feeling at ease. We are proud to say
 that our patients notice how beautiful and contemporary our facility is.</br><br>
@@ -156,7 +158,7 @@ when you're in need of professional dental care and attention..<br>
     <div class="row" > 
     <div class="col-lg-8 col-md-8 col-sm-10 col-12 d-block m-auto">
            <div class="d-block m-auto" style="padding-bottom: 25px;">
-            <h2 class="text-center" style="padding-bottom: 25px; color: #ff8080;"><span style="font-style: italic; color: #ff8080;">Where You Come First Office Policies</span></h2>
+            <h2 class="text-center  text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic;font-size: 25px;  ">Where You Come First Office Policies</span></h2>
                  <div class="circle"></div>
                <p class=" text-secondary"  style="text-align: justify;">You need your teeth and oral health to be the best it can be in your busy
 and challenging lifestyle.<br> 
@@ -198,7 +200,7 @@ Find out how Acme Dental Care can keep you smiling for a lifetime!
     <div class="row" > 
     <div class="col-lg-8 col-md-8 col-sm-10 col-12 d-block m-auto">
            <div class="d-block m-auto" style="padding-bottom: 25px;">
-             <h2 class="text-center" style="padding-bottom: 25px; color: #ff8080;"><span style="font-style: italic; color: #ff8080;">Utilizing the Best Technology for Your Winning Smile</span></h2>
+             <h2 class="text-center  text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px; ">Utilizing the Best Technology for Your Winning Smile</span></h2>
                 <div class="circle"></div>
                <p class="  text-secondary"  style="text-align: justify;">
                 We are proud to offer the latest dental teehnology available today

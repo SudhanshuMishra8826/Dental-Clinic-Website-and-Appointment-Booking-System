@@ -13,7 +13,7 @@
        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/nav_bar.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/btn.css">
     </head>
-<body background="<?php echo base_url();?>/dc1_images/2.jpg" style="background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
+<body background="<?php echo base_url();?>/dc1_images/32b877ed4aa7778cc7d43ebb7d95a6f1.png" style="background-attachment: fixed;   background-repeat: no-repeat; background-size: cover;">
 
 
 
@@ -109,44 +109,44 @@
           <div class="form-container" style="margin-bottom: 50px; margin-top: 120px; ">
           <?php echo form_open('index.php/Admin/index'); ?>
           <h1>Signup</h1>
-
+           <br>
           <div class="form-group">
-            <label for="username">Username</label>
+            <label for="username"><h6>Username</h6></label>
             <?php echo form_input(['class'=>'form-control', 'placeholder'=>'Enter Username','name'=>'uname']);?>
             <?php echo form_error('uname');?>
           </div>
 
           <div class="form-group">
-            <label for="exampleInputEmail1">Email</label>
+            <label for="exampleInputEmail1"><h6>Email</h6></label>
             <?php echo form_input(['class'=>'form-control', 'placeholder'=>'Enter Email','name'=>'email']);?>
             <?php echo form_error('email');?>
           </div>
 
           <div class="form-group">
-            <label for="Password1">Password</label>
+            <label for="Password1"><h6>Password</h6></label>
             <?php echo form_password(['class'=>'form-control','type'=>'Password', 'placeholder'=>'Enter Password','name'=>'pass1']);?>
             <?php echo form_error('pass1');?>
           </div>
 
           <div class="form-group">
-            <label for="Password2">Confirm Password</label>
+            <label for="Password2"><h6>Confirm Password</h6></label>
             <?php echo form_password(['class'=>'form-control','type'=>'Password', 'placeholder'=>'Confirm Password','name'=>'pass2']);?>
           </div>
 
           <div class="form-group">
-             <label for="Occupation">Occupation</label>
+             <label for="Occupation"><h6>Occupation</h6></label>
              <?php echo form_input(['class'=>'form-control','type'=>'text', 'placeholder'=>'Enter your Occupation','name'=>'occupation']);?>
              <?php echo form_error('occupation');?>
           </div>
 
           <div class="form-group">
-             <label for="address">Address</label>
+             <label for="address"><h6>Address</h6></label>
              <?php echo form_input(['class'=>'form-control','type'=>'text', 'placeholder'=>'Enter your Address','name'=>'address']);?>
              <?php echo form_error('address');?>
           </div>
 
           <div class="form-group">
-             <label for="address">Sex</label>&nbsp&nbsp&nbsp&nbsp&nbsp
+             <label for="address"><h5>Sex</h5></label>&nbsp&nbsp&nbsp&nbsp&nbsp
              <input type="radio" name="sex" value="male">Male      &nbsp
              <input type="radio" name="sex" value="female">Female  &nbsp
              <input type="radio" name="sex" value="others">Others  &nbsp
@@ -154,15 +154,16 @@
           </div>  
 
           <div class="form-group">
-             <label for="DOB">DOB</label> &nbsp&nbsp&nbsp&nbsp
+             <label for="DOB"><h6>DOB</h6></label> &nbsp&nbsp&nbsp&nbsp
              <input type="date" name="dob">
              <?php echo form_error('dob');?>
           </div> 
 
           <div class="form-group">
-             <label for="contact">Contact</label>
+             <label for="contact"><h6>Contact 1</h6></label>
              <?php echo form_input(['class'=>'form-control','type'=>'text', 'placeholder'=>'Enter your Contact No.','name'=>'contact1']);?>  
              <?php echo form_error('contact1');?><br>
+             <label for="contact"><h6>Contact 1</h6></label>
              <?php echo form_input(['class'=>'form-control','type'=>'text', 'placeholder'=>'Enter your Alternate Contact No.','name'=>'contact2']);?>
              <?php echo form_error('contact2');?>
           </div>   

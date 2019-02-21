@@ -11,7 +11,7 @@
       <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/form.css">
        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/nav.css">
     </head>
-<body background="<?php echo base_url();?>/dc1_images/2.jpg" style="background-attachment: fixed; background-repeat: no-repeat;">
+<body background="<?php echo base_url();?>/dc1_images/32b877ed4aa7778cc7d43ebb7d95a6f1.png" style="background-attachment: fixed; background-repeat: no-repeat;">
 
 
 
@@ -107,7 +107,7 @@
        
         <div class="col-lg-5 col-md-8 col-sm-10 col-12 d-block m-auto">
          <! form start>
-         <div class="form-container">
+         <div class="form-container" style="margin-top: 150px;">">
             <?php echo form_open('index.php/Loginvali/indexadmin'); ?>
             <h1>Login</h1>
    
