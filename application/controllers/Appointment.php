@@ -12,7 +12,7 @@ class appointment extends CI_Controller {
 			$id=$_SESSION['id'];
 			//echo $id;
 			//load Model
-			$this->load->model('appointment_model');
+			$this->load->model('Appointment_model');
 
 
 			//load registration view form
@@ -31,11 +31,11 @@ class appointment extends CI_Controller {
 			$phone=$this->input->post('phone');
 			
 	//call saverecords method of Hello_Model and pass variables as parameter
-			$apd=$this->appointment_model->saverecords($name,$email,$userid,$date,$time,$service,$phone);
+			$apd=$this->Appointment_model->saverecords($name,$email,$userid,$date,$time,$service,$phone);
 			foreach($apd as $row){
 				$apid=$row->id;
 			}
-			$this->appointment_model->create_notifications($apid,$service,$date,$time,$phone);	
+			$this->Appointment_model->create_notifications($apid,$service,$date,$time,$phone);	
 			$this->session->set_flashdata('apid',$apid);
 			redirect('dental1/recipt');
 			}

@@ -22,7 +22,7 @@ class Loginvali extends CI_Controller {
 		 	$pass1=$this->input->post('pass1');
 		 	$pass=md5($pass1);
 		 	
-			$this->load->model('loginmodel');
+			$this->load->model('Loginmodel');
 			$q=$this->db->where(['email'=>$email,'password'=>$pass])->get('patient');
 			foreach ($q->result() as $row)
 			{
@@ -34,8 +34,8 @@ class Loginvali extends CI_Controller {
                 {
 					//echo "details matched";
 					
-     				$this->load->model('appointment_model');
-     				if($this->appointment_model->check_notifications()){
+     				$this->load->model('Appointment_model');
+     				if($this->Appointment_model->check_notifications()){
         			//$this->load->view('dash_home_2');
 						$data['bool']=1;
          						}
@@ -88,7 +88,7 @@ class Loginvali extends CI_Controller {
 		 	$pass1=$this->input->post('pass1');
 		 	$pass=md5($pass1);
 		 	
-			$this->load->model('loginmodel');
+			$this->load->model('Loginmodel');
 			$q=$this->db->where(['doc_email'=>$email,'doc_password'=>$pass])->get('doctors');
 			foreach ($q->result() as $row)
 			{

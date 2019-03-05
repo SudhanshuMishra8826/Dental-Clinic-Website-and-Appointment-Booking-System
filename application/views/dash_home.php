@@ -5,8 +5,8 @@ $this->load->library('session');
 	//session_start();
 	$name=$_SESSION['name'];
 	$id=$_SESSION['id'];
-  ini_set('session.cache_limiter','public');
-  session_cache_limiter(false);
+  //ini_set('session.cache_limiter','public');
+  //session_cache_limiter(false);
 }
 catch(Exception $e)
 {
@@ -55,7 +55,7 @@ catch(Exception $e)
                      
                 </li>
                 <li>
-                    <a href="<?php echo base_url().'/appointment/savedata/';?>">Book Appointments</a>
+                    <a href="<?php echo base_url().'appointment/savedata/';?>">Book Appointments</a>
                 </li>
                 <li>
                     <a href="<?php echo base_url();?>/dental1/history/">History</a>
