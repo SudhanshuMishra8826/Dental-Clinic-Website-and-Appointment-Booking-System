@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Feb 21, 2019 at 10:47 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 5.6.38
+-- Host: localhost
+-- Generation Time: Mar 06, 2019 at 06:27 PM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -37,141 +37,124 @@ CREATE TABLE `appointments` (
   `time` time NOT NULL,
   `appointmentfor` varchar(255) NOT NULL,
   `status` varchar(100) NOT NULL,
-  `phone` text NOT NULL
+  `phone` text NOT NULL,
+  `doctorName` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `appointments`
 --
 
-INSERT INTO `appointments` (`id`, `name`, `email`, `userid`, `date`, `time`, `appointmentfor`, `status`, `phone`) VALUES
-(1, 'Kishan Kumar', 'kishankumaretah@gmail.com', 'kishankumar', '0000-00-00', '08:00:00', 'Service#1', '', ''),
-(2, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', '', ''),
-(3, 'himanshu', 'hm@gmail.com', '', '0000-00-00', '08:00:00', 'Service#1', '', ''),
-(4, 'sudhanshu', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', '', ''),
-(5, 'sudhanshu', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', '', ''),
-(7, 'naina', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', ''),
-(8, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', ''),
-(9, 'sd', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', ''),
-(10, 'df', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', ''),
-(11, 'sudhanshu', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', ''),
-(12, 'sudhanshu', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', ''),
-(13, 'sudhanshu', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', ''),
-(14, 'himanshu', 'sm@gmail.com', '13', '2019-01-06', '08:00:00', 'Service#1', 'approved', ''),
-(15, 'rohan', 'sm@gmail.com', '13', '2019-01-07', '08:00:00', 'Service#1', 'approved', ''),
-(16, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-01-14', '08:00:00', 'Service#1', 'approved', ''),
-(17, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-01-14', '08:00:00', 'Service#1', 'approved', ''),
-(18, 'himanshu', 'him@gmail.com', '13', '2019-01-14', '08:00:00', 'Service#1', 'approved', ''),
-(19, 'sudhanshu', 'sm@gmail.com', '13', '2019-01-15', '08:00:00', 'Service#1', 'approved', ''),
-(20, 'sudhanshu', 'sm@gmail.com', '13', '2019-01-15', '08:00:00', 'Service#3', 'approved', ''),
-(21, 'cfvgh', 'sm@gmail.com', '13', '2019-01-15', '08:00:00', 'Service#1', 'approved', ''),
-(22, 'xyz', 'xyz@gmail.com', '13', '2019-01-16', '08:00:00', 'Service#3', 'approved', ''),
-(23, 'sudhanshu', 'sm@gmail.com', '13', '2019-01-28', '08:00:00', 'Service#1', 'approved', ''),
-(24, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-01-29', '08:00:00', 'Service#1', 'Rescheduled', ''),
-(25, 'sudhanshu', 'sm@gmail.com', '13', '2019-01-29', '08:00:00', 'Service#1', 'Rescheduled', ''),
-(26, 'sudhanshu', 'sm@gmail.com', '13', '2019-01-29', '08:00:00', 'Service#1', 'Rescheduled', ''),
-(27, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-01-29', '08:00:00', 'Service#1', 'Rescheduled', ''),
-(28, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'Rescheduled', ''),
-(29, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#2', 'approved', ''),
-(30, 'himanshu', 'hm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(31, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(32, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(33, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(34, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(35, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(36, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(37, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(38, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(39, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(40, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(41, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', ''),
-(42, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-03', '08:00:00', 'Service#1', 'approved', ''),
-(43, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-03', '08:00:00', 'Service#1', 'approved', ''),
-(44, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-03', '08:00:00', 'Service#1', 'approved', ''),
-(45, 'himanhsu', 'sm@gmail.com', '13', '2019-02-03', '08:00:00', 'Service#1', 'approved', ''),
-(46, 'abhi', 'abhi@gmail.com', '12', '2019-02-03', '08:00:00', 'Service#1', 'Rescheduled', ''),
-(47, 'kk', 'jl', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', ''),
-(48, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', ''),
-(49, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', ''),
-(50, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', ''),
-(51, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', ''),
-(52, 'himanhsu', 'sm@gmail.com', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', ''),
-(53, 'himanhsu', 'sm@gmail.com', '', '2019-02-15', '08:00:00', 'Service#1', 'approved', ''),
-(54, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-15', '08:00:00', 'Service#1', 'approved', ''),
-(55, 'sudhanshu', 'sm@gmail.com', '', '2019-02-16', '08:00:00', 'Service#1', 'approved', ''),
-(56, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-16', '08:00:00', 'Service#1', 'approved', ''),
-(57, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-16', '08:00:00', 'Service#1', 'approved', ''),
-(58, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', ''),
-(59, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', ''),
-(60, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', ''),
-(61, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', ''),
-(62, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', ''),
-(63, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', ''),
-(64, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', ''),
-(65, 'himanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', ''),
-(66, 'himanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', ''),
-(67, 'himanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', ''),
-(68, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', ''),
-(69, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', ''),
-(70, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', ''),
-(71, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', ''),
-(72, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', ''),
-(73, 'himanshu', 'hm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', ''),
-(74, '', '', '13', '0000-00-00', '00:00:00', '', 'approved', ''),
-(75, '', '', '13', '0000-00-00', '00:00:00', '', 'approved', ''),
-(76, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', ''),
-(77, '', '', '13', '0000-00-00', '00:00:00', '', 'approved', ''),
-(78, 'himanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', ''),
-(79, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '10:00:00', 'Service#2', 'approved', ''),
-(80, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '10:00:00', 'Service#2', 'approved', ''),
-(81, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', ''),
-(82, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#3', 'approved', ''),
-(83, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', ''),
-(84, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', ''),
-(85, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', ''),
-(86, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '10:00:00', 'Service#2', 'approved', ''),
-(87, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', '918826163041'),
-(88, 'himanshu', 'sud221@yahoo.in', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', '918826163041'),
-(89, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#3', 'approved', '918826163041'),
-(90, 'himanshu', 'sm@gmail.com', '13', '2019-02-18', '10:00:00', 'Service#2', 'approved', '918826163041'),
-(91, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#4', 'approved', '918826163041'),
-(92, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '10:00:00', 'Service#3', 'approved', '918826163041'),
-(93, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#2', 'approved', '918826163041'),
-(94, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '10:00:00', 'Service#2', 'approved', '918826163041'),
-(95, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '10:00:00', 'Service#3', 'approved', '918826163041'),
-(96, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '10:00:00', 'Service#3', 'approved', '8826163041'),
-(97, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#3', 'approved', '8826163041'),
-(98, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-19', '09:00:00', 'Service#2', 'approved', '8826163041'),
-(99, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#2', 'approved', '9953707107'),
-(100, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-19', '09:00:00', 'Service#2', 'approved', '8826163041'),
-(101, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#2', 'approved', '7065941728'),
-(102, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-19', '09:00:00', 'Service#2', 'approved', '8826163041'),
-(103, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-20', '09:00:00', 'Service#2', 'approved', '918826163041'),
-(104, 'himanshu', 'sud221@yahoo.in', '13', '2019-02-20', '09:00:00', 'Service#2', 'approved', '8826163041'),
-(105, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-20', '10:00:00', 'Service#3', 'Rescheduled', '8826163041'),
-(106, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-20', '09:00:00', 'Service#2', 'Rescheduled', '9810158471'),
-(107, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-20', '08:00:00', 'Service#2', 'approved', '8826163041');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `contact`
---
-
-CREATE TABLE `contact` (
-  `uname` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `contact` int(12) NOT NULL,
-  `subject` varchar(255) NOT NULL,
-  `message` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `contact`
---
-
-INSERT INTO `contact` (`uname`, `email`, `contact`, `subject`, `message`) VALUES
-('kk', 'abhi@gmail.com', 1234567890, 'wert', 'edrtfgyhuij');
+INSERT INTO `appointments` (`id`, `name`, `email`, `userid`, `date`, `time`, `appointmentfor`, `status`, `phone`, `doctorName`) VALUES
+(1, 'Kishan Kumar', 'kishankumaretah@gmail.com', 'kishankumar', '0000-00-00', '08:00:00', 'Service#1', '', '', ''),
+(2, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', '', '', ''),
+(3, 'himanshu', 'hm@gmail.com', '', '0000-00-00', '08:00:00', 'Service#1', '', '', ''),
+(4, 'sudhanshu', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', '', '', ''),
+(5, 'sudhanshu', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', '', '', ''),
+(7, 'naina', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', '', ''),
+(8, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', '', ''),
+(9, 'sd', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', '', ''),
+(10, 'df', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', '', ''),
+(11, 'sudhanshu', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', '', ''),
+(12, 'sudhanshu', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', '', ''),
+(13, 'sudhanshu', 'sm@gmail.com', '13', '0000-00-00', '08:00:00', 'Service#1', 'approved', '', ''),
+(14, 'himanshu', 'sm@gmail.com', '13', '2019-01-06', '08:00:00', 'Service#1', 'approved', '', ''),
+(15, 'rohan', 'sm@gmail.com', '13', '2019-01-07', '08:00:00', 'Service#1', 'approved', '', ''),
+(16, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-01-14', '08:00:00', 'Service#1', 'approved', '', ''),
+(17, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-01-14', '08:00:00', 'Service#1', 'approved', '', ''),
+(18, 'himanshu', 'him@gmail.com', '13', '2019-01-14', '08:00:00', 'Service#1', 'approved', '', ''),
+(19, 'sudhanshu', 'sm@gmail.com', '13', '2019-01-15', '08:00:00', 'Service#1', 'approved', '', ''),
+(20, 'sudhanshu', 'sm@gmail.com', '13', '2019-01-15', '08:00:00', 'Service#3', 'approved', '', ''),
+(21, 'cfvgh', 'sm@gmail.com', '13', '2019-01-15', '08:00:00', 'Service#1', 'approved', '', ''),
+(22, 'xyz', 'xyz@gmail.com', '13', '2019-01-16', '08:00:00', 'Service#3', 'approved', '', ''),
+(23, 'sudhanshu', 'sm@gmail.com', '13', '2019-01-28', '08:00:00', 'Service#1', 'approved', '', ''),
+(24, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-01-29', '08:00:00', 'Service#1', 'Rescheduled', '', ''),
+(25, 'sudhanshu', 'sm@gmail.com', '13', '2019-01-29', '08:00:00', 'Service#1', 'Rescheduled', '', ''),
+(26, 'sudhanshu', 'sm@gmail.com', '13', '2019-01-29', '08:00:00', 'Service#1', 'Rescheduled', '', ''),
+(27, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-01-29', '08:00:00', 'Service#1', 'Rescheduled', '', ''),
+(28, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'Rescheduled', '', ''),
+(29, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#2', 'approved', '', ''),
+(30, 'himanshu', 'hm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(31, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(32, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(33, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(34, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(35, 'Sudhanshu Mishra', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(36, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(37, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(38, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(39, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(40, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(41, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-02', '08:00:00', 'Service#1', 'approved', '', ''),
+(42, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-03', '08:00:00', 'Service#1', 'approved', '', ''),
+(43, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-03', '08:00:00', 'Service#1', 'approved', '', ''),
+(44, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-03', '08:00:00', 'Service#1', 'approved', '', ''),
+(45, 'himanhsu', 'sm@gmail.com', '13', '2019-02-03', '08:00:00', 'Service#1', 'approved', '', ''),
+(46, 'abhi', 'abhi@gmail.com', '12', '2019-02-03', '08:00:00', 'Service#1', 'Rescheduled', '', ''),
+(47, 'kk', 'jl', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', '', ''),
+(48, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', '', ''),
+(49, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', '', ''),
+(50, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', '', ''),
+(51, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', '', ''),
+(52, 'himanhsu', 'sm@gmail.com', '12', '2019-02-15', '08:00:00', 'Service#1', 'approved', '', ''),
+(53, 'himanhsu', 'sm@gmail.com', '', '2019-02-15', '08:00:00', 'Service#1', 'approved', '', ''),
+(54, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-15', '08:00:00', 'Service#1', 'approved', '', ''),
+(55, 'sudhanshu', 'sm@gmail.com', '', '2019-02-16', '08:00:00', 'Service#1', 'approved', '', ''),
+(56, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-16', '08:00:00', 'Service#1', 'approved', '', ''),
+(57, 'sudhanshu', 'sm@gmail.com', '12', '2019-02-16', '08:00:00', 'Service#1', 'approved', '', ''),
+(58, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', '', ''),
+(59, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', '', ''),
+(60, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', '', ''),
+(61, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', '', ''),
+(62, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', '', ''),
+(63, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-16', '08:00:00', 'Service#1', 'approved', '', ''),
+(64, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', '', ''),
+(65, 'himanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', '', ''),
+(66, 'himanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', '', ''),
+(67, 'himanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', '', ''),
+(68, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', '', ''),
+(69, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', '', ''),
+(70, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', '', ''),
+(71, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', '', ''),
+(72, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', '', ''),
+(73, 'himanshu', 'hm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', '', ''),
+(74, '', '', '13', '0000-00-00', '00:00:00', '', 'approved', '', ''),
+(75, '', '', '13', '0000-00-00', '00:00:00', '', 'approved', '', ''),
+(76, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '08:00:00', 'Service#1', 'approved', '', ''),
+(77, '', '', '13', '0000-00-00', '00:00:00', '', 'approved', '', ''),
+(78, 'himanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', '', ''),
+(79, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '10:00:00', 'Service#2', 'approved', '', ''),
+(80, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '10:00:00', 'Service#2', 'approved', '', ''),
+(81, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', '', ''),
+(82, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#3', 'approved', '', ''),
+(83, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', '', ''),
+(84, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', '', ''),
+(85, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', '', ''),
+(86, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '10:00:00', 'Service#2', 'approved', '', ''),
+(87, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', '918826163041', ''),
+(88, 'himanshu', 'sud221@yahoo.in', '13', '2019-02-17', '09:00:00', 'Service#2', 'approved', '918826163041', ''),
+(89, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#3', 'approved', '918826163041', ''),
+(90, 'himanshu', 'sm@gmail.com', '13', '2019-02-18', '10:00:00', 'Service#2', 'approved', '918826163041', ''),
+(91, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#4', 'approved', '918826163041', ''),
+(92, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '10:00:00', 'Service#3', 'approved', '918826163041', ''),
+(93, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#2', 'approved', '918826163041', ''),
+(94, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '10:00:00', 'Service#2', 'approved', '918826163041', ''),
+(95, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '10:00:00', 'Service#3', 'approved', '918826163041', ''),
+(96, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '10:00:00', 'Service#3', 'approved', '8826163041', ''),
+(97, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#3', 'approved', '8826163041', ''),
+(98, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-19', '09:00:00', 'Service#2', 'approved', '8826163041', ''),
+(99, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#2', 'approved', '9953707107', ''),
+(100, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-19', '09:00:00', 'Service#2', 'approved', '8826163041', ''),
+(101, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-18', '09:00:00', 'Service#2', 'approved', '7065941728', ''),
+(102, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-19', '09:00:00', 'Service#2', 'approved', '8826163041', ''),
+(103, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-20', '09:00:00', 'Service#2', 'approved', '918826163041', ''),
+(104, 'himanshu', 'sud221@yahoo.in', '13', '2019-02-20', '09:00:00', 'Service#2', 'approved', '8826163041', ''),
+(105, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-20', '10:00:00', 'Service#3', 'Rescheduled', '8826163041', ''),
+(106, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-20', '09:00:00', 'Service#2', 'Rescheduled', '9810158471', ''),
+(107, 'sudhanshu', 'sm@gmail.com', '13', '2019-02-20', '08:00:00', 'Service#2', 'approved', '8826163041', ''),
+(108, 's', 'sm@gmail.com', '13', '2019-03-05', '09:00:00', 'Service#3', 'approved', '8826163041', ''),
+(109, 'nv', 'nv@gmail.com', '13', '2019-03-06', '08:00:00', 'Service#1', 'requested', '88261634041', 'Dr. Vishu A Gupta'),
+(110, 'ts', 'ts@gmai.com', '13', '2019-03-06', '08:00:00', 'Service#1', 'approved', '88261634041', 'Dr. Ashish Gupta');
 
 -- --------------------------------------------------------
 
@@ -195,7 +178,9 @@ CREATE TABLE `doctors` (
 --
 
 INSERT INTO `doctors` (`doc_id`, `doc_name`, `doc_email`, `doc_password`, `doc_address`, `doc_gender`, `doc_contactno1`, `doc_contactno2`) VALUES
-(1, 'sudhanshu', 'sm@gmail.com', '202cb962ac59075b964b07152d234b70', 'new delhi', 'male', '8826163041', '9810158471');
+(1, 'sudhanshu', 'sm@gmail.com', '202cb962ac59075b964b07152d234b70', 'new delhi', 'male', '8826163041', '9810158471'),
+(2, 'Vishu A Gupta', 'vishu@gmail.com', '202cb962ac59075b964b07152d234b70', 'new delhi', 'male', '8826163041', '9810807057'),
+(3, 'Ashish Gupta', 'ashish@gmail.com', '202cb962ac59075b964b07152d234b70', 'new delhi', 'male', '8826163041', '9810158471');
 
 -- --------------------------------------------------------
 
@@ -347,7 +332,12 @@ INSERT INTO `notifications` (`uid`, `apid`, `id`, `message`, `status`) VALUES
 (13, '101', 144, 'Your appointment for Service#2 at 2019-02-18 , 09:00:00 is approved', 'seen'),
 (13, '106', 145, 'Your appointment for Service#2 at 2019-02-20 , 09:00:00 is approved', 'seen'),
 (13, '107', 146, 'You have requested an appointment for Service#2 at 2019-02-20 , 8:00 to 9:00 ', 'seen'),
-(13, '107', 147, 'Your appointment for Service#2 at 2019-02-20 , 08:00:00 is approved.', 'unseen');
+(13, '107', 147, 'Your appointment for Service#2 at 2019-02-20 , 08:00:00 is approved.', 'seen'),
+(13, '108', 148, 'You have requested an appointment for Service#3 at 2019-03-05 , 9:00 to 10:00 ', 'seen'),
+(13, '108', 149, 'Your appointment for Service#3 at 2019-03-05 , 09:00:00 is approved.', 'seen'),
+(13, '109', 150, 'You have requested an appointment for Service#1 at 2019-03-06 , 8:00 to 9:00 ', 'seen'),
+(13, '110', 151, 'You have requested an appointment for Service#1 at 2019-03-06 , 8:00 to 9:00 ', 'seen'),
+(13, '110', 152, 'Your appointment for Service#1 at 2019-03-06 , 08:00:00 is approved.', 'seen');
 
 -- --------------------------------------------------------
 
@@ -384,7 +374,8 @@ INSERT INTO `patient` (`id`, `uname`, `email`, `password`, `occupation`, `addres
 (10, 'kks', 'kks@gmail.com', '1234', 'student', 'etah', 'male', '1999-02-10', 1234567890, 0),
 (11, 'kk', 'shakyavivek2000@gmail.com', '202cb962ac59075b964b07152d234b70', 'student', 'etah', 'male', '2000-01-01', 1234567890, 0),
 (12, 'abhi', 'abhi@gmail.com', '202cb962ac59075b964b07152d234b70', 'student', 'etah', 'male', '2004-01-01', 1234567890, 0),
-(13, 'sudhanshu', 'sm@gmail.com', '202cb962ac59075b964b07152d234b70', 'student', 'c-29,Harsh vihar badarpur new delhi', 'male', '1999-01-22', 2147483647, 2147483647);
+(13, 'sudhanshu', 'sm@gmail.com', '202cb962ac59075b964b07152d234b70', 'student', 'c-29,Harsh vihar badarpur new delhi', 'male', '1999-01-22', 2147483647, 2147483647),
+(14, 'pramod', 'pk2@gmail.com', '202cb962ac59075b964b07152d234b70', 'qwerty', 'qwertyuiop', 'male', '2019-03-05', 2147483647, 2147483647);
 
 --
 -- Indexes for dumped tables
@@ -422,25 +413,25 @@ ALTER TABLE `patient`
 -- AUTO_INCREMENT for table `appointments`
 --
 ALTER TABLE `appointments`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
 
 --
 -- AUTO_INCREMENT for table `doctors`
 --
 ALTER TABLE `doctors`
-  MODIFY `doc_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `doc_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=148;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
 
 --
 -- AUTO_INCREMENT for table `patient`
 --
 ALTER TABLE `patient`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

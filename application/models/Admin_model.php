@@ -67,18 +67,20 @@ class admin_model extends CI_Model
 	//$this->load->view('allappointments',$r);
 	
     }
-    function get_appointments_admin()
+    function get_appointments_admin($doc)
 	{
-	$query="select * from appointments";
+	$d="Dr. ".$doc;
+	$query="select * from appointments where doctorName='$d'";
 	$r=$this->db->query($query);
 	return $r->result();
 	//$data['r']=$r;
 	//$this->load->view('allappointments',$r);
 	
 	}
-	function get_appointments_requests()
+	function get_appointments_requests($doc)
 	{
-	$query="select * from appointments where status='requested'";
+	$d="Dr. ".$doc;
+	$query="select * from appointments where status='requested' and doctorName='$d'";
 	$r=$this->db->query($query);
 	return $r->result();
 	//$data['r']=$r;
@@ -153,9 +155,10 @@ class admin_model extends CI_Model
 	//$this->load->view('allappointments',$r);
 	
 	}
-	function get_appointments_today()
+	function get_appointments_today($doc)
 	{$d=date("Y-m-d");
-	$query="select * from appointments where date='$d'";
+		$do="Dr. ".$doc;
+	$query="select * from appointments where date='$d'and doctorName='$do'";
 	$r=$this->db->query($query);
 	return $r->result();
 	//$data['r']=$r;

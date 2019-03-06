@@ -163,6 +163,16 @@
                                          
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="doc">Doctors Name</label>z
+                                        <select id="doc" name="doc" class="form-control" required >
+                                            <option value="Dr. Ashish Gupta">Dr. Ashish Gupta</option>
+                                            <option value="Dr. Vishu A Gupta">Dr. Vishu A Gupta</option>
+                                        </select>
+                                         
+                                    </div>
+                                </div>
                                 <!-- Select Basic -->
                                 <div class="col-md-12">
                                     <div class="form-group">

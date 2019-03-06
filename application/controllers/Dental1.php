@@ -132,7 +132,7 @@ public function appointmentsadmin()
 	//$this->load->view('index');
 	$this->load->library('session');
 	$this->load->model('admin_model');
-	$this->data['posts']=$this->admin_model->get_appointments_admin();
+	$this->data['posts']=$this->admin_model->get_appointments_admin($_SESSION["name"]);
 	$this->load->view('allappointmentsadmin',$this->data);
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
@@ -144,7 +144,7 @@ public function appointments_requests()
 	//$this->load->view('index');
 	$this->load->library('session');
 	$this->load->model('admin_model');
-	$this->data['posts']=$this->admin_model->get_appointments_requests();
+	$this->data['posts']=$this->admin_model->get_appointments_requests($_SESSION["name"]);
 	$this->load->view('allrequestedappointmentsadmin',$this->data);
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
@@ -156,7 +156,7 @@ public function appointments_today()
 	//$this->load->view('index');
 	$this->load->library('session');
 	$this->load->model('admin_model');
-	$this->data['posts']=$this->admin_model->get_appointments_today();
+	$this->data['posts']=$this->admin_model->get_appointments_today($_SESSION["name"]);
 	$this->load->view('allappointmentsadmin',$this->data);
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
