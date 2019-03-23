@@ -72,34 +72,6 @@ public function notifications()
 
 }
 
-
-
-
-//public function index()
-//{
-   //$this->load->view('index');
-  // $this->load->library('session');
-  // $this->load->model('appointment_model');
-//$data['check_posts']=$this->appointment_model->check_notifications();
- //  $this->load->view('dash_home', $data);
-   //unset($_SESSION["name"]);
-   //unset($_SESSION["id"]);
-   //$this->load->view(''.$page);
-   //$this->load->view('home');
-	
-
-
-//}
-
-
-
-
-
-
-
-
-
-
 public function seenNotifications()
 {
    //$this->load->view('index');
@@ -199,11 +171,37 @@ public function approve_this($Bid)
 	//$this->load->view(''.$page);
 	//$this->load->view('home');
 }
+public function confirm_this($Bid)
+ {
+	//$this->load->view('index');
+	$this->load->library('session');
+	$this->load->model('admin_model');
+	$this->data['posts']=$this->admin_model->confirm_appointment($Bid);
+	$this->load->view('dash_home_admin');
+	//unset($_SESSION["name"]);
+	//unset($_SESSION["id"]);
+	//$this->load->view(''.$page);
+	//$this->load->view('home');
+}
+public function pay_now($Bid)
+ {
+	//$this->load->view('index');
+	$this->load->library('session');
+	$this->load->model('appointment_model');
+	$this->data['posts']=$this->appointment_model->pay_fees($Bid);
+	$this->data['posts']=$this->appointment_model->view_appointment($Bid);
+	$this->load->view('appointment_recipt',$this->data);
+	//unset($_SESSION["name"]);
+	//unset($_SESSION["id"]);
+	//$this->load->view(''.$page);
+	//$this->load->view('home');
+}
 public function viewappointment($Bid)
  {
 	//$this->load->view('index');
 	$this->load->library('session');
 	$this->load->model('appointment_model');
+
 	$this->data['posts']=$this->appointment_model->view_appointment($Bid);
 	$this->load->view('appointment_recipt',$this->data);
 	//unset($_SESSION["name"]);

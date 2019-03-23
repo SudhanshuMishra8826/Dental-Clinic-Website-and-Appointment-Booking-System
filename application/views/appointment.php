@@ -154,18 +154,17 @@
                                 <!-- Select Basic -->
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="control-label" for="time">Preferred Time</label>z
+                                        <label class="control-label" for="time">Preferred Time</label>
                                         <select id="time" name="time" class="form-control" required >
-                                            <option value="8:00 to 9:00">8:00 to 9:00</option>
-                                            <option value="9:00 to 10:00">9:00 to 10:00</option>
-                                            <option value="10:00 to 1:00">10:00 to 1:00</option>
+                                            <option value="10:30 am to 2:30 pm">10:30 am to 2:30 pm</option>
+                                            <option value="9:00 pm to 10:00 pm">5:30 pm to 8:30 pm</option>
                                         </select>
                                          
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="control-label" for="doc">Doctors Name</label>z
+                                        <label class="control-label" for="doc">Doctors Name</label>
                                         <select id="doc" name="doc" class="form-control" required >
                                             <option value="Dr. Ashish Gupta">Dr. Ashish Gupta</option>
                                             <option value="Dr. Vishu A Gupta">Dr. Vishu A Gupta</option>
@@ -178,10 +177,10 @@
                                     <div class="form-group">
                                         <label class="control-label" for="appointmentfor">Appointment For</label>
                                         <select id="appointmentfor" name="appointmentfor" class="form-control" required >
-                                            <option value="Service#1">Service#1</option>
-                                            <option value="Service#2">Service#2</option>
-                                            <option value="Service#3">Service#3</option>
-                                            <option value="Service#4">Service#4</option>
+                                            <option value="Root Canal">Root Canal</option>
+                                            <option value="Tooth Extractions">Tooth Extractions</option>
+                                            <option value="Cleaning">Cleaning</option>
+                                            <option value="Dental Implants">Dental Implants</option>
                                         </select>
                                          
                                     </div>

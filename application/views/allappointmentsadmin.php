@@ -65,7 +65,9 @@ td {
   <th>Status</th>
   
   <th>Approve</th>
+  <th>Confirm</th>
   <th>Reschedule</th>
+
 
 
   </tr>";
@@ -82,6 +84,7 @@ td {
   echo "<td>" . $row->appointmentfor . "</td>";
   echo "<td>" . $row->status . "</td>";
   echo "<td><a href='http://localhost/ci2/dental1/approve_this/". $row->id ."'><button>Approve</button></a></td>";
+  echo "<td><a href='http://localhost/ci2/dental1/confirm_this/". $row->id ."'><button>Confirm</button></a></td>";
   echo "<td><a href='http://localhost/ci2/dental1/dissapprove/". $row->id ."'><button>Reschedule</button></a></td>";
 
   echo "</tr>";

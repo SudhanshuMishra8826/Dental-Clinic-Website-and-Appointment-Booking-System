@@ -113,14 +113,17 @@ catch(Exception $e)
  echo '<h3>Appointment Date : '.$row->date. '</h3>';
  echo '<h3>Appointment Time : '.$row->time. '</h3>';
   echo '<h3>Service : '.$row->appointmentfor. '</h3>';
+  echo '<h3>Fees : '.$row->fees. '</h3>';
    echo '<h3>Status : '.$row->status. '</h3>';
-  echo '<h3>Payment not paid : '. '</h3>';
+  echo '<h3>Payment: '.$row->payment. '</h3>';
   echo '<h3>Appointment Id : '.$row->id. '</h3>';
   echo '<h3>Account Id : '.$row->userid. '</h3>';
+  echo "<td><a href='http://localhost/ci2/dental1/pay_now/". $row->id ."'><button>Pay now</button></a></td>";
   }
 ?>
   <form action=<?php echo base_url().'dental1/history/';?> method="POST">
 <!-- Note that the amount is in paise = 50 INR -->
+<!--
 <script
     src="https://checkout.razorpay.com/v1/checkout.js"
     data-key="rzp_test_OeMS2mGVcm5mDl"
@@ -131,7 +134,7 @@ catch(Exception $e)
     data-image="https://your-awesome-site.com/your_logo.jpg"
     data-prefill.name="Gaurav Kumar"
     data-theme.color="#F37254"
-></script>
+></script>-->
 <input type="hidden" value="Hidden Element" name="hidden" >
 </form>
 

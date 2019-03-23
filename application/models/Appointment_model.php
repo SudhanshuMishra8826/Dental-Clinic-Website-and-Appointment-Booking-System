@@ -1,9 +1,9 @@
 <?php 
 class appointment_model extends CI_Model 
 {
-	function saverecords($name,$email,$userid,$date,$time,$appointmentfor,$phone,$doc)
+	function saverecords($name,$email,$userid,$date,$time,$appointmentfor,$phone,$doc,$fees)
 	{
-	$query="insert into appointments values('','$name','$email','$userid','$date','$time','$appointmentfor','requested','$phone','$doc')";
+	$query="insert into appointments values('','$name','$email','$userid','$date','$time','$appointmentfor','requested','$phone','$doc','$fees','not paid')";
 	$this->db->query($query);
 	$query="select id from appointments where userid='$userid' and name='$name' and date='$date' and time='$time' and email='$email' and status='requested' and appointmentfor='$appointmentfor' and doctorName='$doc'";
 	$r=$this->db->query($query);
@@ -14,6 +14,16 @@ class appointment_model extends CI_Model
 	$data['posts']=$this->appointment_model->view_appointment($apid);
 	$this->load->view('appointment_recipt',$data);*/
 	return $r->result();
+	}
+
+	function get_fees($appointmentfor)
+	{
+	$this->load->library('session');
+	$name=$_SESSION['name'];
+	$id=$_SESSION['id'];
+	$query="select price from services where name='$appointmentfor'";
+	$r=$this->db->query($query);
+	return $r->result_array();
 	}
 	function get_appointments()
 	{
@@ -112,23 +122,7 @@ class appointment_model extends CI_Model
                    	
                    } 
 
-	//return $r->result();
-
-
-	//$data['r']=$r;
-	//$this->load->view('allappointments',$r);
-	
 	}
-
-
-
-
-
-
-
-
-
-
 
 	function get_seen_notifications()
 	{
@@ -141,6 +135,21 @@ class appointment_model extends CI_Model
 	//$data['r']=$r;
 	//$this->load->view('allappointments',$r);
 	
+	}
+	function pay($Bid)
+	{
+	$this->load->library('session');
+	$name=$_SESSION['name'];
+	$id=$_SESSION['id'];
+	$query="select price from services where id='$Bid'";
+	$r=$this->db->query($query);
+	return $r->result_array();
+	}
+	function pay_fees($Bid)
+	{
+	$query="update appointments set payment='paid' where id='$Bid'";
+	$r=$this->db->query($query);
+
 	}
 }
 ?>

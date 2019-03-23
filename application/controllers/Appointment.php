@@ -30,9 +30,13 @@ class appointment extends CI_Controller {
 			$service=$this->input->post('appointmentfor');
 			$phone=$this->input->post('phone');
 			$doc=$this->input->post('doc');
-			
+			$feesrow=$this->Appointment_model->get_fees($service);
+			//foreach($feesrow as $ro){
+			//	$fees=$ro->id;
+			//}
+			$fees=$feesrow[0]['price'];
 	//call saverecords method of Hello_Model and pass variables as parameter
-			$apd=$this->Appointment_model->saverecords($name,$email,$userid,$date,$time,$service,$phone,$doc);
+			$apd=$this->Appointment_model->saverecords($name,$email,$userid,$date,$time,$service,$phone,$doc,$fees);
 			foreach($apd as $row){
 				$apid=$row->id;
 			}
