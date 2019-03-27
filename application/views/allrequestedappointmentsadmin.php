@@ -48,6 +48,8 @@ td {
   <li><a href="<?php echo base_url();?>dental1/appointments_today/">Todays Plan</a></li>
   <li><a href="<?php echo base_url();?>dental1/appointments_requests/">Requests</a></li>
   <li><a href="<?php echo base_url();?>dental1/patients/">All patients</a></li>
+  <li><a href="<?php echo base_url();?>dental1/Discounts/">Discounts</a></li>
+
   <li><a href="#contact">Help</a></li>
   <li><a href="<?php echo base_url();?>dental1/homepage/contact">Contact</a></li>
   <li><a href="<?php echo base_url();?>dental1/logout">Logout</a></li>

@@ -118,7 +118,7 @@ catch(Exception $e)
   echo '<h3>Payment: '.$row->payment. '</h3>';
   echo '<h3>Appointment Id : '.$row->id. '</h3>';
   echo '<h3>Account Id : '.$row->userid. '</h3>';
-  echo "<td><a href='http://localhost/ci2/dental1/pay_now/". $row->id ."'><button>Pay now</button></a></td>";
+  echo "<td><a href='http://localhost/ci2/dental1/PaytmGateway/". $row->id ."'><button>Pay now</button></a></td>";
   }
 ?>
   <form action=<?php echo base_url().'dental1/history/';?> method="POST">

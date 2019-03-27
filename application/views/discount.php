@@ -56,30 +56,22 @@ td {
   <?php
   echo "<table border='1'>
   <tr>
-  <th>BookingId</th>
-  <th>Name</th>
-  <th>email</th>
-  <th>Occupation</th>
-  <th>address</th>
-  <th>Gender</th>
-  <th>Contact No</th>
+  <th>Service</th>
+  <th>Discount</th>
   </tr>";
 
   foreach($posts as $row)
   {
   echo "<tr>";
-  echo "<td>" . $row->id . "</td>";
-  echo "<td>" . $row->uname . "</td>";
-  echo "<td>" . $row->email . "</td>";
-  echo "<td>" . $row->occupation . "</td>";
-  echo "<td>" . $row->address . "</td>";
-  echo "<td>" . $row->sex . "</td>";
-  echo "<td>" . $row->contact1 . "</td>";
+  echo "<td>" . $row->servicename . "</td>";
+  echo "<td>" . $row->discount . "</td>";
 
   echo "</tr>";
   }
   echo "</table>";
   ?>
+    <a href="<?php echo base_url();?>dental1/Update_Discount/"><button>Update</button></a></div>
+
   </div>
 </div>
 </div>
