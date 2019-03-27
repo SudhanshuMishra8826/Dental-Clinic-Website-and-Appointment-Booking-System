@@ -12,11 +12,11 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/btn.css">
     </head>
     <body>
-          <!navbar start>
+<!-----------------------------------------------navbar start------------------------------------------------------------->
 <nav class="navbar sticky-top navbar-expand-lg navbar-light"> 
   <div class="navbar-brand text-white font-weight-bold"  style="margin-left: 105px; ">
     <!a href="#">
-    <img src="<?php echo base_url();?>/dc1_images/WPFtdnZn_400x400.jpg" width="50" height="35"><!/a>
+    <img src="<?php echo base_url();?>/dc1_images/New folder/155189227923227433.jpg.gif" width="50" height="45"><!/a>
     </div>
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
           ABOUT US
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage#clinic">Clinic</a>
+          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/about_us">Clinic</a>
           <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage#ashish">Dr.Ashish</a>
           <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage#vishu">Dr.Vishu</a>
         </div>
@@ -59,7 +59,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="https://wego.here.com/directions/mix//Acme-Dental-Lounge-Health-Medi-Center,-Office-no-4,-Westend-Shopping,-opp-Aundh-DMart,-New-D-P-Road-Aundh,-411007-Pune:e-eyJuYW1lIjoiQWNtZSBEZW50YWwgTG91bmdlICYgSGVhbHRoIE1lZGkgQ2VudGVyIiwiYWRkcmVzcyI6Ik9mZmljZSBubyA0LCBXZXN0ZW5kIFNob3BwaW5nLCBvcHAgQXVuZGggRCdNYXJ0LCBOZXcgRCBQIFJvYWQgQXVuZGgsIFB1bmUsIE1haGFyYXNodHJhIiwibGF0aXR1ZGUiOjE4LjU2NjQ0MzU3MjM5NSwibG9uZ2l0dWRlIjo3My44MDc1OTUzNzIyLCJwcm92aWRlck5hbWUiOiJmYWNlYm9vayIsInByb3ZpZGVySWQiOjE3MzA0MDQzMzMwMTc3NX0=?map=18.89244,74.46188,8,normal&fb_locale=en_GB"><i class="fa fa-map-marker fa-2x text-danger"></i></a>
            
-          <a class="dropdown-item" href="https://www.facebook.com/Acme-Dental-Lounge-Health-Medi-Center-173040433301775/"><i class="fa fa-facebook-square fa-2x text-info"></i></a>
+            <a class="dropdown-item" href="https://www.google.com/search?source=hp&ei=te6DXMD9KIKUvQTIqLmoBQ&q=acme+dental+lounge&oq=&gs_l=mobile-gws-wiz-hp.1.1.35i39l5.0.0..6359...1.0..0.0.0.......0...........5.xQ5Z_uRKkeE#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:3983877760138644117,rc_q:Acme%2520Dental%2520Lounge%2520And%2520Health%2520Medi%2520Center%2520%257B%2520Acme%2520Dental%2520Care%2520%257D,ru_q:Acme%2520Dental%2520Lounge%2520And%2520Health%2520Medi%2520Center%2520%257B%2520Acme%2520Dental%2520Care%2520%257D">My Google page</a>
            <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/contact">Contact</a>
            
         </div>
@@ -81,30 +81,13 @@
     </ul>
   </div>
 </nav>
-<!navbar end> 
+<!---------------------------------------------------------------------------------navbar end--------------------------------------------------------> 
+         
         <section id="vid1">
             <div class="container">
-                <div class="row" id="div1">
+                <div class="row text-dark" id="div1">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>Root Canal</h2>
-                      <p style="text-align: justify;">When the decay in your tooth is so deep that it reaches the inner most layer of the tooth where the nerve lies, root canal treatment is needed to save the tooth. Nerve and blood vessels lie in the center of the tooth , when get infected needs to be removed to alleviate the pain and infection. If the carious tooth is left untreated, the infection from the tooth will spread to the bone and surrounding teeth and will cause bone loss and more serious dental problems.</p> 
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/d9iVeeigUPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section id="vid2">
-            <div class="container">
-                <div class="row text-white" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		              <h2>Tooth extraction</h2>
+                  <h2>Tooth extraction</h2>
                       <p style="text-align: justify;  ">A dental extraction (also referred to as tooth extraction, exodontia, exodontics, or informally, tooth pulling) is the removal of teeth from the dental alveolus (socket) in the alveolar bone. Extractions are performed for a wide variety of reasons, but most commonly to remove teeth which have become unrestorable through tooth decay, periodontal disease or dental trauma, especially when they are associated with toothache. Sometimes wisdom teeth are impacted (stuck and unable to grow normally into the mouth) and may cause recurrent infections of the gum (pericoronitis). In orthodontics if the teeth are crowded, sound teeth may be extracted (often bicuspids) to create space so the rest of the teeth can be straightened.</p>                    
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -118,6 +101,169 @@
             </div>
 
         </section>
+
+
+
+         <section id="vid2">
+            <div class="container">
+                <div class="row text-white" id="div1">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h2>Root Canal Treatment</h2>
+                      <p style="text-align: justify;  ">When the decay in your tooth is so deep that it reaches the inner most layer of the tooth where the nerve lies, root canal treatment is needed to save the tooth. Nerve and blood vessels lie in the center of the tooth , when get infected needs to be removed to alleviate the pain and infection. If the carious tooth is left untreated, the infection from the tooth will spread to the bone and surrounding teeth and will cause bone loss and more serious dental problems.</p>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="embed-responsive embed-responsive-21by9">
+                             
+                            <video src="<?php echo base_url();?>/dc1_videos/10000000_310326936493421_4927644836586061824_n.mp4" type="video/mp4" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+         <section id="vid1">
+            <div class="container">
+                <div class="row text-dark" id="div1">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h2>Dentistry</h2>
+                      <p style="text-align: justify;  ">Dentistry, also known as Dental and Oral Medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity, commonly in the dentition but also the oral mucosa, and of adjacent and related structures and tissues, particularly in the maxillofacial (jaw and facial) area.[1] Although primarily associated with teeth among the general public, the field of dentistry or dental medicine is not limited to teeth but includes other aspects of the craniofacial complex including the temporomandibular joint and other supporting, muscular, lymphatic, nervous, vascular, and anatomical structures.</p>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="embed-responsive embed-responsive-21by9">
+                            <video src="<?php echo base_url();?>/dc1_videos/10000000_396333221143929_159331522766176256_n.mp4" type="video/mp4" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+         <section id="vid2">
+            <div class="container">
+                <div class="row text-white" id="div1">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h2>Crown Bridge</h2>
+                      <p style="text-align: justify;  ">A bridge is a fixed dental restoration (a fixed dental prosthesis) used to replace one or more missing teeth by joining an artificial tooth definitively to adjacent teeth or dental <br/>
+                      There are many different types of dental crowns available from your National Dental Care dentist. Your dentist will advise the best option depending on the location of the crown. They may recommend a ceramic, resin or sometimes even gold crowns.</p>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="embed-responsive embed-responsive-21by9">
+                             
+                            <video src="<?php echo base_url();?>/dc1_videos/15132800_1242992815751503_1434925642763206656_n.mp4" type="video/mp4" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="vid1">
+            <div class="container">
+                <div class="row text-dark" id="div1">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h2>Teeth Eruption</h2>
+                      <p style="text-align: justify;  ">Tooth eruption is a process in tooth development in which the teeth enter the mouth and become visible. It is currently believed that the periodontal ligament plays an important role in tooth eruption. The first human teeth to appear, the deciduous (primary) teeth (also known as baby or milk teeth), erupt into the mouth from around 6 months until 2 years of age, in a process known as "teething". These teeth are the only ones in the mouth until a person is about 6 years old creating the primary dentition stage. At that time, the first permanent tooth erupts and begins a time in which there is a combination of primary and permanent teeth, known as the mixed dentition stage, which lasts until the last primary tooth is lost. Then, the remaining permanent teeth erupt into the mouth during the permanent dentition stage.</p>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="embed-responsive embed-responsive-21by9">
+                            <video src="<?php echo base_url();?>/dc1_videos/44720503_403973670371323_7766881389068156928_n.mp4" type="video/mp4" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+         <section id="vid2">
+            <div class="container">
+                <div class="row text-white" id="div1">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h2>Dental Nerve Block</h2>
+                      <p style="text-align: justify;  ">"Dental nerve blocks" is the technical term for dental anesthesia. The most commonly used anesthesia in dentistry is novocaine.<br/>
+
+                      Dental nerve blocks are an exact science. General dentists and dental specialists go through years of study to become licensed, and there are few professionals more thoroughly trained in administering the dental nerve block or numbing the face.<br/>
+
+                      The most common dental nerve block is the inferior alveolar nerve block. This type of block numbs the lower jaw during dental treatment and enables patients to lose sensation temporarily in their teeth.</p>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="embed-responsive embed-responsive-21by9">
+                             
+                            <video src="<?php echo base_url();?>/dc1_videos/46812168_2205395126158353_3269463439407316992_n.mp4" type="video/mp4" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+         <section id="vid1">
+            <div class="container">
+                <div class="row text-dark" id="div1">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h2>How to Brush Teeth</h2>
+                      <p style="text-align: justify;  ">The proper brushing technique is to:<br/>
+                        1.Place your toothbrush at a 45-degree angle to the gums.<br/> 
+                        2.Gently move the brush back and forth in short (tooth-wide) strokes. <br/>
+                        3.Brush the outer surfaces, the inner surfaces, and the chewing surfaces of the teeth.<br/>
+                        4.To clean the inside surfaces of the front teeth, tilt the brush vertically and make several up-and-down strokes.</p>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="embed-responsive embed-responsive-21by9">
+                            <video src="<?php echo base_url();?>/dc1_videos/53012046_352936871976972_4226891218249842688_n.mp4" type="video/mp4" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+         <section id="vid2">
+            <div class="container">
+                <div class="row text-white" id="div1">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h2>Sinus Lift</h2>
+                      <p style="text-align: justify;  ">A sinus lift, also called a sinus augmentation, is surgery that adds bone to your upper jaw in the area of your molars and premolars. During the procedure, bone is added between your jaw and the maxillary sinuses, which are on either side of your nose. To make room for the bone, the sinus membrane has to be moved upward, or "lifted." A sinus lift usually is done by a specialist, who could be either an oral and maxillofacial surgeon or a periodontist.</p>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="embed-responsive embed-responsive-21by9">
+                             
+                            <video src="<?php echo base_url();?>/dc1_videos/54885192_252830538996625_164154091279222369_n.mp4" type="video/mp4" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
          
     </body>
 </html>

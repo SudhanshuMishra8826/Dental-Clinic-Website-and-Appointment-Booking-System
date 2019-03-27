@@ -104,23 +104,132 @@ catch(Exception $e)
                 </div>
             </nav>
 
-            <div class="board">
-            <?php
-    foreach($posts as $row)
+
+<!-------------------------------------------------table--------------------------------------------------------------->
+<section class="container-fluid table-responsive-md">  
+    <?php
+          
+   foreach($posts as $row)
         {
-  echo '<h3> Patient Name : ' .$row->name. '</h3>';
- echo '<h3>Patient Email : '.$row->email. '</h3>';
- echo '<h3>Appointment Date : '.$row->date. '</h3>';
- echo '<h3>Appointment Time : '.$row->time. '</h3>';
-  echo '<h3>Service : '.$row->appointmentfor. '</h3>';
-  echo '<h3>Fees : '.$row->fees. '</h3>';
-   echo '<h3>Status : '.$row->status. '</h3>';
-  echo '<h3>Payment: '.$row->payment. '</h3>';
-  echo '<h3>Appointment Id : '.$row->id. '</h3>';
-  echo '<h3>Account Id : '.$row->userid. '</h3>';
-  echo "<td><a href='http://localhost/ci2/dental1/pay_now/". $row->id ."'><button>Pay now</button></a></td>";
-  }
+            echo "<section class='table-responsive-md'>";
+             echo "<table class='table table-borderless'>";
+  echo'<tbody>';
+  echo'<tr>';
+  echo '<th colspan="2" class="text-center"> Payment Receipt</th>';
+    
+  echo '</tr>';
+  echo'<tr>';
+  echo '<th colspan="2" class="text-center"><span style="color:red; font-style: italic;"> Acme</span> Dental Lounge  <hr style="   border-bottom: solid; border-color:#4db8ff;"> </th>';
+
+   echo '</tr>';
+
+      echo'<tr>';
+       
+      echo'<td>Appointment Id : '.$row->id.'</td>';
+       echo'<td>Account Id : '.$row->userid. '</td>';
+       
+    echo'</tr>';
+    echo'<tr>';
+       
+      echo'<td>Patient Name : '.$row->name.'</td>';
+        echo'<td>Appointment Date : '.$row->date. '</td>';
+       
+    echo'</tr>';
+    echo'<tr>';
+       echo'<td>Patient Email : '.$row->email. '</td>';
+      
+       echo'<td>Appointment Time : '.$row->time. '</td>';
+       
+    echo'</tr>';
+    echo'<tr>';
+       
+      echo'<td>Service : '.$row->appointmentfor. '</td>';
+       echo'<td>Fees : '.$row->fees. '</td>';
+       
+    echo'</tr>';
+    
+    
+  echo'</tbody>';
+  echo  '</table>';
+  echo "</section>";
+
+
+
+echo "<section class='table-responsive-md'>";
+echo "<table class='table table-bordered'>
+<thead class='bg-info text-white'>
+    <tr>
+      <th scope='col' colspan='8'>Service</th>
+      <th scope='col' colspan='0'>Cost</th>
+     </tr> 
+     </thead>";
+
+echo'<tbody>';
+ echo'<tr>';
+       
+      echo'<td colspan="8">'.$row->appointmentfor. '</td>';
+       echo'<td colspan="0">'.$row->fees.'/-</td>';
+       
+    echo'</tr>';
+    
+    echo'<tr>  
+       
+       <th colspan="8" class="text-right">   Total  </td> ';
+       echo'<td colspan="0">'.$row->fees.'/-</td>';
+       
+    echo'</tr>';
+
+
+echo'</tbody>';
+echo  '</table>';
+echo "</section>";
+
+
+echo "<section class='table-responsive-md'>";
+echo "<table class='table table-borderless'>";
+ echo'<tbody>';
+   echo'<tr>  
+       
+       <th colspan="0" class="text-right">  Payment Status :</td> ';
+       echo'<td colspan="0" class="text-left">'.$row->payment.' </td>';
+       
+    echo'</tr>';
+     echo'<tr>  
+       
+       <th colspan="0" class="text-right">  Appointment Status :</td> ';
+       echo'<td colspan="0" class="text-left">'.$row->status.' </td>';
+       
+    echo'</tr>';
+ echo'</tbody>';
+
+echo  '</table>';
+echo "</section>";
+echo'<hr style="border-bottom: solid; border-color:#4db8ff;">';
+ 
+ echo "<center><a href='http://localhost/ci2/dental1/pay_now/". $row->id ."'><button type='button' class='btn btn-info'>Pay now</button></a></center>";
+
+}
 ?>
+</section>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="board">
+            
   <form action=<?php echo base_url().'dental1/history/';?> method="POST">
 <!-- Note that the amount is in paise = 50 INR -->
 <!--

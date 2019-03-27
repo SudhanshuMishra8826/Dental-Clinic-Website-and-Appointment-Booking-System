@@ -21,7 +21,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark"> 
   <div class="navbar-brand text-white font-weight-bold"  style="margin-left: 50px;">
     <a href="#">
-    <img src="<?php echo base_url();?>/dc1_images/WPFtdnZn_400x400.jpg" width="50" height="35"></a>
+    <img src="<?php echo base_url();?>/dc1_images/New folder/155189227923227433.jpg.gif" width="50" height="45"></a>
     </div>
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
