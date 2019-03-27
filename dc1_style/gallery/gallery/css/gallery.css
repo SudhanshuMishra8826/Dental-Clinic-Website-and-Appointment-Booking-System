@@ -1,0 +1,17 @@
+.gallery{
+	margin:  20px 90px; 
+	margin-top: 30px;
+}
+.gallery img{
+	transition: 1s;
+	padding: 0px;
+	margin: 15px;
+	width: 200px;
+	border-style: solid;
+	border-color: #4db8ff;
+}
+.gallery img:hover{
+	 
+	transform: scale(1.1);
+	border-color: #ff8080;
+}

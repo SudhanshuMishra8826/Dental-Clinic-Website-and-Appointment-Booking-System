@@ -1,0 +1,100 @@
+#vid1{
+    padding: 40px 0px;
+    background: rgba(0,0,0,0);
+    
+}
+#vid2{
+    padding: 40px 0px;
+    background: rgba(0,0,0,1);
+    color: aqua;
+}
+
+#vid3{
+    padding: 40px 0px;
+    background: rgba(0,0,0,0);
+    
+}
+
+#vid4{
+    padding: 40px 0px;
+    background: rgba(0,0,0,1);
+    color: aqua;
+}
+
+#vid5{
+    padding: 40px 0px;
+    background: rgba(0,0,0,0);
+    
+}
+
+#vid6{
+    padding: 40px 0px;
+    background: rgba(0,0,0,1);
+    color: aqua;
+}
+
+#vid7{
+    padding: 40px 0px;
+    background: rgba(0,0,0,0);
+    
+}
+
+#vid8{
+    padding: 40px 0px;
+    background: rgba(0,0,0,1);
+    color: aqua;
+}
+
+#vid9{
+    padding: 40px 0px;
+    background: rgba(0,0,0,0);
+    
+}
+
+#vid10{
+    padding: 40px 0px;
+    background: rgba(0,0,0,1);
+    color: aqua;
+}
+
+
+
+
+
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+.nav{
+    background: rgba(0, 0, 0, 1);
+    width:100%;
+    height: auto;
+    position: relative;
+}
+.left{
+    float: left;
+}
+.left ul{
+    list-style: none;
+    padding: 1em 3em;
+}
+.left ul li{
+    display: inline-block;
+}
+.left ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 9px 26px;
+}
+
+.left li:nth-child(1) a{
+    border: 3px solid cyan;
+    border-radius: 4px;
+}

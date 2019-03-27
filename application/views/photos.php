@@ -30,7 +30,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark"> 
   <div class="navbar-brand text-white font-weight-bold"  style="margin-left: 50px;">
     <a href="#">
-    <img src="<?php echo base_url();?>/dc1_images/WPFtdnZn_400x400.jpg" width="50" height="35"></a>
+    <img src="<?php echo base_url();?>/dc1_images/New folder/155189227923227433.jpg.gif" width="50" height="45"></a>
     </div>
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,7 @@
           ABOUT US
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage#clinic">Clinic</a>
+          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/about_us">Clinic</a>
           <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage#ashish">Dr.Ashish</a>
           <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage#vishu">Dr.Vishu</a>
         </div>
@@ -73,7 +73,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="https://wego.here.com/directions/mix//Acme-Dental-Lounge-Health-Medi-Center,-Office-no-4,-Westend-Shopping,-opp-Aundh-DMart,-New-D-P-Road-Aundh,-411007-Pune:e-eyJuYW1lIjoiQWNtZSBEZW50YWwgTG91bmdlICYgSGVhbHRoIE1lZGkgQ2VudGVyIiwiYWRkcmVzcyI6Ik9mZmljZSBubyA0LCBXZXN0ZW5kIFNob3BwaW5nLCBvcHAgQXVuZGggRCdNYXJ0LCBOZXcgRCBQIFJvYWQgQXVuZGgsIFB1bmUsIE1haGFyYXNodHJhIiwibGF0aXR1ZGUiOjE4LjU2NjQ0MzU3MjM5NSwibG9uZ2l0dWRlIjo3My44MDc1OTUzNzIyLCJwcm92aWRlck5hbWUiOiJmYWNlYm9vayIsInByb3ZpZGVySWQiOjE3MzA0MDQzMzMwMTc3NX0=?map=18.89244,74.46188,8,normal&fb_locale=en_GB"><i class="fa fa-map-marker fa-2x"></i></a>
            
-          <a class="dropdown-item" href="https://www.facebook.com/Acme-Dental-Lounge-Health-Medi-Center-173040433301775/"><i class="fa fa-facebook-square fa-2x"></i></a>
+           <a class="dropdown-item" href="https://www.google.com/search?source=hp&ei=te6DXMD9KIKUvQTIqLmoBQ&q=acme+dental+lounge&oq=&gs_l=mobile-gws-wiz-hp.1.1.35i39l5.0.0..6359...1.0..0.0.0.......0...........5.xQ5Z_uRKkeE#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:3983877760138644117,rc_q:Acme%2520Dental%2520Lounge%2520And%2520Health%2520Medi%2520Center%2520%257B%2520Acme%2520Dental%2520Care%2520%257D,ru_q:Acme%2520Dental%2520Lounge%2520And%2520Health%2520Medi%2520Center%2520%257B%2520Acme%2520Dental%2520Care%2520%257D">My Google page</a>
            <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/contact">Contact</a>
            
         </div>
@@ -106,13 +106,27 @@
 
 
   <div class="gallery">
-    <a href="<?php echo base_url();?>/dc1_images/images/44286388_302082290397588_3304832207327068160_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/26907872_176020513003767_1167050437066330406_n.jpg" width="300" height="150"></a>
+    <a href="<?php echo base_url();?>/dc1_images/images/26907872_176020513003767_1167050437066330406_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/26907872_176020513003767_1167050437066330406_n.jpg" width="300" height="150"></a>
 
     <a href="<?php echo base_url();?>/dc1_images/images/26229999_174082143197604_5273773021954518344_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/26229999_174082143197604_5273773021954518344_n.jpg" width="300" height="150"></a>
     <a href="<?php echo base_url();?>/dc1_images/images/44213229_302082260397591_9074665258156556288_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/44213229_302082260397591_9074665258156556288_n.jpg" width="300" height="150"> </a>
     <a href="<?php echo base_url();?>/dc1_images/images/26804960_176020516337100_4471383098197088894_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/26804960_176020516337100_4471383098197088894_n.jpg" width="300" height="150"></a>
     <a href="<?php echo base_url();?>/dc1_images/images/44229698_302082307064253_6156379291425701888_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/44229698_302082307064253_6156379291425701888_n.jpg" width="300" height="150"> </a>
     <a href="<?php echo base_url();?>/dc1_images/images/44286388_302082290397588_3304832207327068160_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/44286388_302082290397588_3304832207327068160_n.jpg" width="300" height="150"></a>
+
+
+    <a href="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.12.01 PM (1).jpeg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.12.01 PM (1).jpeg" width="300" height="150"></a>
+    <a href="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.12.02 PM (1).jpeg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.12.02 PM (1).jpeg" width="300" height="150"></a>
+    <a href="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.12.02 PM.jpeg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.12.02 PM.jpeg" width="300" height="150"></a>
+    <a href="<?php echo base_url();?>/dc1_images/images/1.jpeg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/1.jpeg" width="300" height="150"></a>
+     <a href="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.11.52 PM.jpeg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.11.52 PM.jpeg" width="300" height="150"></a>
+      <a href="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.11.53 PM.jpeg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.11.53 PM.jpeg" width="300" height="150"></a>
+       <a href="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.11.59 PM.jpeg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.11.59 PM.jpeg" width="300" height="150"></a>
+        <a href="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.11.57 PM (1).jpeg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/WhatsApp Image 2019-03-05 at 8.11.57 PM (1).jpeg" width="300" height="150"></a>
+
+
+
+
 
 
   </div>

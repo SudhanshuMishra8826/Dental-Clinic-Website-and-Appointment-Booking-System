@@ -130,7 +130,7 @@ window.onhashchange=function(){window.location.hash=" ";}
   ?>
   
 <div class='nr'>
-  <a href="<?php echo base_url();?>dental1/seenNotifications/"><button>Previous Notifications</button></a>    <a href="<?php echo base_url();?>dental1/Notifications/"><button>New Notifications</button></a>
+  <a href="<?php echo base_url();?>dental1/seenNotifications/"><button  type='button' class='btn btn-info'>Previous Notifications</button></a>    <a href="<?php echo base_url();?>dental1/Notifications/"><button  type='button' class='btn btn-info'>New Notifications</button></a>
   </div>
 </div>
 </div>

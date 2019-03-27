@@ -131,7 +131,7 @@ window.onhashchange=function(){window.location.hash=" ";}
   echo "<td>" . $row->date . "</td>";
   echo "<td>" . $row->time . "</td>";
   echo "<td>" . $row->appointmentfor . "</td>";
-  echo "<td><a href='http://localhost/ci2/dental1/viewappointment/". $row->id ."'><button>View More</button></a></td>";
+  echo "<td><a href='http://localhost/ci2/dental1/viewappointment/". $row->id ."'><button type='button' class='btn btn-info'>View More</button></a></td>";
 
   echo "</tr>";
   echo "</tbody>";
