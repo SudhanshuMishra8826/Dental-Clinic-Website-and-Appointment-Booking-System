@@ -147,6 +147,9 @@ catch(Exception $e)
        echo'<td>Fees : '.$row->fees. '</td>';
        
     echo'</tr>';
+        echo'<tr>';
+            echo'<td>Discount : '.$this->session->flashdata('discount'). '</td>';
+        echo'</tr>';
     
     
   echo'</tbody>';
@@ -171,11 +174,17 @@ echo'<tbody>';
        echo'<td colspan="0">'.$row->fees.'/-</td>';
        
     echo'</tr>';
-    
+    echo'<tr>';
+       
+      echo'<td colspan="8"> Discount </td>';
+       echo'<td colspan="0">'.$this->session->flashdata('discount').'/-</td>';
+       
+    echo'</tr>';
+    $total=(float)$row->fees - (float)$this->session->flashdata('discount');
     echo'<tr>  
        
        <th colspan="8" class="text-right">   Total  </td> ';
-       echo'<td colspan="0">'.$row->fees.'/-</td>';
+       echo'<td colspan="0">'.$total.'/-</td>';
        
     echo'</tr>';
 

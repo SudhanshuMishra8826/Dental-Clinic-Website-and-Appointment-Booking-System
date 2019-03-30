@@ -25,6 +25,17 @@ class appointment_model extends CI_Model
 	$r=$this->db->query($query);
 	return $r->result_array();
 	}
+
+	function show_discount($appointmentfor)
+	{
+	$this->load->library('session');
+	$name=$_SESSION['name'];
+	$id=$_SESSION['id'];
+	$query="select discount from discounts where servicename='$appointmentfor'";
+	$r=$this->db->query($query);
+	//var_dump($r->result()[0]->discount);
+	return $r->result()[0]->discount;
+	}
 	function get_appointments()
 	{
 	$this->load->library('session');
@@ -42,6 +53,7 @@ class appointment_model extends CI_Model
 	{
 	$q="select * from appointments where id='$Bid'";
 	$res=$this->db->query($q);
+	//var_dump($res->result()[0]);
 	return $res->result();
 	}
 

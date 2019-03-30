@@ -310,6 +310,8 @@ public function viewappointment($Bid)
 	$this->load->model('appointment_model');
 
 	$this->data['posts']=$this->appointment_model->view_appointment($Bid);
+	$discount=$this->appointment_model->show_discount($this->data['posts'][0]->appointmentfor);
+	$this->session->set_flashdata('discount',$discount);
 	$this->load->view('appointment_recipt',$this->data);
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);

@@ -28,13 +28,14 @@ class admin_model extends CI_Model
 		if ($err) {
 	  	echo "cURL Error #:" . $err;
 		}
+		/*
 		$this->load->library('email'); 
-    $this->email->from('admin@acmedental.com', 'Admin'); 
+    $this->email->from('sm.22.1.1999@gmail.com', 'you'); 
     $this->email->to($email);
 		$this->email->subject('Appointment Approved'); 
 		$m="Your request for an appointment for $service at $date , $time at ACME Dental Care is approved. You can proceed to payment and ignore if already paid.";
     $this->email->message($m); 
-		$this->email->send();	
+		$this->email->send();	*/
 	}
 		function confirm_notifications($phone,$service,$date,$time,$email){
 			$curl = curl_init();
@@ -63,25 +64,17 @@ class admin_model extends CI_Model
 			if ($err) {
 				echo "cURL Error #:" . $err;
 			}
-		
-		/*	$config = Array(
-				"protocol" => "ssmtp",
-				"smtp_host" => "ssl://smtp.googlemail.com",
-				"smtp_port" => 465,
-				"smtp_user" => "sudhanshu.mishra.8826@gmail.com",
-				"smtp_pass" => "SUdhanshu22",
-			  'validation' => TRUE,
-			);
-		$this->load->library('email',$config); 
-    $this->email->from('sudhanshu.mishra.8826@gmail.com', 'Sudhanshu Mishra'); 
+	/*
+		$this->load->library('email'); 
+    $this->email->from('sm.22.1.1999@gmail.com', 'you'); 
     $this->email->to($email);
 		$this->email->subject('Appointment Approved'); 
-		$m="Your request for an appointment for $service at $date , $time at ACME Dental Care is approved. You can proceed to payment and ignore if already paid.";
+		$m="Your request for an appointment for $service at $date , $time at ACME Dental Care is Confirmed. You can proceed to payment and ignore if already paid.";
     $this->email->message($m); 
 		$this->email->send();*/
 			}
 
-		function dissapprove_notifications($phone,$service,$date,$time){
+		function dissapprove_notifications($phone,$service,$date,$time,$email){
 			$curl = curl_init();
 	
 			curl_setopt_array($curl, array(
@@ -108,6 +101,14 @@ class admin_model extends CI_Model
 			if ($err) {
 			  echo "cURL Error #:" . $err;
 			}
+
+		$this->load->library('email'); 
+    $this->email->from('sm.22.1.1999@gmail.com', 'you'); 
+    $this->email->to($email);
+		$this->email->subject('Appointment Approved'); 
+		$m="Your request for an appointment for $service at $date , $time at ACME Dental Care is rescehduled Please book again.";
+    $this->email->message($m); 
+		$this->email->send();	
 			}
 	function get_patient()
 	{
@@ -184,7 +185,7 @@ class admin_model extends CI_Model
 	function dissapprove_appointments()
 	{
 		
-	$q="select id,userid,date,time,appointmentfor,phone from appointments where status='requested'";
+	$q="select id,userid,date,time,appointmentfor,phone,email from appointments where status='requested'";
 	$res=$this->db->query($q);
 	$query="update appointments set status='Rescheduled' where status='requested'";
 	$r=$this->db->query($query);
@@ -192,7 +193,7 @@ class admin_model extends CI_Model
 	foreach($rows as $row){
 		$query="insert into notifications values('$row->userid','$row->id','','Your appointment for $row->appointmentfor at $row->date , $row->time is rescheduled. Please book again.','unseen')";
 		$this->db->query($query);
-		$this->dissapprove_notifications($row->phone,$row->appointmentfor,$row->date,$row->time);
+		$this->dissapprove_notifications($row->phone,$row->appointmentfor,$row->date,$row->time,$row->email);
 
 	}
 	//$data['r']=$r;
@@ -202,7 +203,7 @@ class admin_model extends CI_Model
 	function dissapprove_appointment($Bid)
 	{
 		
-	$q="select id,userid,date,time,appointmentfor,phone from appointments where status='requested' and id='$Bid'";
+	$q="select id,userid,date,time,appointmentfor,phone,email from appointments where id='$Bid'";
 	$res=$this->db->query($q);
 	$query="update appointments set status='Rescheduled' where id='$Bid'";
 	$r=$this->db->query($query);
@@ -210,7 +211,7 @@ class admin_model extends CI_Model
 	foreach($rows as $row){
 		$query="insert into notifications values('$row->userid','$row->id','','Your appointment for $row->appointmentfor at $row->date , $row->time is rescheduled. Please book again.','unseen')";
 		$this->db->query($query);
-		$this->dissapprove_notifications($row->phone,$row->appointmentfor,$row->date,$row->time);
+		$this->dissapprove_notifications($row->phone,$row->appointmentfor,$row->date,$row->time,$row->email);
 	}
 	//$data['r']=$r;
 	//$this->load->view('allappointments',$r);
@@ -232,7 +233,7 @@ class admin_model extends CI_Model
 }
 	function confirm_appointment($Bid)
 	{
-	$q="select id,userid,date,time,appointmentfor,phone,email from appointments where status='requested' or status='approved' and id='$Bid'";
+	$q="select id,userid,date,time,appointmentfor,phone,email from appointments where id='$Bid'";
 	$res=$this->db->query($q);
 	$query="update appointments set status='Confirmed' where id='$Bid'";
 	$r=$this->db->query($query);
