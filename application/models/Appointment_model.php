@@ -15,7 +15,21 @@ class appointment_model extends CI_Model
 	$this->load->view('appointment_recipt',$data);*/
 	return $r->result();
 	}
-
+	function checkAvailability($date,$time,$doc)
+	{
+	$this->load->library('session');
+	$name=$_SESSION['name'];
+	$id=$_SESSION['id'];
+	$query="select * from appointments where date='$date' and time='$time' and doctorName='$doc'";
+	$r=$this->db->query($query);
+	if($r->num_rows()==0){
+		
+		return TRUE;
+	}
+	else{ 
+	return FALSE;
+	}
+	}
 	function get_fees($appointmentfor)
 	{
 	$this->load->library('session');

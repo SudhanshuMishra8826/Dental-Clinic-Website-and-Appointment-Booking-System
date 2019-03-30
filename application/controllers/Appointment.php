@@ -36,13 +36,21 @@ class appointment extends CI_Controller {
 			//}
 			$fees=$feesrow[0]['price'];
 	//call saverecords method of Hello_Model and pass variables as parameter
+			$bool=$this->Appointment_model->checkAvailability($date,$time,$doc);
+			if($bool==TRUE){
 			$apd=$this->Appointment_model->saverecords($name,$email,$userid,$date,$time,$service,$phone,$doc,$fees);
 			foreach($apd as $row){
 				$apid=$row->id;
 			}
 			$this->Appointment_model->create_notifications($apid,$service,$date,$time,$phone);	
 			$this->session->set_flashdata('apid',$apid);
-			redirect('dental1/recipt');
+			redirect('dental1/viewappointment/'.$apid);
+				}
+			else{
+				echo "<script type='text/javascript'>alert('This slot is booked try another one');</script>";
+				#redirect('Appointment/savedata');
+	
 			}
+		}
 		}
 }
