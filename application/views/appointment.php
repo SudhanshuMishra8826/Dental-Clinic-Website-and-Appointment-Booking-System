@@ -156,8 +156,22 @@
                                     <div class="form-group">
                                         <label class="control-label" for="time">Preferred Time</label>
                                         <select id="time" name="time" class="form-control" required >
-                                            <option value="10:30 am to 2:30 pm">10:30 am to 2:30 pm</option>
-                                            <option value="9:00 pm to 10:00 pm">5:30 pm to 8:30 pm</option>
+                                            
+                                        <option value="10:30 am to 11:00 am">10:30 am to 11:00 am</option>
+                                        <option value="11:00 am to 11:30 am">11:00 am to 11:30 am</option>
+                                        <option value="11:30 am to 12:00 pm">11:30 am to 12:00 pm</option>
+                                        <option value="12:00 pm to 12:30 pm">12:00 pm to 12:30 pm</option>
+                                        <option value="12:30 pm to 1:00 pm">12:30 pm to 1:00 pm</option>
+                                        <option value="1:00 pm to 1:30 pm">1:00 pm to 1:30 pm</option>
+                                        <option value="1:30 pm to 2:00 pm">1:30 pm to 2:00 pm</option>
+                                        <option value="2:00 am to 2:30 pm">2:00 am to 2:30 pm</option>
+                                        <option value="5:30 pm to 6:00 pm">5:30 pm to 6:00 pm</option>
+                                        <option value="6:00 pm to 6:30 pm">6:00 pm to 6:30 pm</option>
+
+                                        <option value="6:30 pm to 7:00 pm">6:30 pm to 7:00 pm</option>
+                                        <option value="7:00 pm to 7:30 pm">7:00 pm to 7:30 pm</option>
+                                        <option value="7:30 pm to 8:00 pm">7:30 pm to 8:00 pm</option>
+                                        <option value="8:00 pm to 8:30 pm">8:00 pm to 8:30 pm</option>
                                         </select>
                                          
                                     </div>

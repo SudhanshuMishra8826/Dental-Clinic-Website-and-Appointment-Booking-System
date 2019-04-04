@@ -3,7 +3,7 @@ class appointment_model extends CI_Model
 {
 	function saverecords($name,$email,$userid,$date,$time,$appointmentfor,$phone,$doc,$fees)
 	{
-	$query="insert into appointments values('','$name','$email','$userid','$date','$time','$appointmentfor','requested','$phone','$doc','$fees','not paid')";
+	$query="insert into appointments values('','$name','$email','$userid','$date','$time','$appointmentfor','requested','$phone','$doc','$fees','not paid','0')";
 	$this->db->query($query);
 	$query="select id from appointments where userid='$userid' and name='$name' and date='$date' and time='$time' and email='$email' and status='requested' and appointmentfor='$appointmentfor' and doctorName='$doc'";
 	$r=$this->db->query($query);
@@ -15,7 +15,21 @@ class appointment_model extends CI_Model
 	$this->load->view('appointment_recipt',$data);*/
 	return $r->result();
 	}
-
+	function checkAvailability($date,$time,$doc)
+	{
+	$this->load->library('session');
+	$name=$_SESSION['name'];
+	$id=$_SESSION['id'];
+	$query="select * from appointments where date='$date' and time='$time' and doctorName='$doc'";
+	$r=$this->db->query($query);
+	if($r->num_rows()==0){
+		
+		return TRUE;
+	}
+	else{ 
+	return FALSE;
+	}
+	}
 	function get_fees($appointmentfor)
 	{
 	$this->load->library('session');
@@ -24,6 +38,17 @@ class appointment_model extends CI_Model
 	$query="select price from services where name='$appointmentfor'";
 	$r=$this->db->query($query);
 	return $r->result_array();
+	}
+
+	function show_discount($appointmentfor)
+	{
+	$this->load->library('session');
+	$name=$_SESSION['name'];
+	$id=$_SESSION['id'];
+	$query="select discount from discounts where servicename='$appointmentfor'";
+	$r=$this->db->query($query);
+	//var_dump($r->result()[0]->discount);
+	return $r->result()[0]->discount;
 	}
 	function get_appointments()
 	{
@@ -42,6 +67,7 @@ class appointment_model extends CI_Model
 	{
 	$q="select * from appointments where id='$Bid'";
 	$res=$this->db->query($q);
+	//var_dump($res->result()[0]);
 	return $res->result();
 	}
 

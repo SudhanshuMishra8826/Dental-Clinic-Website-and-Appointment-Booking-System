@@ -11,16 +11,14 @@ class Admin extends CI_Controller {
 		 $this->form_validation->set_rules('uname','User Name','required|alpha');
 		 $this->form_validation->set_rules('email','Email','required|valid_email');
 		 $this->form_validation->set_rules('pass1','Password','trim|required|matches[pass2]');
-         $this->form_validation->set_rules('pass2','Password Confirmation', 'trim|required');
-         $this->form_validation->set_rules('occupation','Occupation', 'required|alpha');
-         $this->form_validation->set_rules('address','Address', 'trim|required');
-         $this->form_validation->set_rules('sex','Sex', 'required');
-         $this->form_validation->set_rules('dob','DOB', 'required');
-         $this->form_validation->set_rules('contact1','Contact','required|min_length[10]|max_length[12]|integer');
-         $this->form_validation->set_rules('contact2','Alternate Contact','min_length[10]|max_length[12]|integer');
-
-
-
+     $this->form_validation->set_rules('pass2','Password Confirmation', 'trim|required');
+     $this->form_validation->set_rules('occupation','Occupation', 'required|alpha');
+     $this->form_validation->set_rules('address','Address', 'trim|required');
+     $this->form_validation->set_rules('sex','Sex', 'required');
+     $this->form_validation->set_rules('dob','DOB', 'required');
+     $this->form_validation->set_rules('contact1','Contact','required|min_length[10]|max_length[12]|integer');
+		 $this->form_validation->set_rules('contact2','Alternate Contact','min_length[10]|max_length[12]|integer');
+		 
 		 $this->form_validation->set_error_delimiters('<div class="text-danger">','</div>');
 
 

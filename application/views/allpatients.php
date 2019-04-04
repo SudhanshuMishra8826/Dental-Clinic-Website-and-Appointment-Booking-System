@@ -60,6 +60,10 @@ window.onhashchange=function(){window.location.hash=" ";}
                     <a href="<?php echo base_url();?>dental1/appointments_today/">Todays Plan</a>
                      
                 </li>
+
+                <li>
+                <a href="<?php echo base_url();?>dental1/Discounts/">Discounts</a>
+                </li>
                 <li>
                    <a href="<?php echo base_url();?>dental1/appointments_requests/">Requests</a>
                 </li>

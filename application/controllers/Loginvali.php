@@ -69,6 +69,18 @@ class Loginvali extends CI_Controller {
 		 	//echo validation_errors();
 		 }
 	 }
+	 public function appointments_todayCal()
+ {
+	//$this->load->view('index');
+	$this->load->library('session');
+	$this->load->model('admin_model');
+	$this->data['posts']=$this->admin_model->get_appointments_today($_SESSION["name"]);
+	return $this->data;
+	//unset($_SESSION["name"]);
+	//unset($_SESSION["id"]);
+	//$this->load->view(''.$page);
+	//$this->load->view('home');
+}
 	 public function indexadmin()
 	{
 		$this->load->library('session');	 
@@ -94,13 +106,15 @@ class Loginvali extends CI_Controller {
 			foreach ($q->result() as $row)
 			{
 		        $_SESSION['name']=$row->doc_name;
-        		$_SESSION['id']=$row->doc_id;
+				$_SESSION['id']=$row->doc_id;
+				$this->data['posts']=$this->appointments_todayCal();
         		#$data['email']= $row->email;
 			}
                 if($q->num_rows())
                 {
 					//echo "details matched";
-					$this->load->view('dash_home_admin');
+					//var_dump($this->data);
+					$this->load->view('dash_home_admin',$this->data);
                 } 
                 else 
                 {

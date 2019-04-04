@@ -64,6 +64,10 @@ window.onhashchange=function(){window.location.hash=" ";}
                 <li>
                    <a href="<?php echo base_url();?>dental1/appointments_requests/">Requests</a>
                 </li>
+
+                <li>
+                <a href="<?php echo base_url();?>dental1/Discounts/">Discounts</a>
+                </li>
                 <li>
                    <a href="<?php echo base_url();?>dental1/patients/">All Patients</a>
                 </li>
@@ -140,6 +144,8 @@ window.onhashchange=function(){window.location.hash=" ";}
   <th scope='col'>Approve</th>
   <th scope='col'>Confirm</th>
   <th scope='col'>Reschedule</th>
+  <th scope='col'>Discount</th>
+
 
     </tr>
   </thead>";
@@ -158,6 +164,8 @@ window.onhashchange=function(){window.location.hash=" ";}
   echo "<td><a href='http://localhost/ci2/dental1/approve_this/". $row->id ."'><button  type='button' class='btn btn-info'>Approve</button></a></td>";
   echo "<td><a href='http://localhost/ci2/dental1/confirm_this/". $row->id ."'><button  type='button' class='btn btn-info'>Confirm</button></a></td>";
   echo "<td><a href='http://localhost/ci2/dental1/dissapprove/". $row->id ."'><button  type='button' class='btn btn-info'>Reschedule</button></a></td>";
+  echo "<td><a href='http://localhost/ci2/dental1/Update_Discount_Individual/". $row->id ."'><button  type='button' class='btn btn-info'>Discount</button></a></td>";
+
 
   echo "</tr>";
   echo "</tbody>";

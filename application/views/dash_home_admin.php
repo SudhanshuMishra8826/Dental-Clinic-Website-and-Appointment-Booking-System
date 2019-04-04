@@ -48,6 +48,10 @@ $this->load->library('session');
                     <a href="<?php echo base_url();?>dental1/appointments_today/">Todays Plan</a>
                      
                 </li>
+
+                <li>
+                <a href="<?php echo base_url();?>dental1/Discounts/">Discounts</a>
+                </li>
                 <li>
                    <a href="<?php echo base_url();?>dental1/appointments_requests/">Requests</a>
                 </li>
@@ -69,7 +73,6 @@ $this->load->library('session');
 
         <!-- Page Content  -->
         <div id="content">
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
@@ -91,7 +94,7 @@ $this->load->library('session');
                                         echo '<i class="fas fa-bell text-danger"></i>';
                                     //}
                                    // else {
-                                     //   echo '<i class="fas fa-bell"></i>';
+                                    //   echo '<i class="fas fa-bell"></i>';
                                    // }
                                      ?> 
                                           
@@ -115,6 +118,300 @@ $this->load->library('session');
   <p>Here are your registered details</p>
   <p><?php echo 'Name '.ucfirst($name); ?></p>
   <p><?php echo 'User Id '.$id; ?></p>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#calender">
+  Calender
+</button>
+<!-- Modal -->
+<div class="modal fade" id="calender" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Calender</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <section class="table-responsive-md">  
+        <table class="table table-borderless">
+  <thead>
+    <tr>
+      <td colspan="4" class="text-left"><?php
+      $d=date("Y-m-d");
+      echo $d;
+      ?></td>
+        
+    </tr>
+  </thead>
+  
+</table>
+</section>
+<section class="table-responsive-md">  
+<table class="table table-bordered">
+  <thead class="">
+    
+    <tr class="table-primary">
+      <th scope="col"  class="text-center">Timing</th>
+       <th scope="col"  class="text-center" colspan=6>Appointments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">10:30-11:00AM</th>
+        <td colspan=6> <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='10:30:00')
+             {
+               echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+             }
+            }
+  
+          } ?>
+          </td>
+      
+   </tr>
+    <tr>
+      <th scope="row">11:00-11:30AM</th>
+      <td colspan=6>
+      <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='11:00:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+             }
+            }
+  
+          } ?>
+       </td>
+
+    </tr>
+    <tr>
+      <th scope="row">11:30-12:00AM</th>
+      <td colspan=6> <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='11:30:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+
+            }
+            }
+  
+          } ?></td>
+
+    </tr>
+    <tr>
+      <th scope="row">12:00-12:30PM</th>
+      <td colspan=6><?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='12:00:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+            }
+            }
+  
+          } ?> </td>
+
+      
+    </tr>
+    <tr>
+      <th scope="row">12:30-01:00PM</th>
+      <td colspan=6> 
+      <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='12:30:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+            }
+            }
+  
+          } ?>
+      </td>
+
+      
+    </tr>
+    <tr>
+      <th scope="row">01:00-01:30PM</th>
+      <td colspan=6> <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='01:00:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+            }
+            }
+  
+          } ?>
+          </td>
+
+       
+    </tr>
+    <tr>
+      <th scope="row">01:30-02:00PM</th>
+      <td colspan=6>
+      <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='01:30:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+            }
+            }
+  
+          } ?>
+       </td>
+
+      
+    </tr>
+    <tr>
+      <th scope="row">02:00-02:30PM</th>
+      <td colspan=6> <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='02:00:00')
+             {
+               echo $row->time;
+             }
+            }
+  
+          } ?></td>
+
+
+    </tr>
+     
+     <tr  class="table-danger">
+      <th scope="row">02:30-05:30PM</th>
+      <td colspan="6" class="text-center">Break</td>
+      </tr>
+
+     <tr>
+      <th scope="row">05:30-06:00PM</th>
+      <td colspan=6> <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='05:30:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+            }
+            }
+  
+          } ?></td>
+
+      
+   </tr>
+    <tr>
+      <th scope="row">06:00-06:30PM</th>
+      <td colspan=6><?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='06:00:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+            }
+            }
+  
+          } ?> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">06:30-07:00PM</th>
+      <td colspan=6> 
+      <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='06:30:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+            }
+            }
+  
+          } ?>
+      </td>
+
+    </tr>
+    <tr>
+      <th scope="row">07:00-07:30PM</th>
+      <td colspan=6> <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='07:00:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+            }
+            }
+  
+          } ?></td>
+
+      
+    </tr>
+    <tr>
+      <th scope="row">07:30-08:00PM</th>
+      <td colspan=6> 
+      <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='07:30:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+            }
+            }
+  
+          } ?>
+      </td>
+
+      
+    </tr>
+    <tr>
+      <th scope="row">08:00-08:30PM</th>
+      <td colspan=6> 
+      <?php 
+        foreach($posts as $r)
+          {
+            foreach($r as $row){
+             if($row->time=='08:00:00')
+             {
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
+            }
+            }
+  
+          } ?>
+      </td>
+
+       
+    </tr>
+    
+     
+  </tbody>
+</table>
+</section>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
 
             <div class="line"></div>
