@@ -178,9 +178,18 @@ echo'<tbody>';
        
       echo'<td colspan="8"> Discount </td>';
        echo'<td colspan="0">'.$this->session->flashdata('discount').'/-</td>';
+
        
     echo'</tr>';
+
+    echo'<tr>';
+
+    echo'<td colspan="8"> Special Discount </td>';
+    echo'<td colspan="0">'.$row->discountap.'/-</td>';
+    echo'</tr>';
+
     $total=(float)$row->fees - (float)$this->session->flashdata('discount');
+    $total=$total - (float)$row->discountap;
     echo'<tr>  
        
        <th colspan="8" class="text-right">   Total  </td> ';

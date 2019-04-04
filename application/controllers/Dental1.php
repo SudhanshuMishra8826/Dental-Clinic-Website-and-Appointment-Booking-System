@@ -5,16 +5,32 @@ require_once(APPPATH."libraries/lib/encdec_paytm.php");
 
 class Dental1 extends CI_Controller {
 
-	 
 	public function homepage($page="homepage")
 	{
 		//$this->load->view('homepage1');
 		//$this->load->view('contact');
-		 $this->load->view(''.$page);
+		if($page=='dash_home_admin'){
+			$this->data['posts']=$this->appointments_todayCal();
+			$this->load->view('dash_home_admin',$this->data);
+
+		}
+		else{
+		$this->load->view(''.$page);}
+
 		//$this->load->view('home');
-
-
  }
+ public function appointments_todayCal()
+	{
+	   //$this->load->view('index');
+	   $this->load->library('session');
+	   $this->load->model('admin_model');
+	   $this->data['posts']=$this->admin_model->get_appointments_today($_SESSION["name"]);
+	   return $this->data;
+	   //unset($_SESSION["name"]);
+	   //unset($_SESSION["id"]);
+	   //$this->load->view(''.$page);
+	   //$this->load->view('home');
+   }
  public function logout($page="homepage")
 	{
 		//$this->load->view('index');
@@ -24,7 +40,6 @@ class Dental1 extends CI_Controller {
 		unset($_SESSION["id"]);
 		$this->load->view(''.$page);
 		//$this->load->view('home');
-		
  } 
  
  public function recipt()
@@ -39,9 +54,6 @@ class Dental1 extends CI_Controller {
 	//unset($_SESSION["id"]);
 	//$this->load->view(''.$page);
 	//$this->load->view('home');
-	 
-
-
 }
  public function history()
  {
@@ -54,9 +66,6 @@ class Dental1 extends CI_Controller {
 	//unset($_SESSION["id"]);
 	//$this->load->view(''.$page);
 	//$this->load->view('home');
-	 
-
-
 }
 public function notifications()
 {
@@ -135,6 +144,29 @@ public function Update_Discount()
 			$apd=$this->Admin_model->saverecords($Root_Canal,$Tooth_Extractions,$Cleaning,$Dental_Implants);
 		}
 }
+
+public function Update_Discount_Individual($idAp)
+ {
+	//$this->load->view('index');
+	$this->load->database();
+	$this->load->library('session');
+			//session_start();
+	$name=$_SESSION['name'];
+	$id=$_SESSION['id'];
+	//echo $id;
+	//load Model
+	$this->load->model('Admin_model');
+			//load registration view form
+	$this->load->view("discountUpdateIndividual");	
+			//Check submit button 
+	if($this->input->post('save'))
+		{
+			//get form's data and store in local varable
+			$discount=$this->input->post('discount');
+	//call saverecords method of Hello_Model and pass variables as parameter
+			$apd=$this->Admin_model->UpdateIndivDiscount($discount,$idAp);
+		}
+}
 public function appointmentsadmin()
  {
 	//$this->load->view('index');
@@ -159,6 +191,7 @@ public function appointments_requests()
 	//$this->load->view(''.$page);
 	//$this->load->view('home');
 }
+
 public function appointments_today()
  {
 	//$this->load->view('index');

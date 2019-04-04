@@ -9,10 +9,9 @@ $this->load->library('session');
 ?>
 <!DOCTYPE html>
 <html>
-<!---------------link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/dash.css"-------------->
+ 
 <head>
-
- <meta charset="utf-8">
+<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -28,10 +27,6 @@ $this->load->library('session');
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-
-
-
-
 <script>
 window.location.hash=" ";
 window.location.hash="  ";//again because google chrome don't insert first hash into history
@@ -40,7 +35,6 @@ window.onhashchange=function(){window.location.hash=" ";}
  
 </head>
 <body>
-
 <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -54,22 +48,22 @@ window.onhashchange=function(){window.location.hash=" ";}
                    <a   href="<?php echo base_url();?>dental1/homepage/dash_home_admin">Home</a></li>
                      
                 </li>
-                <li class="active">
-                   <a class="active" href="<?php echo base_url();?>dental1/appointmentsadmin/">All Appointments</a>
+                <li  >
+                   <a  href="<?php echo base_url();?>dental1/appointmentsadmin/">All Appointments</a>
                 </li>
                 <li>
                     <a href="<?php echo base_url();?>dental1/appointments_today/">Todays Plan</a>
                      
-                </li>
-                <li>
-                   <a href="<?php echo base_url();?>dental1/appointments_requests/">Requests</a>
                 </li>
 
                 <li>
                 <a href="<?php echo base_url();?>dental1/Discounts/">Discounts</a>
                 </li>
                 <li>
-                   <a href="<?php echo base_url();?>dental1/patients/">All Patients</a>
+                   <a href="<?php echo base_url();?>dental1/appointments_requests/">Requests</a>
+                </li>
+                <li class="active">
+                   <a class="active" href="<?php echo base_url();?>dental1/patients/">All Patients</a>
                 </li>
                  <li>
                   <a href="#contact">Help</a>
@@ -105,10 +99,10 @@ window.onhashchange=function(){window.location.hash=" ";}
                                 <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 0px; "> 
                                     <?php 
                                     //if($bool==1){
-                                        echo '<i class="fas fa-bell text-danger"></i>';
+                                       // echo '<i class="fas fa-bell text-danger"></i>';
                                     //}
                                    // else {
-                                     //   echo '<i class="fas fa-bell"></i>';
+                                       echo '<i class="fas fa-bell"></i>';
                                    // }
                                      ?> 
                                           
@@ -125,63 +119,20 @@ window.onhashchange=function(){window.location.hash=" ";}
                 </div>
             </nav>
 
-
-             <div class="table-responsive-md">
-            <?php
-  echo "<table class='table table-hover'>
-  
-  <thead class='bg-info text-white'>
-    <tr>
-     <th>BookingId</th>
-  <th scope='col'>Name</th>
-  <th scope='col'>email</th>
-  <th scope='col'>User Id</th>
-  <th scope='col'>Date</th>
-  <th scope='col'>Time</th>
-  <th scope='col'>Service</th>
-  <th scope='col'>Status</th>
-  
-  <th scope='col'>Approve</th>
-  <th scope='col'>Confirm</th>
-  <th scope='col'>Reschedule</th>
-  <th scope='col'>Discount</th>
-
-
-    </tr>
-  </thead>";
-  foreach($posts as $row)
-  {
-  echo"<tbody>";
-  echo "<tr>";
-  echo "<td>" . $row->id . "</td>";
-  echo "<td>" . $row->name . "</td>";
-  echo "<td>" . $row->email . "</td>";
-  echo "<td>" . $row->userid . "</td>";
-  echo "<td>" . $row->date . "</td>";
-  echo "<td>" . $row->time . "</td>";
-  echo "<td>" . $row->appointmentfor . "</td>";
-  echo "<td>" . $row->status . "</td>";
-  echo "<td><a href='http://localhost/ci2/dental1/approve_this/". $row->id ."'><button  type='button' class='btn btn-info'>Approve</button></a></td>";
-  echo "<td><a href='http://localhost/ci2/dental1/confirm_this/". $row->id ."'><button  type='button' class='btn btn-info'>Confirm</button></a></td>";
-  echo "<td><a href='http://localhost/ci2/dental1/dissapprove/". $row->id ."'><button  type='button' class='btn btn-info'>Reschedule</button></a></td>";
-  echo "<td><a href='http://localhost/ci2/dental1/Update_Discount_Individual/". $row->id ."'><button  type='button' class='btn btn-info'>Discount</button></a></td>";
-
-
-  echo "</tr>";
-  echo "</tbody>";
-  }
-  echo "</table>";
-  ?>
-</div>
-
-
-
-
-
-
-
  
-</div>
 
-</body>
+                        <form method="post">
+                            <!-- Form start -->
+                            <div class="board">
+
+                                        <label class="control-label" for="name">Discount</label>
+                                        <input id="discount" name="discount" type="text" placeholder="Enter Amount " class="form-control input-md" required>           
+                                        </br>        
+                                    <input type="submit" name="save" class="btn btn-info" />
+                                    </div>
+                        </form>
+                        <!-- form end -->
+                      
+
+                        </body>
 </html>

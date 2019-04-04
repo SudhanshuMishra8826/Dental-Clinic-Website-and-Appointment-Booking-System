@@ -137,6 +137,13 @@ class admin_model extends CI_Model
 	echo '<script>alert("Discounts Updated!");</script>';
 
 	}
+	function UpdateIndivDiscount($discount,$id)
+	{
+	$query="update appointments set discountap=$discount WHERE id=$id";
+	$r=$this->db->query($query);
+	echo '<script>alert("Discounts Updated!");</script>';
+		//var_dump($r);
+	}
 		function get_discounts()
 	{
 	$query="select * from discounts";

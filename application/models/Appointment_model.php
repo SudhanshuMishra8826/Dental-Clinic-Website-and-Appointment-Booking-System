@@ -3,7 +3,7 @@ class appointment_model extends CI_Model
 {
 	function saverecords($name,$email,$userid,$date,$time,$appointmentfor,$phone,$doc,$fees)
 	{
-	$query="insert into appointments values('','$name','$email','$userid','$date','$time','$appointmentfor','requested','$phone','$doc','$fees','not paid')";
+	$query="insert into appointments values('','$name','$email','$userid','$date','$time','$appointmentfor','requested','$phone','$doc','$fees','not paid','0')";
 	$this->db->query($query);
 	$query="select id from appointments where userid='$userid' and name='$name' and date='$date' and time='$time' and email='$email' and status='requested' and appointmentfor='$appointmentfor' and doctorName='$doc'";
 	$r=$this->db->query($query);
