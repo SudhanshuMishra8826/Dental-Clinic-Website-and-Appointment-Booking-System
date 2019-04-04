@@ -47,7 +47,8 @@ class Loginvali extends CI_Controller {
                 		} 
              	   	else 
                 	{
-						echo "detailes not matched";
+                		$this->load->view('login');
+						//echo "detailes not matched";
                    	
                 	} 
 		 	 /*if($this->loginmodel->isvalidate($email,$pass))
