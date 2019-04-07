@@ -98,21 +98,7 @@ window.onhashchange=function(){window.location.hash=" ";}
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url();?>dental1/notifications">
-                                <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 0px; "> 
-                                    <?php 
-                                    //if($bool==1){
-                                        echo '<i class="fas fa-bell text-danger"></i>';
-                                    //}
-                                   // else {
-                                     //   echo '<i class="fas fa-bell"></i>';
-                                   // }
-                                     ?> 
-                                          
-                                </div>
-                            </a>
-                            </li>
+                          
                             <li class="nav-item active">
                                <a href="<?php echo base_url();?>dental1/logout">Logout</a> 
                             </li>

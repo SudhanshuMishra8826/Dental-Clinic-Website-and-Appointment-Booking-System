@@ -284,7 +284,7 @@ public function appointments_approve()
 	$this->load->library('session');
 	$this->load->model('admin_model');
 	$this->data['posts']=$this->admin_model->approve_appointments();
-	$this->load->view('dash_home_admin');
+	redirect('dental1/appointmentsadmin/');
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
 	//$this->load->view(''.$page);
@@ -296,7 +296,7 @@ public function appointments_reschedule()
 	$this->load->library('session');
 	$this->load->model('admin_model');
 	$this->data['posts']=$this->admin_model->dissapprove_appointments();
-	$this->load->view('dash_home_admin');
+	redirect('dental1/appointmentsadmin/');
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
 	//$this->load->view(''.$page);
@@ -308,7 +308,7 @@ public function approve_this($Bid)
 	$this->load->library('session');
 	$this->load->model('admin_model');
 	$this->data['posts']=$this->admin_model->approve_appointment($Bid);
-	$this->load->view('dash_home_admin');
+	redirect('dental1/appointmentsadmin/');
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
 	//$this->load->view(''.$page);
@@ -320,7 +320,7 @@ public function confirm_this($Bid)
 	$this->load->library('session');
 	$this->load->model('admin_model');
 	$this->data['posts']=$this->admin_model->confirm_appointment($Bid);
-	$this->load->view('dash_home_admin');
+	redirect('dental1/appointmentsadmin/');
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
 	//$this->load->view(''.$page);
@@ -433,7 +433,7 @@ public function dissapprove($Bid)
 	$this->load->library('session');
 	$this->load->model('admin_model');
 	$this->data['posts']=$this->admin_model->dissapprove_appointment($Bid);
-	$this->load->view('dash_home_admin');
+	redirect('dental1/appointmentsadmin/');
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
 	//$this->load->view(''.$page);
