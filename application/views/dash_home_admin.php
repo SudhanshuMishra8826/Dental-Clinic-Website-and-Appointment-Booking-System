@@ -288,7 +288,7 @@ $this->load->library('session');
             foreach($r as $row){
              if($row->time=='02:00:00')
              {
-               echo $row->time;
+              echo "Booked for ".$row->appointmentfor.", Appointment Id : ".$row->id;
              }
             }
   
