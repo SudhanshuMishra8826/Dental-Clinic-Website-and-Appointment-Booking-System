@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 04, 2019 at 10:12 AM
+-- Generation Time: Apr 07, 2019 at 05:08 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -79,7 +79,32 @@ INSERT INTO `appointments` (`id`, `name`, `email`, `userid`, `date`, `time`, `ap
 (146, 'sudhanshu', 'sm@gmail.com', '13', '2019-04-03', '12:00:00', 'Root Canal', 'requested', '8826163041', 'Dr. Ashish Gupta', 200, 'not paid', 0),
 (147, 'sudhanshu', 'sm@gmail.com', '13', '2019-04-03', '12:30:00', 'Root Canal', 'requested', '8826163041', 'Dr. Ashish Gupta', 200, 'paid', 60),
 (148, 'sudhanshu', 'sm@gmail.com', '13', '2019-04-04', '01:00:00', 'Root Canal', 'requested', '8826163041', 'Dr. Ashish Gupta', 200, 'not paid', 0),
-(149, 's', 'sm.22.1.1999@gmail.com', '13', '2019-04-04', '11:00:00', 'Root Canal', 'requested', '8826163041', 'Dr. Ashish Gupta', 200, 'not paid', 34);
+(149, 's', 'sm.22.1.1999@gmail.com', '13', '2019-04-04', '11:00:00', 'Root Canal', 'requested', '8826163041', 'Dr. Ashish Gupta', 200, 'paid', 34),
+(150, 'sudhanshu', 'sm@gmail.com', '13', '2019-04-05', '10:30:00', 'Root Canal', 'Rescheduled', '8826163041', 'Dr. Ashish Gupta', 200, 'paid', 67),
+(151, 'sudhanshu', 'sm@gmail.com', '13', '2019-04-05', '07:00:00', 'Root Canal', 'approved', '8826163041', 'Dr. Ashish Gupta', 200, 'paid', 0),
+(152, 'himanshu', '2016004872.sudhanshu@ug.sharda.ac.in', '13', '2019-04-06', '10:30:00', 'Root Canal', 'approved', '8826163041', 'Dr. Ashish Gupta', 200, 'not paid', 0),
+(153, 'sudhanshu', 'sudhanhsu.mishra.8826@gmail.com', '1', '2019-04-06', '06:30:00', 'Root Canal', 'Confirmed', '8826163041', 'Dr. Ashish Gupta', 200, 'not paid', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `uname` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `contact` int(12) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `message` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`uname`, `email`, `contact`, `subject`, `message`) VALUES
+('sudhanhsu', 'ashish@gmail.com', 2147483647, 'wsccs', 'dafdgda');
 
 -- --------------------------------------------------------
 
@@ -540,95 +565,108 @@ INSERT INTO `notifications` (`uid`, `apid`, `id`, `message`, `status`) VALUES
 (13, '132', 406, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is approved.', 'seen'),
 (13, '133', 407, 'You have requested an appointment for Root Canal at 2019-03-30 , 10:30 am to 2:30 pm ', 'seen'),
 (13, '132', 408, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is approved.', 'seen'),
-(13, '134', 409, 'You have requested an appointment for Root Canal at 2019-03-30 , 10:30 am to 2:30 pm ', 'unseen'),
-(13, '134', 410, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is approved.', 'unseen'),
-(13, '135', 411, 'You have requested an appointment for Root Canal at 2019-03-30 , 9:00 pm to 10:00 pm ', 'unseen'),
-(13, '135', 412, 'Your appointment for Root Canal at 2019-03-30 , 09:00:00 is approved.', 'unseen'),
-(13, '111', 413, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'unseen'),
-(13, '113', 414, 'Your appointment for Root Canal at 2019-03-11 , 10:30:00 is confirmed.', 'unseen'),
-(13, '114', 415, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'unseen'),
-(13, '116', 416, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '117', 417, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '118', 418, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '119', 419, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'unseen'),
-(13, '120', 420, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '121', 421, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '122', 422, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'unseen'),
-(13, '125', 423, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'unseen'),
-(13, '127', 424, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'unseen'),
-(13, '128', 425, 'Your appointment for Root Canal at 2019-03-24 , 10:30:00 is confirmed.', 'unseen'),
-(13, '129', 426, 'Your appointment for Root Canal at 2019-03-25 , 09:00:00 is confirmed.', 'unseen'),
-(13, '131', 427, 'Your appointment for Root Canal at 2019-03-28 , 10:30:00 is confirmed.', 'unseen'),
-(13, '133', 428, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is confirmed.', 'unseen'),
-(13, '135', 429, 'Your appointment for Root Canal at 2019-03-30 , 09:00:00 is confirmed.', 'unseen'),
-(13, '111', 430, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'unseen'),
-(13, '113', 431, 'Your appointment for Root Canal at 2019-03-11 , 10:30:00 is confirmed.', 'unseen'),
-(13, '114', 432, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'unseen'),
-(13, '116', 433, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '117', 434, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '118', 435, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '119', 436, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'unseen'),
-(13, '120', 437, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '121', 438, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '122', 439, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'unseen'),
-(13, '125', 440, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'unseen'),
-(13, '127', 441, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'unseen'),
-(13, '128', 442, 'Your appointment for Root Canal at 2019-03-24 , 10:30:00 is confirmed.', 'unseen'),
-(13, '129', 443, 'Your appointment for Root Canal at 2019-03-25 , 09:00:00 is confirmed.', 'unseen'),
-(13, '131', 444, 'Your appointment for Root Canal at 2019-03-28 , 10:30:00 is confirmed.', 'unseen'),
-(13, '133', 445, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is confirmed.', 'unseen'),
-(13, '135', 446, 'Your appointment for Root Canal at 2019-03-30 , 09:00:00 is rescheduled. Please book again.', 'unseen'),
-(13, '136', 447, 'You have requested an appointment for Cleaning at 2019-03-30 , 10:30 am to 2:30 pm ', 'unseen'),
-(13, '136', 448, 'Your appointment for Cleaning at 2019-03-30 , 10:30:00 is approved.', 'unseen'),
-(13, '111', 449, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'unseen'),
-(13, '113', 450, 'Your appointment for Root Canal at 2019-03-11 , 10:30:00 is confirmed.', 'unseen'),
-(13, '114', 451, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'unseen'),
-(13, '116', 452, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '117', 453, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '118', 454, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '119', 455, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'unseen'),
-(13, '120', 456, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '121', 457, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '122', 458, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'unseen'),
-(13, '125', 459, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'unseen'),
-(13, '127', 460, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'unseen'),
-(13, '128', 461, 'Your appointment for Root Canal at 2019-03-24 , 10:30:00 is confirmed.', 'unseen'),
-(13, '129', 462, 'Your appointment for Root Canal at 2019-03-25 , 09:00:00 is confirmed.', 'unseen'),
-(13, '131', 463, 'Your appointment for Root Canal at 2019-03-28 , 10:30:00 is confirmed.', 'unseen'),
-(13, '133', 464, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is confirmed.', 'unseen'),
-(13, '136', 465, 'Your appointment for Cleaning at 2019-03-30 , 10:30:00 is confirmed.', 'unseen'),
-(13, '111', 466, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'unseen'),
-(13, '113', 467, 'Your appointment for Root Canal at 2019-03-11 , 10:30:00 is confirmed.', 'unseen'),
-(13, '114', 468, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'unseen'),
-(13, '116', 469, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '117', 470, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '118', 471, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '119', 472, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'unseen'),
-(13, '120', 473, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '121', 474, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'unseen'),
-(13, '122', 475, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'unseen'),
-(13, '125', 476, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'unseen'),
-(13, '127', 477, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'unseen'),
-(13, '128', 478, 'Your appointment for Root Canal at 2019-03-24 , 10:30:00 is confirmed.', 'unseen'),
-(13, '129', 479, 'Your appointment for Root Canal at 2019-03-25 , 09:00:00 is confirmed.', 'unseen'),
-(13, '131', 480, 'Your appointment for Root Canal at 2019-03-28 , 10:30:00 is confirmed.', 'unseen'),
-(13, '133', 481, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is confirmed.', 'unseen'),
-(13, '136', 482, 'Your appointment for Cleaning at 2019-03-30 , 10:30:00 is rescheduled. Please book again.', 'unseen'),
-(13, '136', 483, 'Your appointment for Cleaning at 2019-03-30 , 10:30:00 is confirmed.', 'unseen'),
-(13, '137', 484, 'You have requested an appointment for Root Canal at 2019-03-31 , 9:00 pm to 10:00 pm ', 'unseen'),
-(13, '138', 485, 'You have requested an appointment for Root Canal at 2019-03-31 , 10:30 am to 2:30 pm ', 'unseen'),
-(13, '139', 486, 'You have requested an appointment for Root Canal at 2019-03-31 , 10:30 am to 2:30 pm ', 'unseen'),
-(13, '140', 487, 'You have requested an appointment for Root Canal at 2019-03-31 , 9:00 pm to 10:00 pm ', 'unseen'),
-(13, '141', 488, 'You have requested an appointment for Root Canal at 2019-04-01 , 10:30 am to 2:30 pm ', 'unseen'),
-(13, '142', 489, 'You have requested an appointment for Dental Implants at 2019-04-03 , 10:30 am to 11:00 am ', 'unseen'),
-(13, '143', 490, 'You have requested an appointment for Root Canal at 2019-04-03 , 7:00 pm to 7:30 pm ', 'unseen'),
-(13, '144', 491, 'You have requested an appointment for Root Canal at 2019-04-03 , 11:00 am to 11:30 am ', 'unseen'),
-(13, '145', 492, 'You have requested an appointment for Root Canal at 2019-04-03 , 11:30 am to 12:00 pm ', 'unseen'),
-(13, '146', 493, 'You have requested an appointment for Root Canal at 2019-04-03 , 12:00 pm to 12:30 pm ', 'unseen'),
-(13, '147', 494, 'You have requested an appointment for Root Canal at 2019-04-03 , 12:30 pm to 1:00 pm ', 'unseen'),
-(13, '119', 495, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is approved.', 'unseen'),
-(13, '148', 496, 'You have requested an appointment for Root Canal at 2019-04-04 , 1:00 pm to 1:30 pm ', 'unseen'),
-(13, '149', 497, 'You have requested an appointment for Root Canal at 2019-04-04 , 11:00 am to 11:30 am ', 'unseen');
+(13, '134', 409, 'You have requested an appointment for Root Canal at 2019-03-30 , 10:30 am to 2:30 pm ', 'seen'),
+(13, '134', 410, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is approved.', 'seen'),
+(13, '135', 411, 'You have requested an appointment for Root Canal at 2019-03-30 , 9:00 pm to 10:00 pm ', 'seen'),
+(13, '135', 412, 'Your appointment for Root Canal at 2019-03-30 , 09:00:00 is approved.', 'seen'),
+(13, '111', 413, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'seen'),
+(13, '113', 414, 'Your appointment for Root Canal at 2019-03-11 , 10:30:00 is confirmed.', 'seen'),
+(13, '114', 415, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'seen'),
+(13, '116', 416, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '117', 417, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '118', 418, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '119', 419, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'seen'),
+(13, '120', 420, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '121', 421, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '122', 422, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'seen'),
+(13, '125', 423, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'seen'),
+(13, '127', 424, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'seen'),
+(13, '128', 425, 'Your appointment for Root Canal at 2019-03-24 , 10:30:00 is confirmed.', 'seen'),
+(13, '129', 426, 'Your appointment for Root Canal at 2019-03-25 , 09:00:00 is confirmed.', 'seen'),
+(13, '131', 427, 'Your appointment for Root Canal at 2019-03-28 , 10:30:00 is confirmed.', 'seen'),
+(13, '133', 428, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is confirmed.', 'seen'),
+(13, '135', 429, 'Your appointment for Root Canal at 2019-03-30 , 09:00:00 is confirmed.', 'seen'),
+(13, '111', 430, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'seen'),
+(13, '113', 431, 'Your appointment for Root Canal at 2019-03-11 , 10:30:00 is confirmed.', 'seen'),
+(13, '114', 432, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'seen'),
+(13, '116', 433, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '117', 434, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '118', 435, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '119', 436, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'seen'),
+(13, '120', 437, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '121', 438, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '122', 439, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'seen'),
+(13, '125', 440, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'seen'),
+(13, '127', 441, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'seen'),
+(13, '128', 442, 'Your appointment for Root Canal at 2019-03-24 , 10:30:00 is confirmed.', 'seen'),
+(13, '129', 443, 'Your appointment for Root Canal at 2019-03-25 , 09:00:00 is confirmed.', 'seen'),
+(13, '131', 444, 'Your appointment for Root Canal at 2019-03-28 , 10:30:00 is confirmed.', 'seen'),
+(13, '133', 445, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is confirmed.', 'seen'),
+(13, '135', 446, 'Your appointment for Root Canal at 2019-03-30 , 09:00:00 is rescheduled. Please book again.', 'seen'),
+(13, '136', 447, 'You have requested an appointment for Cleaning at 2019-03-30 , 10:30 am to 2:30 pm ', 'seen'),
+(13, '136', 448, 'Your appointment for Cleaning at 2019-03-30 , 10:30:00 is approved.', 'seen'),
+(13, '111', 449, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'seen'),
+(13, '113', 450, 'Your appointment for Root Canal at 2019-03-11 , 10:30:00 is confirmed.', 'seen'),
+(13, '114', 451, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'seen'),
+(13, '116', 452, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '117', 453, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '118', 454, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '119', 455, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'seen'),
+(13, '120', 456, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '121', 457, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '122', 458, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'seen'),
+(13, '125', 459, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'seen'),
+(13, '127', 460, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'seen'),
+(13, '128', 461, 'Your appointment for Root Canal at 2019-03-24 , 10:30:00 is confirmed.', 'seen'),
+(13, '129', 462, 'Your appointment for Root Canal at 2019-03-25 , 09:00:00 is confirmed.', 'seen'),
+(13, '131', 463, 'Your appointment for Root Canal at 2019-03-28 , 10:30:00 is confirmed.', 'seen'),
+(13, '133', 464, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is confirmed.', 'seen'),
+(13, '136', 465, 'Your appointment for Cleaning at 2019-03-30 , 10:30:00 is confirmed.', 'seen'),
+(13, '111', 466, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'seen'),
+(13, '113', 467, 'Your appointment for Root Canal at 2019-03-11 , 10:30:00 is confirmed.', 'seen'),
+(13, '114', 468, 'Your appointment for Root Canal at 2019-03-10 , 10:30:00 is confirmed.', 'seen'),
+(13, '116', 469, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '117', 470, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '118', 471, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '119', 472, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'seen'),
+(13, '120', 473, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '121', 474, 'Your appointment for Root Canal at 2019-03-12 , 10:30:00 is confirmed.', 'seen'),
+(13, '122', 475, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is confirmed.', 'seen'),
+(13, '125', 476, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'seen'),
+(13, '127', 477, 'Your appointment for Root Canal at 2019-03-23 , 10:30:00 is confirmed.', 'seen'),
+(13, '128', 478, 'Your appointment for Root Canal at 2019-03-24 , 10:30:00 is confirmed.', 'seen'),
+(13, '129', 479, 'Your appointment for Root Canal at 2019-03-25 , 09:00:00 is confirmed.', 'seen'),
+(13, '131', 480, 'Your appointment for Root Canal at 2019-03-28 , 10:30:00 is confirmed.', 'seen'),
+(13, '133', 481, 'Your appointment for Root Canal at 2019-03-30 , 10:30:00 is confirmed.', 'seen'),
+(13, '136', 482, 'Your appointment for Cleaning at 2019-03-30 , 10:30:00 is rescheduled. Please book again.', 'seen'),
+(13, '136', 483, 'Your appointment for Cleaning at 2019-03-30 , 10:30:00 is confirmed.', 'seen'),
+(13, '137', 484, 'You have requested an appointment for Root Canal at 2019-03-31 , 9:00 pm to 10:00 pm ', 'seen'),
+(13, '138', 485, 'You have requested an appointment for Root Canal at 2019-03-31 , 10:30 am to 2:30 pm ', 'seen'),
+(13, '139', 486, 'You have requested an appointment for Root Canal at 2019-03-31 , 10:30 am to 2:30 pm ', 'seen'),
+(13, '140', 487, 'You have requested an appointment for Root Canal at 2019-03-31 , 9:00 pm to 10:00 pm ', 'seen'),
+(13, '141', 488, 'You have requested an appointment for Root Canal at 2019-04-01 , 10:30 am to 2:30 pm ', 'seen'),
+(13, '142', 489, 'You have requested an appointment for Dental Implants at 2019-04-03 , 10:30 am to 11:00 am ', 'seen'),
+(13, '143', 490, 'You have requested an appointment for Root Canal at 2019-04-03 , 7:00 pm to 7:30 pm ', 'seen'),
+(13, '144', 491, 'You have requested an appointment for Root Canal at 2019-04-03 , 11:00 am to 11:30 am ', 'seen'),
+(13, '145', 492, 'You have requested an appointment for Root Canal at 2019-04-03 , 11:30 am to 12:00 pm ', 'seen'),
+(13, '146', 493, 'You have requested an appointment for Root Canal at 2019-04-03 , 12:00 pm to 12:30 pm ', 'seen'),
+(13, '147', 494, 'You have requested an appointment for Root Canal at 2019-04-03 , 12:30 pm to 1:00 pm ', 'seen'),
+(13, '119', 495, 'Your appointment for Root Canal at 2019-03-12 , 09:00:00 is approved.', 'seen'),
+(13, '148', 496, 'You have requested an appointment for Root Canal at 2019-04-04 , 1:00 pm to 1:30 pm ', 'seen'),
+(13, '149', 497, 'You have requested an appointment for Root Canal at 2019-04-04 , 11:00 am to 11:30 am ', 'seen'),
+(13, '150', 498, 'You have requested an appointment for Root Canal at 2019-04-05 , 10:30 am to 11:00 am ', 'seen'),
+(13, '150', 499, 'Your appointment for Root Canal at 2019-04-05 , 10:30:00 is approved.', 'seen'),
+(13, '150', 500, 'Your appointment for Root Canal at 2019-04-05 , 10:30:00 is confirmed.', 'seen'),
+(13, '150', 501, 'Your appointment for Root Canal at 2019-04-05 , 10:30:00 is rescheduled. Please book again.', 'seen'),
+(13, '151', 502, 'You have requested an appointment for Root Canal at 2019-04-05 , 7:00 pm to 7:30 pm ', 'seen'),
+(13, '152', 503, 'You have requested an appointment for Root Canal at 2019-04-06 , 10:30 am to 11:00 am ', 'seen'),
+(13, '152', 504, 'Your appointment for Root Canal at 2019-04-06 , 10:30:00 is approved.', 'unseen'),
+(13, '152', 505, 'Your appointment for Root Canal at 2019-04-06 , 10:30:00 is confirmed.', 'unseen'),
+(13, '152', 506, 'Your appointment for Root Canal at 2019-04-06 , 10:30:00 is rescheduled. Please book again.', 'unseen'),
+(1, '153', 507, 'You have requested an appointment for Root Canal at 2019-04-06 , 6:30 pm to 7:00 pm ', 'unseen'),
+(1, '153', 508, 'Your appointment for Root Canal at 2019-04-06 , 06:30:00 is approved.', 'unseen'),
+(13, '151', 509, 'Your appointment for Root Canal at 2019-04-05 , 07:00:00 is approved.', 'unseen'),
+(1, '153', 510, 'Your appointment for Root Canal at 2019-04-06 , 06:30:00 is confirmed.', 'unseen');
 
 -- --------------------------------------------------------
 
@@ -725,7 +763,7 @@ ALTER TABLE `patient`
 -- AUTO_INCREMENT for table `appointments`
 --
 ALTER TABLE `appointments`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=150;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
 
 --
 -- AUTO_INCREMENT for table `doctors`
@@ -737,7 +775,7 @@ ALTER TABLE `doctors`
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=498;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=511;
 
 --
 -- AUTO_INCREMENT for table `patient`
