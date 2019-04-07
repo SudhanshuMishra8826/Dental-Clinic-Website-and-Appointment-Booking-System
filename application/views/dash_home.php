@@ -116,17 +116,58 @@ catch(Exception $e)
             </nav>
 
             <div class="board">
-  <h1><?php echo 'Hello '.ucfirst($name); ?></h1>
-  <h3>We hope you are having a good day.</h3>
-  <div class="details">
-  <p>Here are your registered details</p>
-  <p><?php echo 'Name '.ucfirst($name); ?></p>
-  <p><?php echo 'User Id '.$id; ?></p>
-</div>
+                 
+    
+  
+   
+ <center>
+ <img src="<?php echo base_url();?>/dc1_images/gif/tooth_waving_lg_wht_1_.gif">
+ <h3 class="text-center text-info">We hope you are having a good day.</h3>
+  <hr style="width: 30%; border-color: #ff8080; border-width: 2px; padding-bottom: 20px;">
+ </center>
+
+
+
+
+
+<br>
+
+
+<table class="table table-borderless">
+  <thead>
+    <tr class="text-center" style="margin-top: 0px;  border-top: solid; border-color:#4db8ff;">
+      <th colspan="2" scope="col">Your Details</th>      
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr style="margin-top: 0px;  border-top: solid; border-color:#4db8ff;">
+       
+      <td><?php echo 'Name : '.ucfirst($name); ?></td>
+      <td><?php echo 'User Id : '.$id; ?></td>
+       
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+
+
+
             <div class="line"></div>
              
         </div>
     </div>
+
+
+
+
+
+
+
+
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

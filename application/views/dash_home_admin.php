@@ -101,8 +101,15 @@ $this->load->library('session');
                                 </div>
                             </a>
                             </li>
+                            <li> 
+                              <div  class="text-secondary" style="padding: 7px 20px 2px; margin-top: 0px; "> 
+                                <?php echo 'Dr. '.ucfirst($name); ?>&nbsp&nbsp&nbsp
+                              </div>
+                            </li>
                             <li class="nav-item active">
+                              <div  class="text-secondary" style="padding: 7px 20px 2px; margin-top: 0px; "> 
                                <a href="<?php echo base_url();?>dental1/logout">Logout</a> 
+                             </div>
                             </li>
                              
                              
@@ -111,44 +118,57 @@ $this->load->library('session');
                 </div>
             </nav>
 
+
+
+<!------------------------------------------------------------------docters details---------------------------------------------------------------->
            <div class="board">
-  <h1><?php echo 'Hello Dr. '.ucfirst($name); ?></h1>
-  <h3>We hope you are having a good day.</h3>
+   
+   
   <div class="details">
-  <p>Here are your registered details</p>
-  <p><?php echo 'Name '.ucfirst($name); ?></p>
-  <p><?php echo 'User Id '.$id; ?></p>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#calender">
-  Calender
-</button>
-<!-- Modal -->
-<div class="modal fade" id="calender" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Calender</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-         <section class="table-responsive-md">  
-        <table class="table table-borderless">
-  <thead>
-    <tr>
-      <td colspan="4" class="text-left"><?php
-      $d=date("Y-m-d");
-      echo $d;
-      ?></td>
-        
-    </tr>
-  </thead>
   
-</table>
-</section>
+  
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<!----------------------------------------------------------------------calender------------------------------------------------------------------->
+
+
+  
+
+
+
+
+
+
+
+
+ 
 <section class="table-responsive-md">  
 <table class="table table-bordered">
   <thead class="">
+     <tr class="table-primary">
+       <th scope="col" colspan="1" class="text-center text-dark">   <?php echo 'Docter Id = '.$id; ?>  </th>
+
+
+      <th scope="col" colspan="1" class="text-center text-dark"><?php
+      $d=date("Y-m-d");
+      echo 'Date : '.$d;
+      ?> </th>
+       
+    </tr>
     
     <tr class="table-primary">
       <th scope="col"  class="text-center">Timing</th>
@@ -403,16 +423,14 @@ $this->load->library('session');
 </section>
 
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
 
-</div>
+
+
+
+
+
+
+
 
             <div class="line"></div>
              

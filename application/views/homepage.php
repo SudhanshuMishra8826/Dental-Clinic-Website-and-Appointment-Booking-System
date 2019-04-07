@@ -31,9 +31,9 @@
   <div class="row text-center  " style="padding:15px;">
     <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-block m-auto">
       <div class="d-block m-auto">
-       <!img style= float:left src="<?php echo base_url();?>/dc1_images/WPFtdnZn_400x400.jpg" width="90" height="65">
+       <!--img style= float:left src="<?php echo base_url();?>/dc1_images/WPFtdnZn_400x400.jpg" width="90" height="65"-->
        <div style="float: left; margin-top:22px;"> 
-        <!img src="<?php echo base_url();?>/dc1_images/WPFtdnZn_400x400.jpg" width="50" height="35">
+       <!--img src="<?php echo base_url();?>/dc1_images/WPFtdnZn_400x400.jpg" width="50" height="35"-->
         </div>
        <h3 class="text-white"><span style="font-style: italic; color: red;">Acme</span> Dental lounge</h3> 
        <p class="text-white" style="font-family:Albertus Extra Bold">h e l p i n g &nbsp&nbsp y o u r &nbsp&nbsp s m i l e</p></p>
@@ -53,8 +53,8 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark"> 
   <div class="container">  
   <div class="navbar-brand text-white font-weight-bold"  style="margin-left: 20px; ">
-    <!a href="<?php echo base_url();?>dental1/homepage/elements">
-    <!img src="<?php echo base_url();?>/dc1_images/WPFtdnZn_400x400.jpg" width="50" height="35"><!/a>
+    <!--a href="<?php echo base_url();?>dental1/homepage/elements"-->
+    <!--img src="<?php echo base_url();?>/dc1_images/WPFtdnZn_400x400.jpg" width="50" height="35"><!/a-->
     </div>
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -138,7 +138,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active"  >
 
-      <img class="d-block w-100" src="<?php echo base_url();?>/dc1_images/91.jpg" alt="First slide">
+      <img class="d-block w-100" src="<?php echo base_url();?>/dc1_images/familydental.jpg" alt="First slide">
        <div class="carousel-caption d-none d-md-block" style="margin-bottom:  14%; margin-right:  24%; margin-left: -6.7%;">
         
          
