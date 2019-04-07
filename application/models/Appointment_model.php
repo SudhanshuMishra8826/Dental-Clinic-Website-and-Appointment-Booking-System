@@ -18,8 +18,19 @@ class appointment_model extends CI_Model
 	function checkAvailability($date,$time,$doc)
 	{
 	$this->load->library('session');
+	if(isset($_SESSION['name']))
+    {
 	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
 	$query="select * from appointments where date='$date' and time='$time' and doctorName='$doc'";
 	$r=$this->db->query($query);
 	if($r->num_rows()==0){
@@ -33,8 +44,19 @@ class appointment_model extends CI_Model
 	function get_fees($appointmentfor)
 	{
 	$this->load->library('session');
+	if(isset($_SESSION['name']))
+    {
 	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
 	$query="select price from services where name='$appointmentfor'";
 	$r=$this->db->query($query);
 	return $r->result_array();
@@ -43,8 +65,19 @@ class appointment_model extends CI_Model
 	function show_discount($appointmentfor)
 	{
 	$this->load->library('session');
+	if(isset($_SESSION['name']))
+    {
 	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
 	$query="select discount from discounts where servicename='$appointmentfor'";
 	$r=$this->db->query($query);
 	//var_dump($r->result()[0]->discount);
@@ -53,9 +86,20 @@ class appointment_model extends CI_Model
 	function get_appointments()
 	{
 	$this->load->library('session');
+	if(isset($_SESSION['name']))
+    {
 	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
-	$query="select * from appointments where userid='$id'";
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
+	$query="select * from appointments where userid='$id' order by id desc";
 	$r=$this->db->query($query);
 	return $r->result();
 	//$data['r']=$r;
@@ -74,8 +118,20 @@ class appointment_model extends CI_Model
 	function create_notifications($apid,$service,$date,$time,$phone)
 	{
 	$this->load->library('session');
+	
+	if(isset($_SESSION['name']))
+    {
 	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
 	$query="insert into notifications values('$id','$apid','','You have requested an appointment for $service at $date , $time ' ,'unseen')";
 	$this->db->query($query);
 
@@ -112,8 +168,19 @@ class appointment_model extends CI_Model
 	function get_notifications()
 	{
 	$this->load->library('session');
+	if(isset($_SESSION['name']))
+    {
 	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
 	$query="select * from notifications where uid='$id' and status='unseen'";
 	$r=$this->db->query($query);
 	$q="update notifications set status='seen' where uid='$id' and status='unseen'";
@@ -133,9 +200,20 @@ class appointment_model extends CI_Model
 	function check_notifications()
 	{
 	$this->load->library('session');
+	if(isset($_SESSION['name']))
+    {
 	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
-	$query="select * from notifications where uid='$id' and status='unseen'";
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
+	$query="select * from notifications where uid='$id' and status='unseen' order by apid desc";
 	$r=$this->db->query($query);
 	 if($r->num_rows())
                   {
@@ -153,9 +231,20 @@ class appointment_model extends CI_Model
 	function get_seen_notifications()
 	{
 	$this->load->library('session');
+	if(isset($_SESSION['name']))
+    {
 	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
-	$query="select * from notifications where uid='$id' and status='seen'";
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
+	$query="select * from notifications where uid='$id' and status='seen' order by apid desc";
 	$r=$this->db->query($query);
 	return $r->result();
 	//$data['r']=$r;
@@ -165,8 +254,19 @@ class appointment_model extends CI_Model
 	function pay($Bid)
 	{
 	$this->load->library('session');
+	if(isset($_SESSION['name']))
+    {
 	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
 	$query="select price from services where id='$Bid'";
 	$r=$this->db->query($query);
 	return $r->result_array();

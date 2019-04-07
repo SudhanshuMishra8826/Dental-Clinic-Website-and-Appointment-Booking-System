@@ -28,14 +28,14 @@ class admin_model extends CI_Model
 		if ($err) {
 	  	echo "cURL Error #:" . $err;
 		}
-		/*
+		
 		$this->load->library('email'); 
-    $this->email->from('sm.22.1.1999@gmail.com', 'you'); 
+    $this->email->from('sm.22.1.1999@gmail.com', 'Acme Dental Lounge'); 
     $this->email->to($email);
 		$this->email->subject('Appointment Approved'); 
 		$m="Your request for an appointment for $service at $date , $time at ACME Dental Care is approved. You can proceed to payment and ignore if already paid.";
     $this->email->message($m); 
-		$this->email->send();	*/
+		$this->email->send();	
 	}
 		function confirm_notifications($phone,$service,$date,$time,$email){
 			$curl = curl_init();
@@ -64,14 +64,13 @@ class admin_model extends CI_Model
 			if ($err) {
 				echo "cURL Error #:" . $err;
 			}
-	/*
 		$this->load->library('email'); 
-    $this->email->from('sm.22.1.1999@gmail.com', 'you'); 
+		$this->email->from('sm.22.1.1999@gmail.com', 'Acme Dental Lounge'); 
     $this->email->to($email);
-		$this->email->subject('Appointment Approved'); 
+		$this->email->subject('Appointment Confirmed'); 
 		$m="Your request for an appointment for $service at $date , $time at ACME Dental Care is Confirmed. You can proceed to payment and ignore if already paid.";
     $this->email->message($m); 
-		$this->email->send();*/
+		$this->email->send();
 			}
 
 		function dissapprove_notifications($phone,$service,$date,$time,$email){
@@ -103,9 +102,9 @@ class admin_model extends CI_Model
 			}
 
 		$this->load->library('email'); 
-    $this->email->from('sm.22.1.1999@gmail.com', 'you'); 
+    $this->email->from('sm.22.1.1999@gmail.com', 'Acme Dental Lounge'); 
     $this->email->to($email);
-		$this->email->subject('Appointment Approved'); 
+		$this->email->subject('Appointment Rescheduled'); 
 		$m="Your request for an appointment for $service at $date , $time at ACME Dental Care is rescehduled Please book again.";
     $this->email->message($m); 
 		$this->email->send();	
@@ -156,7 +155,7 @@ class admin_model extends CI_Model
     function get_appointments_admin($doc)
 	{
 	$d="Dr. ".$doc;
-	$query="select * from appointments where doctorName='$d'";
+	$query="select * from appointments where doctorName='$d' order by id desc";
 	$r=$this->db->query($query);
 	return $r->result();
 	//$data['r']=$r;
@@ -166,7 +165,7 @@ class admin_model extends CI_Model
 	function get_appointments_requests($doc)
 	{
 	$d="Dr. ".$doc;
-	$query="select * from appointments where status='requested' and doctorName='$d'";
+	$query="select * from appointments where status='requested' and doctorName='$d' order by id desc";
 	$r=$this->db->query($query);
 	return $r->result();
 	//$data['r']=$r;
@@ -258,7 +257,7 @@ class admin_model extends CI_Model
 	function get_appointments_today($doc)
 	{$d=date("Y-m-d");
 		$do="Dr. ".$doc;
-	$query="select * from appointments where date='$d'and doctorName='$do'";
+	$query="select * from appointments where date='$d'and doctorName='$do' order by id desc";
 	$r=$this->db->query($query);
 	return $r->result();
 	//$data['r']=$r;

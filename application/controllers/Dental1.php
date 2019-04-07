@@ -24,7 +24,20 @@ class Dental1 extends CI_Controller {
 	   //$this->load->view('index');
 	   $this->load->library('session');
 	   $this->load->model('admin_model');
-	   $this->data['posts']=$this->admin_model->get_appointments_today($_SESSION["name"]);
+	   if(isset($_SESSION['name']))
+    	{
+		$name=$_SESSION['name'];
+    	$id=$_SESSION['id'];
+    	}
+    	else
+    	{
+    	echo '<script language="javascript">';
+		echo 'alert("Invalid login try again")';
+		echo '</script>';
+		redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    	}
+	   $this->data['posts']=$this->admin_model->get_appointments_today($name);
 	   return $this->data;
 	   //unset($_SESSION["name"]);
 	   //unset($_SESSION["id"]);
@@ -125,8 +138,19 @@ public function Update_Discount()
 	$this->load->database();
 	$this->load->library('session');
 			//session_start();
-	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
+			if(isset($_SESSION['name']))
+			{
+			$name=$_SESSION['name'];
+			$id=$_SESSION['id'];
+			}
+			else
+			{
+			echo '<script language="javascript">';
+			echo 'alert("Invalid login try again")';
+			echo '</script>';
+			redirect('/Dental1/homepage', 'refresh');
+			//$this->load->view('homepage');
+			}
 	//echo $id;
 	//load Model
 	$this->load->model('Admin_model');
@@ -151,8 +175,19 @@ public function Update_Discount_Individual($idAp)
 	$this->load->database();
 	$this->load->library('session');
 			//session_start();
-	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
+			if(isset($_SESSION['name']))
+			{
+			$name=$_SESSION['name'];
+			$id=$_SESSION['id'];
+			}
+			else
+			{
+			echo '<script language="javascript">';
+			echo 'alert("Invalid login try again")';
+			echo '</script>';
+			redirect('/Dental1/homepage', 'refresh');
+			//$this->load->view('homepage');
+			}
 	//echo $id;
 	//load Model
 	$this->load->model('Admin_model');
@@ -172,7 +207,20 @@ public function appointmentsadmin()
 	//$this->load->view('index');
 	$this->load->library('session');
 	$this->load->model('admin_model');
-	$this->data['posts']=$this->admin_model->get_appointments_admin($_SESSION["name"]);
+	if(isset($_SESSION['name']))
+    {
+	$name=$_SESSION['name'];
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
+	$this->data['posts']=$this->admin_model->get_appointments_admin($name);
 	$this->load->view('allappointmentsadmin',$this->data);
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
@@ -184,7 +232,20 @@ public function appointments_requests()
 	//$this->load->view('index');
 	$this->load->library('session');
 	$this->load->model('admin_model');
-	$this->data['posts']=$this->admin_model->get_appointments_requests($_SESSION["name"]);
+	if(isset($_SESSION['name']))
+    {
+	$name=$_SESSION['name'];
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
+	$this->data['posts']=$this->admin_model->get_appointments_requests($name);
 	$this->load->view('allrequestedappointmentsadmin',$this->data);
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
@@ -197,7 +258,20 @@ public function appointments_today()
 	//$this->load->view('index');
 	$this->load->library('session');
 	$this->load->model('admin_model');
-	$this->data['posts']=$this->admin_model->get_appointments_today($_SESSION["name"]);
+	if(isset($_SESSION['name']))
+    {
+	$name=$_SESSION['name'];
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
+	echo 'alert("Invalid login try again")';
+	echo '</script>';
+	redirect('/Dental1/homepage', 'refresh');
+    //$this->load->view('homepage');
+    }
+	$this->data['posts']=$this->admin_model->get_appointments_today($name);
 	$this->load->view('allappointmentsadmin',$this->data);
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
@@ -329,8 +403,8 @@ public function pay_now($Bid)
 	$this->load->library('session');
 	$this->load->model('appointment_model');
 	$this->data['posts']=$this->appointment_model->pay_fees($Bid);
-	$this->data['posts']=$this->appointment_model->view_appointment($Bid);
-	$this->load->view('appointment_recipt',$this->data);
+	$this->viewappointment($Bid);
+	//$this->load->view('appointment_recipt',$this->data);
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
 	//$this->load->view(''.$page);
@@ -344,7 +418,9 @@ public function viewappointment($Bid)
 
 	$this->data['posts']=$this->appointment_model->view_appointment($Bid);
 	$discount=$this->appointment_model->show_discount($this->data['posts'][0]->appointmentfor);
-	$this->session->set_flashdata('discount',$discount);
+	$this->data['posts'][0]->dis=$discount;
+	//var_dump($this->data);
+	//$this->session->set_flashdata('discount',$discount);
 	$this->load->view('appointment_recipt',$this->data);
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);

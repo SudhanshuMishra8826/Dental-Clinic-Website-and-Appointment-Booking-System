@@ -1,20 +1,21 @@
 <?php
-try{
-    //version 1
+//version 1
 $this->load->library('session');
-	//session_start();
+    //session_start();
+    if(isset($_SESSION['name']))
+    {
 	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
-  //ini_set('session.cache_limiter','public');
-  //session_cache_limiter(false);
-}
-catch(Exception $e)
-{
-  echo '<script language="javascript">';
+    $id=$_SESSION['id'];
+    }
+    else
+    {
+    echo '<script language="javascript">';
 	echo 'alert("Invalid login try again")';
 	echo '</script>';
-  $this->load->view('homepage');
-}
+    redirect('/Dental1/homepage', 'refresh');
+
+    //$this->load->view('homepage');
+    }
 ?>
 
  

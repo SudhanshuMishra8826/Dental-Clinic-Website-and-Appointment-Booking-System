@@ -177,7 +177,7 @@ echo'<tbody>';
     echo'<tr>';
        
       echo'<td colspan="8"> Discount </td>';
-       echo'<td colspan="0">'.$this->session->flashdata('discount').'/-</td>';
+       echo'<td colspan="0">'.$row->dis.'/-</td>';
 
        
     echo'</tr>';
@@ -188,7 +188,7 @@ echo'<tbody>';
     echo'<td colspan="0">'.$row->discountap.'/-</td>';
     echo'</tr>';
 
-    $total=(float)$row->fees - (float)$this->session->flashdata('discount');
+    $total=(float)$row->fees - (float)$row->dis;
     $total=$total - (float)$row->discountap;
     echo'<tr>  
        
@@ -224,7 +224,7 @@ echo  '</table>';
 echo "</section>";
 echo'<hr style="border-bottom: solid; border-color:#4db8ff;">';
  
- echo "<center><a href='http://localhost/ci2/dental1/pay_now/". $row->id ."'><button type='button' class='btn btn-info'>Pay now</button></a></center>";
+ //echo "<center><a href='http://localhost/ci2/dental1/pay_now/". $row->id ."'><button type='button' class='btn btn-info'>Pay now</button></a></center>";
 
 }
 ?>
@@ -250,7 +250,7 @@ echo'<hr style="border-bottom: solid; border-color:#4db8ff;">';
             
   <form action=<?php echo base_url().'dental1/history/';?> method="POST">
 <!-- Note that the amount is in paise = 50 INR -->
-<!--
+
 <script
     src="https://checkout.razorpay.com/v1/checkout.js"
     data-key="rzp_test_OeMS2mGVcm5mDl"
@@ -261,7 +261,7 @@ echo'<hr style="border-bottom: solid; border-color:#4db8ff;">';
     data-image="https://your-awesome-site.com/your_logo.jpg"
     data-prefill.name="Gaurav Kumar"
     data-theme.color="#F37254"
-></script>-->
+></script>
 <input type="hidden" value="Hidden Element" name="hidden" >
 </form>
 

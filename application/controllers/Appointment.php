@@ -8,9 +8,19 @@ class appointment extends CI_Controller {
 			$this->load->database();
 			$this->load->library('session');
 			//session_start();
-			$name=$_SESSION['name'];
-			$id=$_SESSION['id'];
-			//echo $id;
+			if(isset($_SESSION['name']))
+    		{
+		$name=$_SESSION['name'];
+		$id=$_SESSION['id'];
+		}
+		else
+		{
+		echo '<script language="javascript">';
+		echo 'alert("Invalid login try again")';
+		echo '</script>';
+		redirect('/Dental1/homepage', 'refresh');
+		//$this->load->view('homepage');
+		}
 			//load Model
 			$this->load->model('Appointment_model');
 
