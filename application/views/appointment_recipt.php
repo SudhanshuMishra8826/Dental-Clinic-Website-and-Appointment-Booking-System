@@ -34,7 +34,17 @@ catch(Exception $e)
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+        }
+    </script>
 </head>
 
 <body>
@@ -87,13 +97,7 @@ catch(Exception $e)
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url();?>dental1/notifications">
-                                <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 8px; "> 
-                                   <i class="fas fa-bell"></i>
-                                </div>
-                            </a>
-                            </li>
+                            
                             <li class="nav-item active">
                                 <a class="nav-link" href="<?php echo base_url();?>dental1/logout">Logout</a>
                             </li>
@@ -107,6 +111,7 @@ catch(Exception $e)
 
 <!-------------------------------------------------table--------------------------------------------------------------->
 <section class="container-fluid table-responsive-md">  
+<div id="recipt">
     <?php
           
    foreach($posts as $row)
@@ -228,25 +233,9 @@ echo'<hr style="border-bottom: solid; border-color:#4db8ff;">';
 
 }
 ?>
+</div>
 </section>
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="board">
+        <div class="board">
             
   <form action=<?php echo base_url().'dental1/history/';?> method="POST">
 <!-- Note that the amount is in paise = 50 INR -->
@@ -264,6 +253,10 @@ echo'<hr style="border-bottom: solid; border-color:#4db8ff;">';
 ></script>
 <input type="hidden" value="Hidden Element" name="hidden" >
 </form>
+
+<br>
+
+<input type="button" onclick="printDiv('recipt')" value="Print" />
 
 </div>
             <div class="line"></div>
