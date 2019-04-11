@@ -59,7 +59,7 @@ window.onhashchange=function(){window.location.hash=" ";}
                      
                 </li>
                 <li>
-                    <a href="#contact">Help</a> 
+                   <a href="<?php echo base_url();?>dental1/faq">Help</a> 
                 </li>
                 <li>
                    <a href="<?php echo base_url();?>dental1/homepage/contact">Contact</a>
@@ -90,9 +90,22 @@ window.onhashchange=function(){window.location.hash=" ";}
                            <li class="nav-item" >
                              <a class="nav-link" href="<?php echo base_url();?>dental1/notifications">
                                 <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 0px; "> 
+                                   <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 0px; "> 
+                                    <?php 
                                      
-                                         <i class="fas fa-bell text-danger"></i> 
+                                     if($bool==1){
+                                        echo '<i class="fas fa-bell text-danger"></i>';
+                                       
+                                    }
+                                    else {
+                                        echo '<i class="fas fa-bell"></i>';
+                                             
+                                    }
+                                     ?> 
+
                                      
+                                          
+                                </div>
                                           
                                 </div>
                             </a>

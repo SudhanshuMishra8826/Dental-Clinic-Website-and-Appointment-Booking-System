@@ -24,9 +24,29 @@ class appointment extends CI_Controller {
 			//load Model
 			$this->load->model('Appointment_model');
 
+            
+
+            //check notification 
+            if($this->Appointment_model->check_notifications()){
+        //$this->load->view('dash_home_2');
+
+       $data['bool']=1;
+         
+     }
+     else{
+     	 $data['bool']=2;
+     }
+     //$data['check_posts']=$this->appointment_model->check_notifications();
+     $this->load->view('appointment', $data);
+
+
+
+
+
+
 
 			//load registration view form
-			$this->load->view('appointment');
+			//$this->load->view('appointment');
 		
 			//Check submit button 
 			if($this->input->post('save'))
@@ -63,4 +83,19 @@ class appointment extends CI_Controller {
 			}
 		}
 		}
+
+
+
+
+
+
+
+
+
+
+ 
+  
+      
+      
+ 
 }

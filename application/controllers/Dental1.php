@@ -74,7 +74,29 @@ class Dental1 extends CI_Controller {
 	$this->load->library('session');
 	$this->load->model('appointment_model');
 	$this->data['posts']=$this->appointment_model->get_appointments();
+	 if($this->appointment_model->check_notifications()){
+        //$this->load->view('dash_home_2');
+
+       $this->data['bool']=1;
+         
+     }
+     else{
+     	 $this->data['bool']=2;
+     }
 	$this->load->view('allappointments',$this->data);
+ 
+     
+     //$data['check_posts']=$this->appointment_model->check_notifications();
+      
+
+
+
+
+
+
+
+
+
 	//unset($_SESSION["name"]);
 	//unset($_SESSION["id"]);
 	//$this->load->view(''.$page);
@@ -467,6 +489,27 @@ public function appointment()
 	$this->load->view('appointment');
 	//$this->load->view('home');
 
+
+}
+ public function faq()
+ {
+	 //$this->load->view('index');
+	 //$this->load->view('contact');
+	 //$this->load->view('dash_home');
+	 //$this->load->view('home');
+     $this->load->library('session');
+     $this->load->model('appointment_model');
+     if($this->appointment_model->check_notifications()){
+        //$this->load->view('dash_home_2');
+
+       $data['bool']=1;
+         
+     }
+     else{
+     	 $data['bool']=2;
+     }
+     //$data['check_posts']=$this->appointment_model->check_notifications();
+     $this->load->view('faq', $data);
 
 }
 }

@@ -10,8 +10,17 @@
       
       <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/form.css">
        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/nav.css">
+
+        <style>
+#grad1 {
+  height: 55px;
+  background-color: #68CBFD; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #68CBFD,  #ff8080); /* Standard syntax (must be last) */
+}
+</style>
+
     </head>
-<body background="<?php echo base_url();?>/dc1_images/32b877ed4aa7778cc7d43ebb7d95a6f1.png" style="background-attachment: fixed; background-repeat: no-repeat;">
+<body  id="grad1" style="background-attachment: fixed; background-repeat: no-repeat;">
 
 
 
@@ -125,8 +134,7 @@
 
             <button type="submit" class="btn btn-success btn-block">Submit</button>
             <br/>
-            <a href="#">Forgot Password ?</a><br>
-            <a href="<?php echo base_url();?>dental1/homepage/signup">Signup now and create an account</a>
+            
         </div>
      <! form end>
    </div> 

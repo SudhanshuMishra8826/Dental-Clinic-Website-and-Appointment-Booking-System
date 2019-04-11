@@ -12,8 +12,16 @@
       <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/form.css">
        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/nav_bar.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/btn.css">
+
+         <style>
+#grad1 {
+  height: 55px;
+  background-color: #68CBFD; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #68CBFD, orange); /* Standard syntax (must be last) */
+}
+</style>
     </head>
-<body background="<?php echo base_url();?>/dc1_images/32b877ed4aa7778cc7d43ebb7d95a6f1.png" style="background-attachment: fixed;   background-repeat: no-repeat; background-size: cover;">
+<body id="grad1" style="background-attachment: fixed; background-color:#68CBFD  ; background-repeat: no-repeat; background-size: cover;">
 
 
 
