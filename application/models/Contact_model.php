@@ -21,5 +21,20 @@
        
 
    }
+
+   public function fetch(){
+     
+  $q="select * from contact";
+  $res=$this->db->query($q);
+  //var_dump($res->result()[0]);
+  return $res->result();
+   
+   }
+   
+
+
+
+
+
  } 
  ?>

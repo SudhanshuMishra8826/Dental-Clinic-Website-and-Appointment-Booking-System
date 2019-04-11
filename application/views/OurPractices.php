@@ -141,7 +141,7 @@
            <div class="d-block m-auto" style="padding-bottom: 25px;">
              <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px;  ">Feel Comfortable Relaxed and at Ease Our Facility</span></h2>
                 <div class="circle"></div>
-               <p class="text-secondary" style="text-align: justify;">At Acme Dental Care, we have created an atmosphere to induce the feeling of comfort, relaxation and feeling at ease. We are proud to say
+               <p class="text-secondary" style="text-align: justify;">At Acme Dental Lounge, we have created an atmosphere to induce the feeling of comfort, relaxation and feeling at ease. We are proud to say
 that our patients notice how beautiful and contemporary our facility is.</br><br>
 We understand that the cleanliness of our office is a direct reflection of
 the quality dental care we provide.
@@ -151,7 +151,7 @@ dental stations we have at our facility, you'll instantly notice that all our eq
 dentistry can provide.<br> 
 Computerization, digital x-rays, digital photos of smiles and digital
 imaging are available so you and our dentists can observe everything
-simultaneously on one computer monitor. You will see your smile as
+simultaneously on one LCD screen. You will see your smile as
 you've never seen it before and as a truly important benefit to you,
 appreciate your oral health needs like never before. We absolutely
 adore learning about your dental health situation and you will sense this
@@ -188,8 +188,8 @@ when you're in need of professional dental care and attention..<br>
 and challenging lifestyle.<br> 
  We understand that you need timely service,
 compassionate care and a winning smile when you walk out our doors.
-The dental professionals at Acme Dental Care want to build a strong.
-lusting, meaningful relationship with you as our client. We will make
+The dental professionals at Acme Dental Lounge want to build a strong.
+lasting, meaningful relationship with you as our client. We will make
 you feel welcome, take the time to make sure you get everything you
 require and give your smile the attention it deserves and needs.
 We are dedicated to giving you exceptional, timely service in every
@@ -198,15 +198,14 @@ never have to worry about being abandoned without dental treatment
 and care.<br>
  
 You can make the most of your time with us because with extended
-hours of operation (Monday to Saturday, 10.30 am to 2.30 pm & 5.30
+hours of operation (Monday to Wednesday and Friday to Sunday, 10.30 am to 2.30 pm & 5.30
 pm - 8.30 pm) you can make an appointment that works with your
 schedule.
 <br> 
-Acme Dental Care makes it easy for you to either contact us online
-through our online or contact us offline through phone to schedule an
+Acme Dental Lounge makes it easy for you to either contact us  
+through our online website or contact us offline through phone to schedule an
 appointment with us.
-Find out how Acme Dental Care can keep you smiling for a lifetime!
-                </p>
+                 </p>
                  
            </div>
         </div>
@@ -227,39 +226,39 @@ Find out how Acme Dental Care can keep you smiling for a lifetime!
              <h2 class="text-center  text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px; ">Utilizing the Best Technology for Your Winning Smile</span></h2>
                 <div class="circle"></div>
                <p class="  text-secondary"  style="text-align: justify;">
-                We are proud to offer the latest dental teehnology available today
-Digital Radiography (x-rays)<br> 
-This technology allows x-rays to be obtained with signicantly less
+                We are proud to offer the latest dental technology available today<br>
+<b>Digital Radiography (x-rays)- </b><br> 
+This technology allows x-rays to be obtained with significantly less
 radiation to the patient then traditional film based radiography. Digital
 x-rays allow for better diagnostic capabilities and better patient
 communication because images can be viewed on a monitor at higher
 magnification.
 <br> 
-Soft Tissue Laser<br>
-soh tisstue laser is a sophisticated adjunct to managing the soft tissues
+<b>Soft Tissue Laser-</b><br>
+soft tisstue laser is a sophisticated adjunct to managing the soft tissues
 (gums) around teeth during certain dental procedures. Often this
 technology eliminates the need for use of surgery with a scalpel and the
 associated bleeding accompanied with gum surgery. Our patients find this method of treatment preferable to the traditional surgery involving
 a scalpel.<br> 
-Gnatus Dental chairs<br>
+<b> Dental chairs-</b><br>
 The latest design in dental chairs for patient comfort and ergonomies.<br> 
-Computerized Root Canal Treatment<br>
+<b>Computerized Root Canal Treatment-</b><br>
 Systems that allow for the most exacting Root Canal treatment
 available.<br> 
-Intra Oral Digital Camera.<br>
+<b>Intra Oral Digital Camera-</b><br>
 Digital imaging systems which allow for detailed documentation for
 patient education and better communication with insurance companies.<br> 
 
-Gnatus Autoclave Sterilization (Advanced Technology)<br>
+ <b> Autoclave Sterilization (Advanced Technology)-</b><br>
 
 Ensures ultimate infection control for patient safety with advanced
 technology Dry Heat Autoclave systerm.<br> 
-Fully Computerized Operatories<br>
+<b>Fully Computerized Operatories-</b><br>
 Optimized for efficient, accurate detailed charting as well as fully
 computerized delivery systems which control the dental hand pieces
 allowing for optimum control by your dentist.<br> 
 
-Cad/Cam Technology<br>
+<b>Cad/Cam Technology-</b><br>
 
 We are tie up with the world class provider Labs which is well
 equipped with Cad/Cam Technology. crowns are computer aided
@@ -285,10 +284,9 @@ trained with this technology
             <div class="circle"></div>
                <p class=" text-secondary"  style="text-align: justify;">
                 We are pleased to offer state of the art infection control
-procedures at Acme Dental Care.<br> 
+procedures at Acme Dental Lounge.<br> 
 Our staff is trained in latest infection control procedures
-recommended by the Canadian Dental Association and BC
-College of Dental Surgeons. Equipment is routinely tested for
+recommended by the Canadian Dental Association. Equipment is routinely tested for
 effectiveness,<br>
 We use protective barriers where they are possible, including
 masks and goves. Many of the products we use are one patient

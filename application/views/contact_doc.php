@@ -1,17 +1,17 @@
 <?php
 
 $this->load->library('session');
-	//session_start();
-	$name=$_SESSION['name'];
-	$id=$_SESSION['id'];
-  ///ini_set('session.cache_limiter','public');
+  //session_start();
+  $name=$_SESSION['name'];
+  $id=$_SESSION['id'];
+  //ini_set('session.cache_limiter','public');
   //session_cache_limiter(false);
 ?>
 <!DOCTYPE html>
 <html>
- 
+<!-----------link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/dash.css"--------->
 <head>
-<meta charset="utf-8">
+   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -26,16 +26,9 @@ $this->load->library('session');
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
-<script>
-window.location.hash=" ";
-window.location.hash="  ";//again because google chrome don't insert first hash into history
-window.onhashchange=function(){window.location.hash=" ";}
-</script>
- 
 </head>
 <body>
-<div class="wrapper">
+   <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -44,12 +37,12 @@ window.onhashchange=function(){window.location.hash=" ";}
 
             <ul class="list-unstyled components">
                  
-                <li >
-                   <a   href="<?php echo base_url();?>dental1/homepage/dash_home_admin">Home</a></li>
+                <li  >
+                   <a class="active" href="<?php echo base_url();?>dental1/homepage/dash_home_admin">Home</a></li>
                      
                 </li>
-                <li  >
-                   <a  href="<?php echo base_url();?>dental1/appointmentsadmin/">All Appointments</a>
+                <li>
+                   <a href="<?php echo base_url();?>dental1/appointmentsadmin/">All Appointments</a>
                 </li>
                 <li>
                     <a href="<?php echo base_url();?>dental1/appointments_today/">Todays Plan</a>
@@ -62,13 +55,13 @@ window.onhashchange=function(){window.location.hash=" ";}
                 <li>
                    <a href="<?php echo base_url();?>dental1/appointments_requests/">Requests</a>
                 </li>
-                <li class="active">
-                   <a class="active" href="<?php echo base_url();?>dental1/patients/">All Patients</a>
+                <li>
+                   <a href="<?php echo base_url();?>dental1/patients/">All Patients</a>
                 </li>
                  <li>
                   <a href="#contact">Help</a>
                 </li>
-                 <li>
+                 <li class="active">
                   <a href="<?php echo base_url();?>dental1/contact">Contact</a>
                 </li>
                  
@@ -80,7 +73,6 @@ window.onhashchange=function(){window.location.hash=" ";}
 
         <!-- Page Content  -->
         <div id="content">
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
@@ -94,45 +86,88 @@ window.onhashchange=function(){window.location.hash=" ";}
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url();?>dental1/notifications">
-                                <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 0px; "> 
-                                    <?php 
-                                    //if($bool==1){
-                                       // echo '<i class="fas fa-bell text-danger"></i>';
-                                    //}
-                                   // else {
-                                       echo '<i class="fas fa-bell"></i>';
-                                   // }
-                                     ?> 
-                                          
-                                </div>
-                            </a>
+                             
+                            <li> 
+                              <div  class="text-secondary" style="padding: 7px 20px 2px; margin-top: 0px; "> 
+                                <?php echo 'Dr. '.ucfirst($name); ?>&nbsp&nbsp&nbsp
+                              </div>
                             </li>
                             <li class="nav-item active">
+                              <div  class="text-secondary" style="padding: 7px 20px 2px; margin-top: 0px; "> 
                                <a href="<?php echo base_url();?>dental1/logout">Logout</a> 
+                             </div>
                             </li>
                              
                              
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav><center> 
+                       <h3>Persons trying  to contact you.</h3>
+                       <br>
+                       </center>
+            <div class="table-responsive-md">
+            <?php
+  echo "<table class='table table-hover'>
+  
+  <thead class='bg-info text-white'>
+    <tr>
+       
+      <th scope='col'>Name</th>
+      <th scope='col'>email</th>
+      <th scope='col'>contact</th>
+      <th scope='col'>Subject</th>
+      <th scope='col'>Message</th>
+       
+
+
+    </tr>
+  </thead>";
+  foreach($query as $row)
+  {
+  echo"<tbody>";
+  echo "<tr>";
+  echo "<td>" . $row->uname . "</td>";
+  
+  echo "<td>" . $row->email . "</td>";
+   
+  echo "<td>" . $row->contact . "</td>";
+  echo "<td>" . $row->subject . "</td>";
+  echo "<td>" . $row->message . "</td>";
+  
+
+  echo "</tr>";
+  echo "</tbody>";
+  }
+  echo "</table>";
+  ?>
+
+
+     
+
+
+
+
+</div>
+
 
  
+</div>
+</div>
 
-                        <form method="post">
-                            <!-- Form start -->
-                            <div class="board">
+ <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-                                        <label class="control-label" for="name">Discount</label>
-                                        <input id="discount" name="discount" type="text" placeholder="Enter Amount " class="form-control input-md" required>           
-                                        </br>        
-                                    <input type="submit" name="save" class="btn btn-info" />
-                                    </div>
-                        </form>
-                        <!-- form end -->
-                      
-
-                        </body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
 </html>

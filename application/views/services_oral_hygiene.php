@@ -138,14 +138,14 @@ If your gums appear red and swollen or bleed often, you may have gingivitis ( in
  
  
                
-<p style="text-align: justify; line-height: 32px;     ">
+<p style="text-align: justify; line-height: 32px;">
 If you have a bad breath, lose teeth you have a Periodontal disease ( a more severe form of gum disease) that can affect your overall health and can make you lose all your teeth. This can be very serious as it will affect your self image and social well being.<br> 
 
-The doctor will first check your medical history and will rule out any long standing uncontrolled disease/s. Smoking is one of the most common causes of gum disease. If you have no underlying disease and have no or very minimal plaque/calculus deposits, your gum disease is most likely due to smoking. Smoking induces the inflammatory process and reduces the immunity to fight the bacteria in your mouth. Poor oral hygiene with heavy calculus deposits ( plaque/tartar) is another common cause for the gum disease. The dentist or dental hygienist will measure your gum pockets and will determine the severity of your gum disease. Scaling and Root Planing ( deep cleaning) is usually the first step to prevent the progression of the gum disease.<br> 
+The doctor will first check your medical history and will rule out any long standing uncontrolled disease/s. Smoking is one of the most common causes of gum disease. If you have no underlying disease and have no or very minimal plaque/calculus deposits, your gum disease is most likely due to smoking. Smoking induces the inflammatory process and reduces the immunity to fight the bacteria in your mouth. Poor oral hygiene with heavy calculus deposits ( plaque/tartar) is another common cause for the gum disease. The dentist will measure your gum pockets and will determine the severity of your gum disease. Scaling and Root Planing ( deep cleaning) is usually the first step to prevent the progression of the gum disease.<br> 
 
-The dentist or dental hygienist might also recommend Arestin antibiotic along with the deep cleaning. Arestin is minocycline hydrochloride that comes in a powder form. It is placed directly into the gum pocket after the Scaling and Root planing is completed.<br> 
+  
 
-If you have a severe form of gums disease where you have lost considerable amount of bone, you might need a specialist help. Our office will refer you to one of our recommended Periodontist ( gum specialist ) for any required gum surgeries.<br> 
+ 
 
 We highly recommend dental check ups and cleanings every 6 months to keep your teeth clean and gums healthy to prevent any gum disease.<br> 
 
@@ -178,7 +178,8 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
              <div class="col-lg-6 col-md-6 col-sm-10 col-12 d-block m-auto" style="float: right;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">                
                 <div class="embed-responsive embed-responsive-16by9" style="float: right;border-style: solid; border-width: 5; border-color:  #4db8ff; ">
-                       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wZ1MtdkkZXg" allowfullscreen></iframe>
+                       <!--iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wZ1MtdkkZXg" allowfullscreen></iframe-->
+                       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R3YouMZwLI8" allowfullscreen></iframe>
                 </div>
               </div>
            </div>
@@ -217,7 +218,7 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
                  <div class="col-lg-6 col-md-6 col-sm-10 col-12 d-block m-auto" style="float: right;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">                
                 <div class="embed-responsive embed-responsive-16by9" style="float: right;border-style: solid; border-width: 5; border-color:  #4db8ff; ">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R3YouMZwLI8" allowfullscreen></iframe>
+                      <!--iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R3YouMZwLI8" allowfullscreen></iframe-->
                 </div>
               </div>
            </div>
@@ -226,7 +227,6 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
 
                  
                Crowns improve your ability to chew the food and improved your overall dental health.</br> 
-               There are a large variety of dental crowns today in the market ranging from a full metal or metal fused to porcelain to full porcelain crown. We recommend that you stop by our office and let the doctor explain you which type of crown suits you the best.</br> 
                 
 
 
@@ -260,11 +260,11 @@ periodontal maintenance cleaning. is done every 3, 4 or 6 months depending on yo
                  <div class="col-lg-6 col-md-6 col-sm-10 col-12 d-block m-auto" style="float: right;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">                
                 <div class="embed-responsive embed-responsive-16by9" style="float: right;border-style: solid; border-width: 5; border-color:  #4db8ff; ">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cQgpHufB-5k" allowfullscreen></iframe>
+                      <!--iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cQgpHufB-5k" allowfullscreen></iframe-->
                 </div>
               </div>
            </div>
-               <p class="  text-secondary" style="text-align: justify;">If you don’t like your smile or you want a solution for your discolored teeth or smaller sized/maligned teeth? We can transform your smile with the help of Veneers. Veneer is a thin porcelain shell that covers the front of your natural tooth surface. It’s a simple procedure that is done in 2 visits. The 1st visit- we minimally prepare your teeth to fit the veneers. we then, make an impression of your teeth and provisionalize your teeth with temporary veneers. The dental laboratory fabricates your veneers within 10-14 business days.</br> On the 2nd visit- we cement your permanent veneers with the help of color matching resin cement.</br> The dentist will let you know what precautions to take while you have your Veneers. And how to Whiten rest of your teeth when you have Veneers or Porcelain crowns.</br> 
+               <p class="  text-secondary" style="text-align: justify;">If you don’t like your smile or you want a solution for your discolored teeth or smaller sized/maligned teeth? We can transform your smile with the help of Veneers. Veneer is a thin porcelain shell that covers the front of your natural tooth surface. It’s a simple procedure that is done in 2 visits. The 1st visit- we minimally prepare your teeth to fit the veneers. we then, make an impression of your teeth and provisionalize your teeth with temporary veneers.</br> On the 2nd visit- we cement your permanent veneers with the help of color matching resin cement.</br> The doctor will let you know what precautions to take while you have your Veneers. And how to Whiten rest of your teeth when you have Veneers or Porcelain crowns.</br> 
 
             
         </div>
@@ -313,7 +313,7 @@ Failed root canal treatment<br>
 
 Wisdom teeth extractions<br> 
 
-Tooth extraction can be done under local or general anesthesia. We highly recommend nitrous oxide gas ( laughing gas ) for kids between 5 – 12 years of age. Please stop by our office to get more information.</p>
+ </p>
  
                 
            </div>
@@ -327,48 +327,10 @@ Tooth extraction can be done under local or general anesthesia. We highly recomm
 </section>
 <!service end>
 
-<!service start>
-<section class="container-fluid bg-info text-center" style="margin-top:  50px;">
-  <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Inlays and Onlays</span>  </h2>
-  <hr style="width: 10%; border-color: white; border-width: 2px; padding-bottom: 40px;">
-</section>
-<section id="clinic" class="container-fluid bg-white" style="margin-top: 50px; margin-bottom: 50px;">
-   
-    <div class="row" > 
-    <div class="col-lg-10 col-md-10 col-sm-10 col-12 d-block m-auto" style="padding:  0px;">
-           <div class="d-block m-auto" style="padding-bottom: 25px;">
-            <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px; ">Want to know the benefits of Inlays and Onlays?</span></h2>
-
-            <div class="col-lg-6 col-md-6 col-sm-10 col-12 d-block m-auto" style="float: right;">
-           <div class="d-block m-auto" style="padding-bottom: 25px;">                
-                <div class="embed-responsive embed-responsive-16by9" style="float: right;border-style: solid; border-width: 5; border-color:  #4db8ff; ">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OJYao1MOFf0" allowfullscreen></iframe>
-                </div>
-           </div>
-        </div>
-                
-               <div class=" text-secondary" style="text-align: justify;">
-               <p>Inlays or Onlays are partial crowns or custom made filling made in the laboratory. They are more conservative way to restore your teeth without destroying the sound tooth structure. Your dentist may indicate an Inlay Or Onlay depending on how much tooth has been affected by the tooth decay /tooth fracture. Inlays and Onlays can be made of different materials like Porcelain, Composite or Gold. Stop by our office to find out which one is the best for you.</br> 
-                
-
-               This procedure is done in 2 visits- during the first visit, Dentist removes any old filling/decay from the tooth, he then makes an impression of the tooth to send to the dental lab. he then temporizes your tooth with a temporary filling. The lab takes about 10-14 business day to fabricate your inlay/onlay.</br> On the 2nd visit, the dentist cements in your final restoration ( inlay/onlay) with the tooth colored cement. he then polishes the tooth to removed any excess cement and check your bite.
-               </br><br>
-                </p>
-                  
-                </div>
-           </div>
-        </div>
-
-
-
-         
-  </div>
-</section>
-<!service end>
-
+ 
 <!service start>
 <section class="container-fluid bg-info text-center" style="margin-top: 50px;">
-  <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  ">Sealants & Sports Guard</span>  </h2>
+  <h2 class="text-white" style="padding-top: 50px;"><span style="font-style: italic;  "> Sports Guard</span>  </h2>
   <hr style="width: 10%; border-color: white; border-width: 2px; padding-bottom: 40px;">
 </section>
 <section id="clinic" class="container-fluid bg-white" style="margin-top: 50px;">
@@ -376,11 +338,12 @@ Tooth extraction can be done under local or general anesthesia. We highly recomm
     <div class="row" > 
     <div class="col-lg-10 col-md-10 col-sm-10 col-12 d-block m-auto" style="padding:  0px;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">
-            <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px; ">How Can You Keep Your Childrens Teeth Healthy, Safe, and Prevent Cavities?</span></h2>
+            <h2 class="text-center text-dark" style="padding-bottom: 25px; color: #ff8080;"><span style="font-family: 'Adamina'; font-style: italic; font-size: 25px; ">How Can You Keep Your Childrens Teeth Healthy, Safe?</span></h2>
                 
                <div class="  text-secondary" style="text-align: justify;">
                <p>  
-               Sealants are a thin layer of resin based material painted on the back molars. They are known to prevent cavities in the children by sealing the pits and fissures of the teeth.
+                Mouth Guard<br> 
+              If you play any kind of contact sport ( soccer, basketball, baseball, wrestling, etc ), it is highly recommended to wear a mouth guard to prevent any tooth injury or tooth loss.
               <br> 
               <div class="col-lg-6 col-md-6 col-sm-10 col-12 d-block m-auto" style="float: right;">
            <div class="d-block m-auto" style="padding-bottom: 25px;">                
@@ -389,15 +352,19 @@ Tooth extraction can be done under local or general anesthesia. We highly recomm
                 </div>
            </div>
         </div>
-                Sealants are recommended between the ages of 6-8 years for the 1st molars and between 12-14 years for the 2nd molars.
-              </br> 
-              Mouth Guard<br> 
-              If you play any kind of contact sport ( soccer, basketball, baseball, wrestling, etc ), it is highly recommended to wear a mouth guard to prevent any tooth injury or tooth loss.
-              <br> 
+                 
+              
               There are several OTC mouth guard’s available but are ill-fitting and uncomfortable, therefore, do not provide best protection. For highest level of comfort and protection you need a custom made mouth guard. we can make a custom made mouth guard by taking a mold of you mouth. This mold is unique to your mouth and the mouth guard made of this mold fits perfectly into your mouth without any. discomfort.
                </br> 
-                </p>
-                  
+               </br> 
+               </br> 
+               </br> 
+               </br> 
+               </br> 
+               </br> 
+               </br> 
+               </p>
+                   
                 </div>
            </div>
         </div>

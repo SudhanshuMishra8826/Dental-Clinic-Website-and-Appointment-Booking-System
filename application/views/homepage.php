@@ -15,7 +15,13 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/dc1_style/indicator.css">
 
   
-
+ <style>
+#grad1 {
+  height: 55px;
+  background-color: #68CBFD; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #68CBFD, orange); /* Standard syntax (must be last) */
+}
+</style>
 
 
  
@@ -257,13 +263,11 @@
                <h2 class="text-center"><span style="font-style: italic; color: red;">Acme</span> Dental Lounge</h2>
                <hr style="width: 30%; border-color: #ff8080;  border-width: 2px; padding-bottom: 20px;">
                <p class="text-secondary" style="text-align: justify;"> 
-                At Acme Dental care we are proud to have helped thousands of
-patients from India. Korea Japan. Canada. Germany, Iraq, Irarn
-yaman, Israel Uk, USA, Russia and the surrounding area with
-their dental healtn and appearance over the past 12 years.<br>
-Our office is owned and operated by Dr. Gupta who dedicates
-all their expertise and time to this clinic. Dr Gupta along with the
-rest of the team, Acme strives to provide a warm and friendly
+                At Acme Dental lounge we are proud to have helped thousands of
+patients from India, Korea, Japan, Canada, Germany, Iraq, Irarn,
+yaman, Israel, Uk, USA, Russia and the surrounding area with
+their dental health and appearance over the past 12 years.<br>
+Our office is owned and operated by Dr. Gupta. Acme strives to provide a warm and friendly
 atmosphere where dental patients can be comfortable, relaxed
 and stress-free during their dental visits.<br>
 Family and cosmetic dentistry are the cornerstones of our clinic
@@ -337,7 +341,7 @@ modern office!</p>
                <h2 class="text-center">Dr. Vishu A Gupta</h2>
                <hr style="width: 30%; border-color: #ff8080;  border-width: 2px; padding-bottom: 20px;">
                <p class="text-secondary " style="text-align: justify;">Dr Vishu Gupta is helping our community since 11
-years Her warm sense of humor and friendly
+years. Her warm sense of humor and friendly
 nature make visiting the dentist feel more like a
 social call than an ordinary responsibility, one in
 which your smile can leave healthier and more
@@ -371,107 +375,16 @@ office!</p>
   <h2 class="text-dark" style="padding-top:  50px;">Our Results</h2>
   <hr style="width: 10%; border-color: #ff8080;  border-width: 2px;  padding-bottom: 20px;">
   <!div class="container-fluid bg-dark">  
-  <p class="text-secondary" style="padding-bottom: 20px;">For our patients, dental treatments provided by us have been nothing short of life changing! Be it a bride who wanted to show off her pearly whites on her D-day, an IT professional who wanted to confidently pitch proposals or a fitness enthusiast who wanted to improve his oral health and diet. From designing smiles and porcelain crown sculpting to full mouth dental implants and mouth rehabilitation, Smilekraft Dentistry has successfully created customized treatments for each patient. Here is a sneak peek into the before and after pictures of our smiling patients.</p> 
-   <div class="row text-center" style="margin-right: 50px; margin-left: 50px;" >
-    <div class="col-lg-3 col-md-3 col-sm-4 col-10 d-block m-auto">
-      <div class="d-block m-auto" style="padding-bottom: 50px;">
-         
-            <img class="testi" src="<?php echo base_url();?>/dc1_images/results/3M-LAVA-Crowns-1-600x400.jpg" height="150" width="220">
-          <p style="margin-top: 15px;">3M LAVA Crowns</p>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-4 col-10 d-block m-auto">
-      <div class="d-block m-auto" style="padding-bottom: 50px;">
-         
-        <img class="testi" src="<?php echo base_url();?>/dc1_images/results/Dental-Implants-600x400.jpg" height="150" width="220">
-      <p style="margin-top: 15px;">Dental Implants</p>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-4 col-10 d-block m-auto">
-      <div class="d-block m-auto" style="padding-bottom: 50px;">
-         
-        <img class="testi" src="<?php echo base_url();?>/dc1_images/results/E-Max-Porcelain-Veneers-1-600x400.jpg" height="150" width="220">
-      <p style="margin-top: 15px;">E-Max Porcelain Veneers</p>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-4 col-10 d-block m-auto">
-      <div class="d-block m-auto" style="padding-bottom: 50px;">
-         
-         <img class="testi" src="<?php echo base_url();?>/dc1_images/results/Full-Mouth-Dental-Implants-600x400.jpg" height="150" width="220">
-         <p style="margin-top: 15px;">Full Mouth Dental Implants</p>
-      </div>
-    </div>  
-    <div class="col-lg-3 col-md-3 col-sm-4 col-10 d-block m-auto">
-      <div class="d-block m-auto" style="padding-bottom: 50px;">
-         
-           <img class="testi" src="<?php echo base_url();?>/dc1_images/results/Porcelain-Crowns-Veneers-1-600x400.jpg" height="150" width="220">
-           <p style="margin-top: 15px;">Porcelain Crowns & Veneers</p>
-         
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-4 col-10 d-block m-auto">
-      <div class="d-block m-auto" style="padding-bottom: 50px;">
-         
-        <img class="testi" src="<?php echo base_url();?>/dc1_images/results/Smile-Correction-600x400.jpg" height="150" width="220">
-      <p style="margin-top: 15px;">Smile Correction</p>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-4 col-10 d-block m-auto">
-      <div class="d-block m-auto" style="padding-bottom: 50px;">
-         
-        <img class="testi" src="<?php echo base_url();?>/dc1_images/results/Smile-Designing-600x400.jpg" height="150" width="220">
-      <p style="margin-top: 15px;">Smile Designing</p>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-4 col-10 d-block m-auto">
-      <div class="d-block m-auto" style="padding-bottom: 50px;">
-         
-         <img class="testi" src="<?php echo base_url();?>/dc1_images/results/Full-Mouth-Rehabilitation-600x400.jpg" height="150" width="220">
-         <p style="margin-top: 15px;">Full Mouth Rehabilitation</p>
-      </div>
-    </div>              
- </div>
+  <p class="text-secondary" style="padding-bottom: 20px;"> Dentistry has successfully created customized treatments for each patient. Here is a sneak peek into the before and after pictures of our smiling patients.</p> 
+   
 <!/div>
 </section>
 
 
 
 
-
-<section class="container-fluid  text-center" style="margin-top: -7px;">
-   <!div class="container-fluid bg-dark">   
-   <div class="row text-center text-white">
-    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto" style="background:#339BA5;">
-      <div class="d-block m-auto" style="padding: 78px 50px 98px;">
-         
-            <h4 style="margin-top:  10px;">Cosmetic Dentistry</h4> 
-            <hr style="width: 40%; border-color: #ff8080;  border-width: 2px; padding-bottom: 20px;">
-           <p style="text-align: justify;">In today’s world, modern technology has paved the path for newer possibilities that were once only a dream to create a perfect set of pearly whites. While your smile adds up to be a confidence booster in social and professional situations, it is now possible to have aesthetic enhancements to a level that meet your needs perfectly – from basic alterations of your teeth to more pronounced smile makeovers provided by the best cosmetic dentist in Pune,India    </p>   
 
  
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto" style="background:#337DA5;">
-      <div class="d-block m-auto" style="padding: 30px 50px 50px;">
-         
-        <h4 style="margin-top: 10px;">Dental Implants</h4> 
-            <hr style="width: 40%; border-color: #ff8080;  border-width: 2px; padding-bottom: 20px;">
-           <p style="text-align: justify;"> Missing teeth or loose dentures are detrimental not only to your oral health, but your self-esteem might also take a hit. Whatever the reason for losing your teeth, they need to be replaced both for aesthetic and functional reasons such as eating or talking, which would be more difficult otherwise. Eliminating the need to live with an ill-fitting set of teeth or an embarrassing gap between them, Dr. Ashish, an implantologist, widely known as the best implant dentist in Pune at Smilekraft Dentistry provides you with easy and comfortable solutions best suiting your needs.</p>
-
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto" style="background:#0482C4;">
-      <div class="d-block m-auto" style="padding: 66px 50px 86px;">
-         
-        <h4 style="margin-top: 10px;">Laser Assisted Dentistry</h4> 
-            <hr style="width: 40%; border-color: #ff8080;  border-width: 2px; padding-bottom: 20px;">
-           <p style="text-align: justify;"> Laser Dentistry is one of the most innovative and minimally invasive technologies. Acting as a gentle alternative to the drill, the WATERLASE laser dentistry eliminates the feeling of anxiety amongst patients enhancing faster healing and a reduced risk of infection. With this preventive approach, we are committed to providing you with services for all your dental needs. Visit the pioneer of this technology and the best dentist in Pune, India, Dr. Priyank Mathur at Smilekraft Dentistry today.</p>
-      </div>
-    </div>
-            
- </div>
-<!/div>
-</section>
 
 
 

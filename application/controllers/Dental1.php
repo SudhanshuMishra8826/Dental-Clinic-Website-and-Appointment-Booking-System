@@ -512,5 +512,23 @@ public function appointment()
      $this->load->view('faq', $data);
 
 }
+public function contact()
+ {
+	//$this->load->view('index');
+	 
+	$this->load->model('Contact_model');
+
+	$this->data['query']=$this->Contact_model->fetch();
+ 
+	$this->load->view('contact_doc',$this->data);
+	 
+	//var_dump($this->data);
+	//$this->session->set_flashdata('discount',$discount);
+	 
+	//unset($_SESSION["name"]);
+	//unset($_SESSION["id"]);
+	//$this->load->view(''.$page);
+	//$this->load->view('home');
+}
 }
 	

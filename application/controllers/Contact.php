@@ -35,6 +35,7 @@ class Contact extends CI_Controller {
 		 	     {
 		 	     	 
 		 	        echo "data insert successfull";
+		 	        $this->load->view('contact');
 		         }
 		         else
 		         {

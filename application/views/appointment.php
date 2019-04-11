@@ -98,7 +98,8 @@
                             <li class="nav-item">
                             
                             <a class="nav-link" href="<?php echo base_url();?>dental1/notifications">
-                                <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 8px; "> 
+                                <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 0px; "> 
+                                    <div  class="text-secondary" style="padding: 2px 20px 2px; margin-top: 0px; "> 
                                    <?php 
                                     if($bool==1){
                                         echo '<i class="fas fa-bell text-danger"></i>';
@@ -107,6 +108,7 @@
                                         echo '<i class="fas fa-bell"></i>';
                                     }
                                      ?> 
+                                 </div>
                                 </div>
                                 </a>
                                 

@@ -106,11 +106,9 @@
 
 
   <div class="gallery">
-    <a href="<?php echo base_url();?>/dc1_images/images/26907872_176020513003767_1167050437066330406_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/26907872_176020513003767_1167050437066330406_n.jpg" width="300" height="150"></a>
-
-    <a href="<?php echo base_url();?>/dc1_images/images/26229999_174082143197604_5273773021954518344_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/26229999_174082143197604_5273773021954518344_n.jpg" width="300" height="150"></a>
+    
     <a href="<?php echo base_url();?>/dc1_images/images/44213229_302082260397591_9074665258156556288_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/44213229_302082260397591_9074665258156556288_n.jpg" width="300" height="150"> </a>
-    <a href="<?php echo base_url();?>/dc1_images/images/26804960_176020516337100_4471383098197088894_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/26804960_176020516337100_4471383098197088894_n.jpg" width="300" height="150"></a>
+    
     <a href="<?php echo base_url();?>/dc1_images/images/44229698_302082307064253_6156379291425701888_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/44229698_302082307064253_6156379291425701888_n.jpg" width="300" height="150"> </a>
     <a href="<?php echo base_url();?>/dc1_images/images/44286388_302082290397588_3304832207327068160_n.jpg" data-lightbox="mygallery" data-title="Acme Dental Care"><img src="<?php echo base_url();?>/dc1_images/images/44286388_302082290397588_3304832207327068160_n.jpg" width="300" height="150"></a>
 

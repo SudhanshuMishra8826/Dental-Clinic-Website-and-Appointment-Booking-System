@@ -104,49 +104,7 @@
 
 
 
-         <section id="vid2">
-            <div class="container">
-                <div class="row text-white" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                  <h2>Root Canal Treatment</h2>
-                      <p style="text-align: justify;  ">When the decay in your tooth is so deep that it reaches the inner most layer of the tooth where the nerve lies, root canal treatment is needed to save the tooth. Nerve and blood vessels lie in the center of the tooth , when get infected needs to be removed to alleviate the pain and infection. If the carious tooth is left untreated, the infection from the tooth will spread to the bone and surrounding teeth and will cause bone loss and more serious dental problems.</p>                    
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                             
-                            <video src="<?php echo base_url();?>/dc1_videos/10000000_310326936493421_4927644836586061824_n.mp4" type="video/mp4" controls></video>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-
-
-         <section id="vid1">
-            <div class="container">
-                <div class="row text-dark" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                  <h2>Dentistry</h2>
-                      <p style="text-align: justify;  ">Dentistry, also known as Dental and Oral Medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity, commonly in the dentition but also the oral mucosa, and of adjacent and related structures and tissues, particularly in the maxillofacial (jaw and facial) area.[1] Although primarily associated with teeth among the general public, the field of dentistry or dental medicine is not limited to teeth but includes other aspects of the craniofacial complex including the temporomandibular joint and other supporting, muscular, lymphatic, nervous, vascular, and anatomical structures.</p>                    
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                            <video src="<?php echo base_url();?>/dc1_videos/10000000_396333221143929_159331522766176256_n.mp4" type="video/mp4" controls></video>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
+         
 
 
          <section id="vid2">
@@ -154,8 +112,8 @@
                 <div class="row text-white" id="div1">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                   <h2>Crown Bridge</h2>
-                      <p style="text-align: justify;  ">A bridge is a fixed dental restoration (a fixed dental prosthesis) used to replace one or more missing teeth by joining an artificial tooth definitively to adjacent teeth or dental <br/>
-                      There are many different types of dental crowns available from your National Dental Care dentist. Your dentist will advise the best option depending on the location of the crown. They may recommend a ceramic, resin or sometimes even gold crowns.</p>                    
+                      <p style="text-align: justify;  "> 
+                      There are many different types of dental crowns available from your National Dental Care dentist. Your dentist will advise the best option depending on the location of the crown.  </p>                    
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="embed-responsive embed-responsive-21by9">
@@ -193,29 +151,7 @@
 
 
 
-         <section id="vid2">
-            <div class="container">
-                <div class="row text-white" id="div1">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                  <h2>Dental Nerve Block</h2>
-                      <p style="text-align: justify;  ">"Dental nerve blocks" is the technical term for dental anesthesia. The most commonly used anesthesia in dentistry is novocaine.<br/>
-
-                      Dental nerve blocks are an exact science. General dentists and dental specialists go through years of study to become licensed, and there are few professionals more thoroughly trained in administering the dental nerve block or numbing the face.<br/>
-
-                      The most common dental nerve block is the inferior alveolar nerve block. This type of block numbs the lower jaw during dental treatment and enables patients to lose sensation temporarily in their teeth.</p>                    
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="embed-responsive embed-responsive-21by9">
-                             
-                            <video src="<?php echo base_url();?>/dc1_videos/46812168_2205395126158353_3269463439407316992_n.mp4" type="video/mp4" controls></video>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
+         
 
          <section id="vid1">
             <div class="container">
@@ -247,7 +183,7 @@
                 <div class="row text-white" id="div1">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                   <h2>Sinus Lift</h2>
-                      <p style="text-align: justify;  ">A sinus lift, also called a sinus augmentation, is surgery that adds bone to your upper jaw in the area of your molars and premolars. During the procedure, bone is added between your jaw and the maxillary sinuses, which are on either side of your nose. To make room for the bone, the sinus membrane has to be moved upward, or "lifted." A sinus lift usually is done by a specialist, who could be either an oral and maxillofacial surgeon or a periodontist.</p>                    
+                      <p style="text-align: justify;  ">A sinus lift, also called a sinus augmentation, is surgery that adds bone to your upper jaw in the area of your molars and premolars. During the procedure, bone is added between your jaw and the maxillary sinuses, which are on either side of your nose. To make room for the bone, the sinus membrane has to be moved upward, or "lifted."  </p>                    
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="embed-responsive embed-responsive-21by9">

@@ -32,7 +32,7 @@ class Loginvali extends CI_Controller {
 			}
                 if($q->num_rows())
                 {
-					//echo "details matched";
+					 
 					
      				$this->load->model('Appointment_model');
      				if($this->Appointment_model->check_notifications()){
@@ -45,9 +45,16 @@ class Loginvali extends CI_Controller {
      //$data['check_posts']=$this->appointment_model->check_notifications();
      					$this->load->view('dash_home', $data);
                 		} 
-             	   	else 
-                	{
-                		$this->load->view('login');
+             	else 
+                	{    
+                		 
+
+                     
+
+ 
+  
+ 
+                	  $this->load->view('login');
 						//echo "detailes not matched";
                    	
                 	} 
@@ -65,7 +72,7 @@ class Loginvali extends CI_Controller {
 		 	 
 		 }
 		 else{
-		 	$this->load->view('login');
+		 	 $this->load->view('login');
 		 	//echo validation_errors();
 		 }
 	 }

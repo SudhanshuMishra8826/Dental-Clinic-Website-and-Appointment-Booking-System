@@ -75,7 +75,7 @@ window.onhashchange=function(){window.location.hash=" ";}
                   <a href="#contact">Help</a>
                 </li>
                  <li>
-                  <a href="<?php echo base_url();?>dental1/homepage/contact">Contact</a>
+                  <a href="<?php echo base_url();?>dental1/contact">Contact</a>
                 </li>
                  
             </ul>

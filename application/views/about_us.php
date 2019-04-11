@@ -138,10 +138,10 @@ by emphasizing preventive care. We strive to make dental
 care accessible to all so that everyone can enjoy a healthy
 smile. We are committed to providing quality dental
 services to our valued patients.<br>
-Acme Dental Care was conceptualized by Dr. Gupta. It is
-conveniently located in Aundh in the Pune city, Center
+Acme Dental Lounge was conceptualized by Dr. Gupta. It is
+conveniently located in Aundh in the Pune city, Our center isb
 having well-qualified and competent Dental surgeons, and
-many other experienced visiting consultants provide
+many other experienced visiting consultants which provide
 comprehensive dental treatment including specialized
 procedures.<br>
 When you visit us, your smile is our top priority. Our entire
@@ -149,17 +149,17 @@ team is dedicated to providing you with the personalized,
 gentle care that you deserve. Our goal is to do whatever it
 takes to enhance the well-being and appearance of our
 patients.<br>
-dental treatment plan that not only yields amazingly
-beautiful results, but keeps your mouth healthy for a
+We work with you to develop a personalized dental treatment plan that not only yields amazingly
+beautiful results, but also keep your mouth healthy for a
 lifetime. With us, discover how easy it is to achieve
-your dream smile We offer a comprehensive and
+your dream smile. We offer a comprehensive and
 preventative approach emphasizing and teaching
 excellent oral health to all our patients. As always, we
 strive to focus a great deal of time and resources on
 meeting and exceeding your dental expectations each
 and every time.</p>
 <div class="d-block m-auto">
-         <P>Timing-Monday to Saturday <br> 
+         <P>Timing-Monday to Wednesday and Friday to Sunday <br> 
         (10:30am-02:30pm and 05:30pm-08:30pm)</p></P>
       </div>
                 
@@ -212,8 +212,8 @@ and every time.</p>
            <div class="d-block m-auto" style="padding-bottom: 25px; padding-top: 40px;">
                <h2 class="text-center">Dr. Ashish Gupta</h2>
                 <hr style="width: 30%; border-color: #ff8080;  padding-bottom: 20px;">
-               <p class="text-secondary" style="text-align: justify;">Dr. Ashish Gupta has been practicing Dentistry since 14 years and he established centr by the name 'Acme Dental Care' in Aundh,Pune which is specially established to experience the people advancement of dentistry.<br>
-                Dr. Gupta continued his advanced studies in dental implants,comprehensive training conducted by Biohorizon Impalant System USA and is currently a certified Life Time Menmber of ISOI(Indian Society of Implantology). His expertise in Cosmetic Dentistry,Dentl Implants,Restorative Dentistry,Rotry Endo (lastest technique in RCT),Veneers & Laminates. His favorite thing about the partice is being able to change patient's perception of dentistry & empower them reading the importance of oral health. He is looking forward to providing quality of oral health care service from its state of art facility.</p>
+               <p class="text-secondary" style="text-align: justify;">Dr. Ashish Gupta has been practicing Dentistry since 14 years and he established center by the name 'ACME DENTAL LOUNGE' in Aundh,Pune which is specially established to experience the people advancement of dentistry.<br>
+                Dr. Gupta continued his advanced studies in dental implant , comprehensive training conducted by Biohorizon Impalant System USA and is currently a certified Life Time Member of ISOI(Indian Society of Implantology).<br> His expertise in Cosmetic Dentistry, Dental Implants, Restorative Dentistry, Rotry Endo (lastest technique in RCT), Veneers & Laminates. His favorite thing about the practice is being able to change patient's perception of dentistry & empower them reading the importance of oral health. He is looking forward to providing quality of oral health care service from its state of art facility.</p>
                  
                  
            </div>
@@ -228,8 +228,8 @@ and every time.</p>
            <div class="d-block m-auto" style="padding-bottom: 25px; padding-top: 40px;">
                <h2 class="text-center">Dr. Vishu A Gupta</h2>
                 <hr style="width: 30%; border-color: #ff8080;  padding-bottom: 20px;">
-               <p class="text-secondary" style="text-align: justify;">Dr. Vishu A Gupta qualified as Dental surgeon in 2007 and has 11yrs of clinical Expeience.She has unique & wide spectrum of skill in all aspect of Dentistry with special interest in cosmetic Dentistry, smile designing, Pediatric Dentistry, Restorative Dentistry. Dentistry is her passion & philosophy is to provide the best & ethical Care to the patient with Care with on pain. She provides an upgarded experience that includes state-of-the-art technology,personalized treatment,and luxurious amenities. Her waen sense of humor and friendly nature make visiting the dentist fell more like a social call then an ordinary responsibility, one in which your smile can leave healthier and more beautiful than ever before.<br>
-               Dr. Vishu A gupta believes continuing education to be very important to staying at the cutting edge of ehat dentistry has to offer. she is committed to learning the latest techniques to provide the best possible care for her patiebts.</p>
+               <p class="text-secondary" style="text-align: justify;">Dr. Vishu A Gupta qualified as Dental surgeon in 2007 and has 11yrs of clinical Expeience.She has unique & wide spectrum of skill in all aspect of Dentistry with special interest in cosmetic Dentistry, smile designing, Pediatric Dentistry, Restorative Dentistry. Dentistry is her passion & philosophy is to provide the best & ethical Care to the patient with on pain. She provides an upgarded experience that includes state-of-the-art technology, personalized treatment, and luxurious amenities. Her warm sense of humor and friendly nature make visiting the dentist feel more like a social call then an ordinary responsibility, one in which your smile can leave healthier and more beautiful than ever before.<br>
+               Dr. Vishu A gupta believes continuing education to be very important to staying at the cutting edge of that dentistry has to offer. she is committed to learning the latest techniques to provide the best possible care for her patients.</p>
                 
                 
            </div>
