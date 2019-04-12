@@ -93,8 +93,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/about_us">Clinic</a>
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage#ashish">Dr.Ashish</a>
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage#vishu">Dr.Vishu</a>
+          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/about_us#ashish">Dr.Ashish</a>
+          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/about_us#vishu">Dr.Vishu</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -276,7 +276,14 @@ materials, techniques and equipment.</br>
 We always appreciate to book prior appointment for hassle free
 no waiting schedule with us. Choose us to serve you best in
 class dentistry and let us be a part of your smile.</p>
-               <a class="btn btn-dark text-center btn1" role="button" href="<?php echo base_url();?>dental1/homepage/about_us#clinic">Read More</a>
+ <div id="acme" class="collapse text-secondary " style="text-align: justify;">
+  <p>Patients feel Acme Dental Lounge is one of the Best Dental Care Center in Pune, here we are passionate about oral health and its importance to people of all ages. Over the years, we have worked to improve oral health and hygiene by emphasizing preventive care. We strive to make dental care accessible to all so that everyone can enjoy a healthy smile. We are committed to providing quality dental services to our valued patients.
+Acme Dental Lounge was conceptualized by Dr. Gupta. It is conveniently located in Aundh in the Pune city, Our center isb having well-qualified and competent Dental surgeons, and many other experienced visiting consultants which provide comprehensive dental treatment including specialized procedures.
+When you visit us, your smile is our top priority. Our entire team is dedicated to providing you with the personalized, gentle care that you deserve. Our goal is to do whatever it takes to enhance the well-being and appearance of our patients.
+We work with you to develop a personalized dental treatment plan that not only yields amazingly beautiful results, but also keep your mouth healthy for a lifetime. With us, discover how easy it is to achieve your dream smile. We offer a comprehensive and preventative approach emphasizing and teaching excellent oral health to all our patients. As always, we strive to focus a great deal of time and resources on meeting and exceeding your dental expectations each and every time.</p>
+</div>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#acme">Read more </button>
+             <!--a class="btn btn-dark text-center btn1" role="button" href="<?php echo base_url();?>dental1/homepage/about_us#clinic">Read More</a-->
            </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-10 col-10 d-block m-auto">
@@ -327,7 +334,13 @@ that Dr. Ashish Gupta and his team will help maintain
 all of your family's dental requirements. We look
 forward to meeting you soon and hope you enjoy our
 modern office!</p>
-                <a class="btn btn-dark text-center btn1" role="button" href="<?php echo base_url();?>dental1/homepage/about_us#ashish">Read More</a>
+ <div id="ashish1" class="collapse text-secondary " style="text-align: justify;">
+  <p>Dr. Ashish Gupta has been practicing Dentistry since 14 years and he established center by the name 'ACME DENTAL LOUNGE' in Aundh,Pune which is specially established to experience the people advancement of dentistry.
+Dr. Gupta continued his advanced studies in dental implant , comprehensive training conducted by Biohorizon Impalant System USA and is currently a certified Life Time Member of ISOI(Indian Society of Implantology).
+His expertise in Cosmetic Dentistry, Dental Implants, Restorative Dentistry, Rotry Endo (lastest technique in RCT), Veneers & Laminates. His favorite thing about the practice is being able to change patient's perception of dentistry & empower them reading the importance of oral health. He is looking forward to providing quality of oral health care service from its state of art facility.</p>
+</div>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#ashish1">Read more  </button>
+             <!--a class="btn btn-dark text-center btn1" role="button" href="<?php echo base_url();?>dental1/homepage/about_us#ashish">Read More</a-->
            </div>
         </div> 
     </div>    
@@ -348,7 +361,12 @@ which your smile can leave healthier and more
 beautiful than ever before. We look forward to
 meeting you soon and hope you enjoy our modern
 office!</p>
-               <a class="btn btn-dark text-center btn1" role="button" href="<?php echo base_url();?>dental1/homepage/about_us#vishu">Read More</a>
+ <div id="vishu1" class="collapse text-secondary " style="text-align: justify;">
+  <p>Dr. Vishu A Gupta qualified as Dental surgeon in 2007 and has 11yrs of clinical Expeience.She has unique & wide spectrum of skill in all aspect of Dentistry with special interest in cosmetic Dentistry, smile designing, Pediatric Dentistry, Restorative Dentistry. Dentistry is her passion & philosophy is to provide the best & ethical Care to the patient with on pain. She provides an upgarded experience that includes state-of-the-art technology, personalized treatment, and luxurious amenities. Her warm sense of humor and friendly nature make visiting the dentist feel more like a social call then an ordinary responsibility, one in which your smile can leave healthier and more beautiful than ever before.
+Dr. Vishu A gupta believes continuing education to be very important to staying at the cutting edge of that dentistry has to offer. she is committed to learning the latest techniques to provide the best possible care for her patients.</p>
+</div>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#vishu1">Read more </button>
+               <!--a class="btn btn-dark text-center btn1" role="button" href="<?php echo base_url();?>dental1/homepage/about_us#vishu">Read More</a-->
            </div>
         </div>
         <div class="col-lg-5 col-md-5 col-sm-10 col-10 d-block m-auto">

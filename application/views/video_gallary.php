@@ -48,8 +48,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/about_us">Clinic</a>
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage#ashish">Dr.Ashish</a>
-          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage#vishu">Dr.Vishu</a>
+          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/about_us#ashish">Dr.Ashish</a>
+          <a class="dropdown-item" href="<?php echo base_url();?>dental1/homepage/about_us#vishu">Dr.Vishu</a>
         </div>
       </li>
       <li class="nav-item dropdown">
